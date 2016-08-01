@@ -146,6 +146,10 @@ form {
 	text-decoration: none;
 }
 
+.navLink:hover {
+	background: #D00;
+}
+
 .main {
 	overflow: hidden;
 	padding-bottom: 42px;
