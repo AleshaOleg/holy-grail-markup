@@ -1,0 +1,180 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #EEE;
+	font: 10pt Tahoma, Sans-Serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+h1 {
+	font-size: 180%;
+    letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 130%;
+}
+
+input {
+	width: 10em;
+    font-size: 7pt;
+}
+
+button {
+    font-size: 7pt;
+}
+
+form {
+	display: inline-block;
+}
+
+.inlineBlock {
+	display: inline-block;
+}
+
+.block {
+	display: block;
+}
+
+.redColor {
+	color: #D00;
+}
+
+.whiteColor {
+	color: #FFF;
+}
+
+.blueColor {
+	color: #293499;
+}
+
+.blueBack {
+	background: #45F;
+}
+
+.whiteBack {
+	background: #FFF;
+}
+
+.lightBlueBack {
+	background: #DDE6FF;
+}
+
+.darkBlueBack {
+	background: #293499;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.font100 {
+	font-size: 100%;
+}
+
+.font80 {
+	font-size: 80%;
+}
+
+.font70 {
+	font-size: 70%;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.widthMain {
+	width: 700px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+.header {
+	padding: 20px;
+}
+
+.name {
+	margin: 0;
+	padding-left: 40px;
+}
+
+.nav {
+	margin: 50px 0;
+	width: 140px;
+}
+
+.navLink {
+    margin: 5px 0;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+
+.content {
+	width: 355px;
+    padding: 0 15px;
+}
+
+.contentImg {
+    padding: 5px;
+    border: 1px solid #45F;
+    margin: 0 15px 15px 0;
+}
+
+.contentTitle {
+    font-size: 130%;
+}
+
+.news {
+	width: 175px;
+}
+
+.newsTitle {
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+
+.article {
+    margin: 20px 5px;
+}
+
+.articleTitle {
+    margin: 0 5px 0 0;
+}
+
+.footer {
+    bottom: 0;
+}
+
+.footerText {
+    margin: 5px;
+}
