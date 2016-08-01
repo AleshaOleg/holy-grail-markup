@@ -25,20 +25,20 @@ body {
 .header-text {
 	display: inline-block;
 	margin: 0;
-    padding-left: 40px;
+	padding-left: 40px;
 	color: #FFF;
 	font-size: 180%;
-    letter-spacing: 1px;
+	letter-spacing: 1px;
 }
 
 .header-search {
-    display: inline-block;
-    float: right;
-    font-size: 80%;
+	display: inline-block;
+	float: right;
+	font-size: 80%;
 }
 
 .header-search-text {
-    display: inline-block;
+	display: inline-block;
 	color: #FFF;
 }
 
@@ -68,9 +68,9 @@ body {
 .nav-link {
 	font-size: 80%;
 	display: block;
-    margin: 5px 0;
-    padding: 2px 5px;
-    background: #293499;
+	margin: 5px 0;
+	padding: 2px 5px;
+	background: #293499;
 	text-decoration: none;
 	color: #FFF;
 }
@@ -96,9 +96,9 @@ body {
 
 .content-article-image {
 	float: left;
-    padding: 5px;
-    border: 1px solid #45F;
-    margin: 0 15px 15px 0;
+	padding: 5px;
+	border: 1px solid #45F;
+	margin: 0 15px 15px 0;
 }
 
 .content-article-text {
@@ -113,10 +113,10 @@ body {
 .news-title {
 	background: #DDE6FF;
 	text-transform: uppercase;
-    font-weight: bold;
-    color: #293499;
-    margin: 0 0 20px 0;
-    padding: 10px;
+	font-weight: bold;
+	color: #293499;
+	margin: 0 0 20px 0;
+	padding: 10px;
 }
 
 .news-article {
@@ -125,11 +125,11 @@ body {
 }
 
 .news-article-date {
-    color: #293499;
-    font-size: 100%;
-    font-weight: bold;
-    float: left;
-    margin: 0 5px 0 0;
+	color: #293499;
+	font-size: 100%;
+	font-weight: bold;
+	float: left;
+	margin: 0 5px 0 0;
 }
 
 .news-article-text {
@@ -137,15 +137,15 @@ body {
 }
 
 .news-article-link {
-    color: #D00;
+	color: #D00;
 }
 
 .l-footer {
-    position: absolute;
-    bottom: 0;
-    width: 700px;
-    background: #45F;
-    color: #FFF;
+	position: absolute;
+	bottom: 0;
+	width: 700px;
+	background: #45F;
+	color: #FFF;
 }
 
 .footer-text {
