@@ -17,12 +17,12 @@ body {
 	background: #FFF;
 }
 
-.title {
+.l-header {
 	padding: 20px;
 	background: #45F;
 }
 
-.title-text {
+.header-text {
 	display: inline-block;
 	margin: 0;
     padding-left: 40px;
@@ -31,29 +31,29 @@ body {
     letter-spacing: 1px;
 }
 
-.title-search {
+.header-search {
     display: inline-block;
     float: right;
     font-size: 80%;
 }
 
-.title-search-text {
+.header-search-text {
     display: inline-block;
 	color: #FFF;
 }
 
-.title-search-field {
+.header-search-field {
 	width: 10em;
 	display: block;
 	font-size: 7pt;
 }
 
-.title-search-button {
+.header-search-button {
 	display: inline-block;
 	font-size: 7pt;
 }
 
-.main {
+.l-main {
 	min-height: 100%;
 }
 
@@ -140,7 +140,7 @@ body {
     color: #D00;
 }
 
-.footer {
+.l-footer {
     position: absolute;
     bottom: 0;
     width: 700px;
