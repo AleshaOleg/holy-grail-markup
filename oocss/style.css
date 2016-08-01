@@ -18,7 +18,7 @@ ul {
 
 h1 {
 	font-size: 180%;
-    letter-spacing: 1px;
+	letter-spacing: 1px;
 }
 
 h2 {
@@ -27,11 +27,11 @@ h2 {
 
 input {
 	width: 10em;
-    font-size: 7pt;
+	font-size: 7pt;
 }
 
 button {
-    font-size: 7pt;
+	font-size: 7pt;
 }
 
 form {
@@ -134,24 +134,24 @@ form {
 }
 
 .navLink {
-    margin: 5px 0;
-    padding: 2px 5px;
-    text-decoration: none;
+	margin: 5px 0;
+	padding: 2px 5px;
+	text-decoration: none;
 }
 
 .content {
 	width: 355px;
-    padding: 0 15px;
+	padding: 0 15px;
 }
 
 .contentImg {
-    padding: 5px;
-    border: 1px solid #45F;
-    margin: 0 15px 15px 0;
+	padding: 5px;
+	border: 1px solid #45F;
+	margin: 0 15px 15px 0;
 }
 
 .contentTitle {
-    font-size: 130%;
+	font-size: 130%;
 }
 
 .news {
@@ -159,22 +159,22 @@ form {
 }
 
 .newsTitle {
-    margin: 0 0 20px 0;
-    padding: 10px;
+	margin: 0 0 20px 0;
+	padding: 10px;
 }
 
 .article {
-    margin: 20px 5px;
+	margin: 20px 5px;
 }
 
 .articleTitle {
-    margin: 0 5px 0 0;
+	margin: 0 5px 0 0;
 }
 
 .footer {
-    bottom: 0;
+	bottom: 0;
 }
 
 .footerText {
-    margin: 5px;
+	margin: 5px;
 }
