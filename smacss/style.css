@@ -39,18 +39,17 @@ body {
 }
 
 .header-search-text {
-	display: block;
+	display: inline-block;
 	color: #FFF;
 }
 
 .header-search-field {
 	width: 10em;
-	display: inline-block;
+	display: block;
 	font-size: 7pt;
 }
 
 .header-search-button {
-	display: inline-block;
 	font-size: 7pt;
 }
 
@@ -89,20 +88,20 @@ body {
 }
 
 .content {
-	width: 355px;
+	width: 55%;
 	float: left;
-	padding: 0 15px;
 }
 
 .content-title {
     margin-top: 20px;
     margin-bottom: 10px;
 	font-size: 130%;
+	padding: 0 15px;
 	color: #293499;
 }
 
 .content-article {
-
+	padding: 0 15px;
 }
 
 .content-article-image {
@@ -112,12 +111,8 @@ body {
 	margin: 0 15px 15px 0;
 }
 
-.content-article-text {
-
-}
-
 .news {
-	width: 175px;
+	width: 25%;
 	float: right;
 }
 

@@ -115,8 +115,9 @@ form {
 }
 
 .wrapper {
-	margin: 0 auto;
 	min-height: 100%;
+	margin: 0 auto;
+	position: relative;
 }
 
 .header {
@@ -129,19 +130,29 @@ form {
 }
 
 .nav {
+	width: 20%;
+}
+
+.navList {
 	margin: 50px 0;
-	width: 140px;
 }
 
 .navLink {
+	border: 1px solid #FFF;
+	border-right: 0;
+	border-left: 0;
 	margin: 5px 0;
 	padding: 2px 5px;
 	text-decoration: none;
 }
 
+.main {
+	overflow: hidden;
+	padding-bottom: 42px;
+}
+
 .content {
-	width: 355px;
-	padding: 0 15px;
+	width: 55%;
 }
 
 .contentImg {
@@ -151,11 +162,17 @@ form {
 }
 
 .contentTitle {
-	font-size: 130%;
+	margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+.contentArticle {
+	padding: 0 15px;
 }
 
 .news {
-	width: 175px;
+	width: 25%;
 }
 
 .newsTitle {
@@ -172,6 +189,8 @@ form {
 }
 
 .footer {
+	height: 40px;
+	padding: 1px 0;
 	bottom: 0;
 }
 
