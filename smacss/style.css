@@ -14,6 +14,7 @@ body {
 	width: 700px;
 	min-height: 100%;
 	margin: 0 auto;
+	position: relative;
 	background: #FFF;
 }
 
@@ -32,19 +33,19 @@ body {
 }
 
 .header-search {
-	display: inline-block;
+	display: block;
 	float: right;
 	font-size: 80%;
 }
 
 .header-search-text {
-	display: inline-block;
+	display: block;
 	color: #FFF;
 }
 
 .header-search-field {
 	width: 10em;
-	display: block;
+	display: inline-block;
 	font-size: 7pt;
 }
 
@@ -54,21 +55,29 @@ body {
 }
 
 .l-main {
+	overflow: hidden;
 	min-height: 100%;
+	padding-bottom: 42px;
 }
 
 .nav {
 	float: left;
-	width: 140px;
+	width: 20%;
+}
+
+.nav-list {
 	margin: 50px 0;
 	padding: 0;
-	list-style-type: none;
+	list-style: none;
 }
 
 .nav-link {
 	font-size: 80%;
 	display: block;
 	margin: 5px 0;
+	border: 1px solid #FFF;
+	border-right: 0;
+	border-left: 0;
 	padding: 2px 5px;
 	background: #293499;
 	text-decoration: none;
@@ -86,6 +95,8 @@ body {
 }
 
 .content-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
 	font-size: 130%;
 	color: #293499;
 }
@@ -143,16 +154,17 @@ body {
 .l-footer {
 	position: absolute;
 	bottom: 0;
+    height: 40px;
+    padding: 1px 0;
 	width: 700px;
 	background: #45F;
 	color: #FFF;
 }
 
 .footer-text {
+	display: block;
 	font-size: 70%;
 	margin: 5px;
-	float: left;
-	clear: both;
 }
 
 .footer-link {
