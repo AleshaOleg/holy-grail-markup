@@ -139,11 +139,13 @@ body {
 }
 
 .news-article-text {
+	display: inline;
 	color: #293499;
 }
 
 .news-article-link {
 	color: #D00;
+	padding-right: 13px;
 }
 
 .l-footer {

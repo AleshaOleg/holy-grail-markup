@@ -196,6 +196,14 @@ form {
 	margin: 0 5px 0 0;
 }
 
+.articleText {
+	display: inline;
+}
+
+.articleLink {
+	padding-right: 13px;
+}
+
 .footer {
 	height: 40px;
 	padding: 1px 0;
