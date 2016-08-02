@@ -1,215 +1,215 @@
 /* Layout ******************/
 
 html {
-  height:100%;
+	height:100%;
 }
 
 body {
-  padding:0;
-  width:700px; margin:0 auto;
-  min-height:100%;
-  position:relative;
+	padding:0;
+	width:700px; margin:0 auto;
+	min-height:100%;
+	position:relative;
 }
 
 #meta {
-  position:absolute; bottom:0;
-  height:40px; width:100%;
-  padding:1px 0;
+	position:absolute; bottom:0;
+	height:40px; width:100%;
+	padding:1px 0;
 }
 
 #content {
-  padding-bottom:42px;
+	padding-bottom:42px;
 }
 
 #main {
-  float:left; width:55%;
-  margin-left:20%;
+	float:left; width:55%;
+	margin-left:20%;
 }
 
 #sections {
-  float:left; width:20%; margin-left:-75%;
+	float:left; width:20%; margin-left:-75%;
 }
 
 #news {
-  float:right; width:25%;
+	float:right; width:25%;
 }
 
 #content {
-  overflow:hidden; width:100%;
+	overflow:hidden; width:100%;
 }
 
 h1 {
-  margin:0; padding:20px;
+	margin:0; padding:20px;
 }
 
 #search {
-  position:absolute;
-  top:0; right:0;
-  margin:20px;
+	position:absolute;
+	top:0; right:0;
+	margin:20px;
 }
 
 /* Fonts *******************/
 
 body {
-  font:10pt Tahoma, Sans-Serif;
+	font:10pt Tahoma, Sans-Serif;
 }
 
 h1 {
-  font-size:180%;
-  letter-spacing:1px;
+	font-size:180%;
+	letter-spacing:1px;
 }
 
 #main h2 {
-  font-size:130%;
+	font-size:130%;
 }
 
 #sections,
 #news {
-  font-size:80%;
+	font-size:80%;
 }
 
 #sections h2,
 #news h2 {
-  font-size:125%; font-weight:bold;
-  text-transform:uppercase;
+	font-size:125%; font-weight:bold;
+	text-transform:uppercase;
 }
 
 #news h3 {
-  font-size:100%; font-weight:bold;
+	font-size:100%; font-weight:bold;
 }
 
 #meta {
-  font-size:70%;
+	font-size:70%;
 }
 
 #search input,
 #search button {
-  font-size:7pt;
+	font-size:7pt;
 }
 
 /* Colors ******************/
 
 html {
-  background:url(window-bg.png) #EEE;
+	background:url(window-bg.png) #EEE;
 }
 
 body {
-  background:url(content-bg.png) white left top repeat-y;
-  color:black;
+	background:url(content-bg.png) white left top repeat-y;
+	color:black;
 }
 
 #title {
-  background:url(title-bg.png) #45F left top repeat-x;
-  color:white;
+	background:url(title-bg.png) #45F left top repeat-x;
+	color:white;
 }
 
 #meta,
 #meta a {
-  background:#45F;
-  color:white;
+	background:#45F;
+	color:white;
 }
 
 #sections li a {
-  background:#293499;
-  color:white;
-  border-color:white;
+	background:#293499;
+	color:white;
+	border-color:white;
 }
 
 #sections li a:hover {
-  background:#D00;
+	background:#D00;
 }
 
 #news {
-  color:#293499;
+	color:#293499;
 }
 
 #news a {
-  color:#D00;
+	color:#D00;
 }
 
 #news h2 {
-  background:url(news-head-bg.png) #DDE6FF left top repeat-x;
+	background:url(news-head-bg.png) #DDE6FF left top repeat-x;
 }
 
 #main h2 {
-  color:#293499;
+	color:#293499;
 }
 
 #main .picture {
-  border-color:#45F;
+	border-color:#45F;
 }
 
 #search {
-  color:white;
+	color:white;
 }
 
 h1 {
-  background:url(logo.png) left top no-repeat;
-  padding-left:60px;
+	background:url(logo.png) left top no-repeat;
+	padding-left:60px;
 }
 
 /* Misc ********************/
 
 #sections h2 {
-  display:none;
+	display:none;
 }
 
 #sections ul {
-  list-style:none;
-  margin:50px 0; padding:0;
+	list-style:none;
+	margin:50px 0; padding:0;
 }
 
 #sections li a {
-  display:block;
-  margin:5px 0; padding:2px 5px;
-  border-style:solid; border-width:1px 0;
-  text-decoration:none;
+	display:block;
+	margin:5px 0; padding:2px 5px;
+	border-style:solid; border-width:1px 0;
+	text-decoration:none;
 }
 
 #news h2 {
-  margin:0 0 20px 0;
-  padding:10px;
+	margin:0 0 20px 0;
+	padding:10px;
 }
 
 #news h3 {
-  float:left;
-  margin:0 5px;
+	float:left;
+	margin:0 5px;
 }
 
 #news p {
-  margin:20px 5px;
+	margin:20px 5px;
 }
 
 #news a {
-  background:url(red-arrow.png) right center no-repeat;
-  padding-right:13px;
+	background:url(red-arrow.png) right center no-repeat;
+	padding-right:13px;
 }
 
 #main h2,
 #main p {
-  margin-left:15px;
-  margin-right:15px;
+	margin-left:15px;
+	margin-right:15px;
 }
 
 #main h2 {
-  margin-top:20px; margin-bottom:10px;
+	margin-top:20px; margin-bottom:10px;
 }
 
 #main .picture {
-  float:left;
-  padding:5px;
-  border-style:solid; border-width:1px;
-  margin:0 15px 15px 0;
+	float:left;
+	padding:5px;
+	border-style:solid; border-width:1px;
+	margin:0 15px 15px 0;
 }
 
 #meta p {
-  margin:5px;
+	margin:5px;
 }
 
 #search p {
-  margin:0;
+	margin:0;
 }
 
 #search input {
-  width:10em;
+	width:10em;
 }

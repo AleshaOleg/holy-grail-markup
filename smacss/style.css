@@ -93,8 +93,8 @@ body {
 }
 
 .content-title {
-    margin-top: 20px;
-    margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 	font-size: 130%;
 	padding: 0 15px;
 	color: #293499;
@@ -151,8 +151,8 @@ body {
 .l-footer {
 	position: absolute;
 	bottom: 0;
-    height: 40px;
-    padding: 1px 0;
+	height: 40px;
+	padding: 1px 0;
 	width: 700px;
 	background: #45F;
 	color: #FFF;
