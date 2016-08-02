@@ -10,7 +10,7 @@ body {
 	font: 10pt Tahoma, Sans-Serif;
 }
 
-.l-wrapper {
+.wrapper {
 	width: 700px;
 	min-height: 100%;
 	margin: 0 auto;
@@ -18,12 +18,12 @@ body {
 	background: #FFF;
 }
 
-.l-header {
+.header {
 	padding: 20px;
 	background: #45F;
 }
 
-.header-title {
+.header__title {
 	display: inline-block;
 	margin: 0;
 	padding-left: 40px;
@@ -32,45 +32,45 @@ body {
 	letter-spacing: 1px;
 }
 
-.header-search {
+.header__search {
 	display: block;
 	float: right;
 	font-size: 80%;
 }
 
-.header-label {
+.header__label {
 	display: inline-block;
 	color: #FFF;
 }
 
-.header-field {
+.header__field {
 	width: 10em;
 	display: block;
 	font-size: 7pt;
 }
 
-.header-button {
+.header__button {
 	font-size: 7pt;
 }
 
-.l-main {
+.main {
 	overflow: hidden;
 	min-height: 100%;
 	padding-bottom: 42px;
 }
 
-.l-nav {
+.nav {
 	float: left;
 	width: 20%;
 }
 
-.nav-list {
+.nav__list {
 	margin: 50px 0;
 	padding: 0;
 	list-style: none;
 }
 
-.nav-link {
+.nav__link {
 	font-size: 80%;
 	display: block;
 	margin: 5px 0;
@@ -83,16 +83,16 @@ body {
 	color: #FFF;
 }
 
-.nav-link:hover {
+.nav__link:hover {
 	background: #D00;
 }
 
-.l-content {
+.content {
 	width: 55%;
 	float: left;
 }
 
-.content-title {
+.content__title {
     margin-top: 20px;
     margin-bottom: 10px;
 	font-size: 130%;
@@ -100,23 +100,23 @@ body {
 	color: #293499;
 }
 
-.content-article {
+.content__article {
 	padding: 0 15px;
 }
 
-.content-image {
+.content__image {
 	float: left;
 	padding: 5px;
 	border: 1px solid #45F;
 	margin: 0 15px 15px 0;
 }
 
-.l-news {
+.news {
 	width: 25%;
 	float: right;
 }
 
-.news-title {
+.news__title {
 	background: #DDE6FF;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -125,12 +125,12 @@ body {
 	padding: 10px;
 }
 
-.news-article {
+.news__article {
 	margin: 20px 5px;
 	font-size: 80%;
 }
 
-.news-date {
+.news__date {
 	color: #293499;
 	font-size: 100%;
 	font-weight: bold;
@@ -138,17 +138,17 @@ body {
 	margin: 0 5px 0 0;
 }
 
-.news-text {
+.news__text {
 	display: inline;
 	color: #293499;
 }
 
-.news-link {
+.news__link {
 	color: #D00;
 	padding-right: 13px;
 }
 
-.l-footer {
+.footer {
 	position: absolute;
 	bottom: 0;
     height: 40px;
@@ -158,12 +158,12 @@ body {
 	color: #FFF;
 }
 
-.footer-text {
+.footer__text {
 	display: block;
 	font-size: 70%;
 	margin: 5px;
 }
 
-.footer-link {
+.footer__link {
 	color: #FFF;
 }
