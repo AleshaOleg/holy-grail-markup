@@ -6,7 +6,6 @@ body {
 .l-wrapper {
 	display: flex;
 	min-height: 100vh;
-	height: 100%;
 	flex-direction: column;
 	margin: 0 auto;
 }
@@ -44,6 +43,8 @@ body {
 
 .header__button {
 	font-size: 7pt;
+	display: inline-block;
+	vertical-align: bottom;
 }
 
 .main {

@@ -50,6 +50,8 @@ body {
 }
 
 .header__button {
+	display: inline-block;
+	vertical-align: bottom;
 	font-size: 7pt;
 }
 

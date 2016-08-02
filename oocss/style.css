@@ -118,6 +118,10 @@ form {
 	width: 700px;
 }
 
+.verticalBottom {
+	vertical-align: bottom;
+}
+
 .wrapper {
 	min-height: 100%;
 	margin: 0 auto;
