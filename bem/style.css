@@ -10,7 +10,7 @@ body {
 	font: 10pt Tahoma, Sans-Serif;
 }
 
-.l-wrapper {
+.wrapper {
 	width: 700px;
 	min-height: 100%;
 	margin: 0 auto;
@@ -49,7 +49,7 @@ body {
 	font-size: 7pt;
 }
 
-.header__button {
+.button {
 	display: inline-block;
 	vertical-align: bottom;
 	font-size: 7pt;
@@ -80,12 +80,21 @@ body {
 	border-right: 0;
 	border-left: 0;
 	padding: 2px 5px;
-	background: #293499;
 	text-decoration: none;
 	color: #FFF;
 }
 
+.nav__link--blue {
+	background: #293499;
+}
+
+.nav__link--light-blue {
+	color: #000;
+	background: #DDE6FF;
+}
+
 .nav__link:hover {
+	color: #FFF;
 	background: #D00;
 }
 
