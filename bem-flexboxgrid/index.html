@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Holy Grail Markup</title>
 	<link rel="stylesheet" href="node_modules/flexbox-grid-sass/dist/flexbox-grid.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body class="l-wrapper">
-<div class="grid grid--container l-wrapper">
-	<div class="row l-wrapper">
-		<div class="header col col--md-12 col--lg-12 col--xl-12">
+<body>
+<div class="grid grid--container wrapper">
+	<div class="row">
+		<div class="header col col--xs-12 col--md-12 col--lg-12 col--xl-12">
 			<h1 class="header__title">CompanyName</h1>
 			<form class="header__search">
 				<label class="header__label">Type to search:
@@ -17,8 +18,8 @@
 				<button class="header__button" type="submit">Search</button>
 			</form>
 		</div>
-		<div class="main col col--md-12 col--lg-12 col--xl-12" style="padding-bottom: 42px;">
-			<div class="nav col col--md-12 col--lg-3 col--xl-3">
+		<div class="main col col--xs-12 col--md-12 col--lg-12 col--xl-12" style="padding-bottom: 42px;">
+			<div class="nav col col--xs-12 col--md-12 col--lg-3 col--xl-3">
 				<ul class="nav__list">
 					<li class="nav__item">
 						<a href="#" class="nav__link">Solutions</a>
@@ -34,7 +35,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="content col col--md-8 col--lg-6 col--xl-6">
+			<div class="content col col--xs-8 col--md-8 col--lg-6 col--xl-6">
 				<h2 class="content__title">About Company</h2>
 				<div class="content__article">
 					<img src="imgpsh_fullsize.jpg" class="content__image" alt="">
@@ -53,7 +54,7 @@
 					Suspendisse potenti.</p>
 				</div>
 			</div>
-			<div class="news col col--md-4 col--lg-3 col--xl-3">
+			<div class="news col col--xs-3 col--md-4 col--lg-3 col--xl-3">
 				<div class="news__title">News</div>
 				<div class="news__article">
 					<h3 class="news__date">01.01.16</h3>
@@ -77,7 +78,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer col col--md-12 col--lg-12 col--xl-12 col--sm-align-bottom">
+	</div>
+</div>
+<div class="grid grid--container">
+	<div class="row">
+		<div class="footer col col--xs-12 col--md-12 col--lg-12 col--xl-12 col--sm-align-bottom">
 			<span class="footer__text">© 2016 CompanyName, Inc. All Rights Reserved.</span>
 			<span class="footer__text">Site support: <a href="mailto:design@megacorp.kk" class="footer__link">design@megacorp.kk</a></span>
 		</div>
