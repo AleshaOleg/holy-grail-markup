@@ -38,12 +38,12 @@ body {
 	font-size: 80%;
 }
 
-.header__label {
+.label {
 	display: inline-block;
 	color: #FFF;
 }
 
-.header__field {
+.label__field {
 	width: 10em;
 	display: block;
 	font-size: 7pt;
@@ -80,26 +80,14 @@ body {
 	border-right: 0;
 	border-left: 0;
 	padding: 2px 5px;
+	background: #DDE6FF;
+	color: #000;
 	text-decoration: none;
 }
 
-.nav__link--blue {
+.nav__link--contact {
 	color: #FFF;
 	background: #293499;
-}
-
-.nav__link--light-blue {
-	color: #000;
-	background: #DDE6FF;
-}
-
-.nav__link--blue {
-	background: #293499;
-}
-
-.nav__link--light-blue {
-	color: #000;
-	background: #DDE6FF;
 }
 
 .nav__link:hover {
