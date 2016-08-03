@@ -93,6 +93,15 @@ body {
 	background: #DDE6FF;
 }
 
+.nav__link--blue {
+	background: #293499;
+}
+
+.nav__link--light-blue {
+	color: #000;
+	background: #DDE6FF;
+}
+
 .nav__link:hover {
 	color: #FFF;
 	background: #D00;
