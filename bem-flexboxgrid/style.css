@@ -48,7 +48,7 @@ body {
 	font-size: 7pt;
 }
 
-.header__button {
+.button {
 	font-size: 7pt;
 	display: inline-block;
 	vertical-align: bottom;
@@ -80,12 +80,21 @@ body {
 	border-right: 0;
 	border-left: 0;
 	padding: 2px 5px;
-	background: #293499;
 	text-decoration: none;
+}
+
+.nav__link--blue {
 	color: #FFF;
+	background: #293499;
+}
+
+.nav__link--light-blue {
+	color: #000;
+	background: #DDE6FF;
 }
 
 .nav__link:hover {
+	color: #FFF;
 	background: #D00;
 }
 
@@ -139,8 +148,12 @@ body {
 }
 
 .news__text {
-	display: inline;
+    display: inline;
 	color: #293499;
+}
+
+.news__text p:last-child {
+	display: inline;
 }
 
 .news__link {

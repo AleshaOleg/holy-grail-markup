@@ -2,13 +2,17 @@
 <html>
 <head>
 	<title>Holy Grail Markup</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="basic.css">
+	<link rel="stylesheet" href="layouts.css">
+	<link rel="stylesheet" href="modules.css">
+	<link rel="stylesheet" href="states.css">
+	<link rel="stylesheet" href="themes.css">
 </head>
 <body>
 	<div class="l-wrapper">
 		<div class="l-header">
 			<h1 class="header-title">CompanyName</h1>
-			<form class="header-search">
+			<form class="header-search Bd(1px,solid,#000)">
 				<label class="header-label">Type to search:
 					<input class="header-field" type="text">
 				</label>
@@ -19,16 +23,16 @@
 			<div class="l-nav">
 				<ul class="nav-list">
 					<li>
-						<a class="nav-link" href="#">Solutions</a>
+						<a class="nav-link nav-link-blue" href="#">Solutions</a>
 					</li>
 					<li>
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link nav-link-blue" href="#">About</a>
 					</li>
 						<li>
-						<a class="nav-link" href="#">Testimonials</a>
+						<a class="nav-link nav-link-blue" href="#">Testimonials</a>
 					</li>
 					<li>
-						<a class="nav-link" href="#">Contact-us</a>
+						<a class="nav-link nav-link-light-blue" href="#">Contact-us</a>
 					</li>
 				</ul>
 			</div>
@@ -55,23 +59,31 @@
 				<div class="news-title">News</div>
 				<div class="news-article">
 					<h3 class="news-date">01.01.16</h3>
-					<p class="news-text">Vestibulum semper convallis mauris vitae lobortis. 
-					Pellentesque lobortis sem a cursus varius. Phasellus 
-					dignissim diam eget lectus cursus finibus.</p>
+					<div class="news-text">
+						<p>Vestibulum semper convallis mauris vitae lobortis. 
+						Pellentesque lobortis sem a cursus varius. Phasellus 
+						dignissim diam eget lectus cursus finibus.</p>
+					</div>
 				</div>
 				<div class="news-article">
 					<h3 class="news-date">03.01.16</h3>
-					<p class="news-text">Nam placerat tellus vitae rhoncus 
-					ornare. Suspendisse scelerisque lorem id turpis efficitur 
-					facilisis. Vivamus enim magna, hendrerit id rutrum at, euismod 
-					ac orci. <a class="news-link" href="#">Read more...</a></p>
+					<div class="news-text">
+						<p>Nam placerat tellus vitae rhoncus 
+						ornare. Suspendisse scelerisque lorem id turpis efficitur 
+						facilisis. Vivamus enim magna, hendrerit id rutrum at, euismod 
+						ac orci.</p>
+					</div>
+					<a class="news-link" href="#">Read more...</a>
 				</div>
 				<div class="news-article">
 					<h3 class="news-date">08.01.16</h3>
-					<p class="news-text">Maecenas sed orci turpis. Donec pretium lorem in purus porta 
-					hendrerit. Praesent at placerat lacus, ac ultrices ligula. Cras 
-					at consequat velit. Vivamus dapibus metus at nisl imperdiet 
-					imperdiet. <a class="news-link" href="#">Read more...</a></p>
+					<div class="news-text">
+						<p>Maecenas sed orci turpis. Donec pretium lorem in purus porta 
+						hendrerit. Praesent at placerat lacus, ac ultrices ligula. Cras 
+						at consequat velit. Vivamus dapibus metus at nisl imperdiet 
+						imperdiet.</p>
+					</div>
+					<a class="news-link" href="#">Read more...</a>
 				</div>
 			</div>
 		</div>

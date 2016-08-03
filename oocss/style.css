@@ -30,6 +30,7 @@ h3 {
 }
 
 input {
+	display: block;
 	width: 10em;
 	font-size: 7pt;
 }
@@ -38,114 +39,63 @@ button {
 	font-size: 7pt;
 }
 
-form {
-	display: inline-block;
-}
-
-.inlineBlock {
-	display: inline-block;
-}
-
-.block {
-	display: block;
-}
-
-.redColor {
-	color: #D00;
-}
-
-.whiteColor {
+.blue {
 	color: #FFF;
-}
-
-.blueColor {
-	color: #293499;
-}
-
-.blueBack {
-	background: #45F;
-}
-
-.whiteBack {
-	background: #FFF;
-}
-
-.lightBlueBack {
-	background: #DDE6FF;
-}
-
-.darkBlueBack {
 	background: #293499;
 }
 
-.bold {
-	font-weight: bold;
-}
-
-.font100 {
-	font-size: 100%;
-}
-
-.font80 {
-	font-size: 80%;
-}
-
-.font70 {
-	font-size: 70%;
-}
-
-.right {
-	float: right;
-}
-
-.left {
-	float: left;
-}
-
-.clearBoth {
-	clear: both;
-}
-
-.absolute {
-	position: absolute;
-}
-
-.uppercase {
-	text-transform: uppercase;
-}
-
-.widthMain {
-	width: 700px;
-}
-
-.verticalBottom {
-	vertical-align: bottom;
+.light-blue {
+	background: #DDE6FF;
+	color: #000;
 }
 
 .wrapper {
+	width: 700px;
+	background: #FFF;
 	min-height: 100%;
 	margin: 0 auto;
 	position: relative;
 }
 
 .header {
+	background: #45F;
+	color: #FFF;
 	padding: 20px;
 }
 
 .name {
+	display: inline-block;
 	margin: 0;
 	padding-left: 40px;
 }
 
+.search {
+	display: inline-block;
+	float: right;
+	font-size: 80%;
+}
+
+.search label {
+	display: inline-block;
+}
+
+.search button {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
 .nav {
+	float: left;
 	width: 20%;
 }
 
-.navList {
+.nav ul {
+	font-size: 80%;
 	margin: 50px 0;
 }
 
-.navLink {
+.nav a {
+	display: block;
 	border: 1px solid #FFF;
 	border-right: 0;
 	border-left: 0;
@@ -154,7 +104,8 @@ form {
 	text-decoration: none;
 }
 
-.navLink:hover {
+.nav a:hover {
+	color: #FFF;
 	background: #D00;
 }
 
@@ -164,56 +115,80 @@ form {
 }
 
 .content {
+	float: left;
 	width: 55%;
 }
 
-.contentImg {
-	padding: 5px;
-	border: 1px solid #45F;
-	margin: 0 15px 15px 0;
-}
-
-.contentTitle {
+.content h2 {
+	color: #293499;
 	margin-top: 20px;
 	margin-bottom: 10px;
 	padding: 0 15px;
 }
 
-.contentArticle {
+.content img {
+	float: left;
+	padding: 5px;
+	border: 1px solid #45F;
+	margin: 0 15px 15px 0;
+}
+
+.article {
 	padding: 0 15px;
 }
 
 .news {
+	float: right;
+	color: #293499;
 	width: 25%;
 }
 
-.newsTitle {
+.title {
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #DDE6FF;
 	margin: 0 0 20px 0;
 	padding: 10px;
 }
 
-.article {
+.item {
+	font-size: 80%;
+	color: #293499;
 	margin: 20px 5px;
 }
 
-.articleTitle {
+.item h3 {
+	float: left;
+	font-weight: bold;
 	margin: 0 5px 0 0;
 }
 
-.articleText {
+.item p {
 	display: inline;
 }
 
-.articleLink {
+.item a {
+	color: #D00;
 	padding-right: 13px;
 }
 
 .footer {
+	position: absolute;
+	background: #45F;
+	color: #FFF;
+	width: 700px;
 	height: 40px;
 	padding: 1px 0;
 	bottom: 0;
 }
 
-.footerText {
+.footer span {
+	clear: both;
 	margin: 5px;
+	display: block;
+	font-size: 70%;
+}
+
+.footer a {
+	color: #FFF;
 }

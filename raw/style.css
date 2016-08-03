@@ -109,13 +109,22 @@ body {
 	color:white;
 }
 
-#sections li a {
+#sections li a.blue {
 	background:#293499;
 	color:white;
+}
+
+#sections li a.light-blue {
+	background:#DDE6FF;
+	color:black;
+}
+
+#sections li a {
 	border-color:white;
 }
 
 #sections li a:hover {
+	color:white;
 	background:#D00;
 }
 

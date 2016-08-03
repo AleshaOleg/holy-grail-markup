@@ -1,28 +1,3 @@
-html {
-	height: 100%;
-}
-
-body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background: #EEE;
-	font: 10pt Tahoma, Sans-Serif;
-}
-
-.l-wrapper {
-	width: 700px;
-	min-height: 100%;
-	margin: 0 auto;
-	position: relative;
-	background: #FFF;
-}
-
-.l-header {
-	padding: 20px;
-	background: #45F;
-}
-
 .header-title {
 	display: inline-block;
 	margin: 0;
@@ -53,17 +28,6 @@ body {
 	font-size: 7pt;
 }
 
-.l-main {
-	overflow: hidden;
-	min-height: 100%;
-	padding-bottom: 42px;
-}
-
-.l-nav {
-	float: left;
-	width: 20%;
-}
-
 .nav-list {
 	margin: 50px 0;
 	padding: 0;
@@ -78,18 +42,8 @@ body {
 	border-right: 0;
 	border-left: 0;
 	padding: 2px 5px;
-	background: #293499;
 	text-decoration: none;
 	color: #FFF;
-}
-
-.nav-link:hover {
-	background: #D00;
-}
-
-.l-content {
-	width: 55%;
-	float: left;
 }
 
 .content-title {
@@ -109,11 +63,6 @@ body {
 	padding: 5px;
 	border: 1px solid #45F;
 	margin: 0 15px 15px 0;
-}
-
-.l-news {
-	width: 25%;
-	float: right;
 }
 
 .news-title {
@@ -143,19 +92,13 @@ body {
 	color: #293499;
 }
 
+.news-text p:last-child {
+	display: inline;
+}
+
 .news-link {
 	color: #D00;
 	padding-right: 13px;
-}
-
-.l-footer {
-	position: absolute;
-	bottom: 0;
-	height: 40px;
-	padding: 1px 0;
-	width: 700px;
-	background: #45F;
-	color: #FFF;
 }
 
 .footer-text {
