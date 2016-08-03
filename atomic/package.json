@@ -11,6 +11,7 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-atomizer": "^3.0.2",
-    "grunt-cli": "^1.2.0"
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
