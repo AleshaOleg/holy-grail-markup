@@ -1,6 +1,7 @@
 var gulp            = require('gulp'),
     sass            = require('gulp-sass'),
     sourcemaps      = require('gulp-sourcemaps'),
+    autoprefixer    = require('gulp-autoprefixer'),
     cached          = require('gulp-cached'),
     remember        = require('gulp-remember'),
     gulpif          = require('gulp-if'),
@@ -16,6 +17,7 @@ gulp.task('sass', function(filepath) {
         gulp.src('*.scss'),
         cached('*.scss'),
         gulpif(isDevelopment, sourcemaps.init({loadMaps: true})),
+        autoprefixer(),
         sass({
             outputStyle: "compressed"
         }),

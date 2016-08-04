@@ -1,0 +1,135 @@
+.Bdc\(\#fff\) {
+  border-color: #fff;
+}
+.Bds\(s\) {
+  border-style: solid;
+}
+.Bdw\(1px\) {
+  border-width: 1px;
+}
+.Bdendw\(0\) {
+  border-right-width: 0;
+}
+.Bdstartw\(0\) {
+  border-left-width: 0;
+}
+.Bgc\(\#eee\) {
+  background-color: #eee;
+}
+.Bgc\(\#fff\) {
+  background-color: #fff;
+}
+.Bgc\(\#45f\) {
+  background-color: #45f;
+}
+.Bgc\(\#dde6ff\) {
+  background-color: #dde6ff;
+}
+.Bgc\(\#293499\) {
+  background-color: #293499;
+}
+.C\(\#fff\) {
+  color: #fff;
+}
+.C\(\#000\) {
+  color: #000;
+}
+.D\(ib\) {
+  display: inline-block;
+}
+.D\(b\) {
+  display: block;
+}
+.Fl\(end\) {
+  float: right;
+}
+.Fl\(start\) {
+  float: left;
+}
+.Ff\(tahoma\) {
+  font-family: Tahoma, sans-serif;
+}
+.Fz\(10pt\) {
+  font-size: 10pt;
+}
+.Fz\(180\%\) {
+  font-size: 180%;
+}
+.Fz\(80\%\) {
+  font-size: 80%;
+}
+.Fz\(7pt\) {
+  font-size: 7pt;
+}
+.H\(100\%\) {
+  height: 100%;
+}
+.Lts\(1px\) {
+  letter-spacing: 1px;
+}
+.List\(n\) {
+  list-style-type: none;
+}
+.M\(0\) {
+  margin: 0;
+}
+.Mx\(a\) {
+  margin-left: auto;
+  margin-right: auto;
+}
+.My\(0\) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.My\(50px\) {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.My\(5px\) {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.Mih\(100\%\) {
+  min-height: 100%;
+}
+.Ov\(h\) {
+  overflow: hidden;
+}
+.P\(0\) {
+  padding: 0;
+}
+.P\(20px\) {
+  padding: 20px;
+}
+.Px\(5px\) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.Py\(2px\) {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.Pb\(42px\) {
+  padding-bottom: 42px;
+}
+.Pstart\(40px\) {
+  padding-left: 40px;
+}
+.Pos\(r\) {
+  position: relative;
+}
+.Td\(n\) {
+  text-decoration: none;
+}
+.Va\(b\) {
+  vertical-align: bottom;
+}
+.W\(700px\) {
+  width: 700px;
+}
+.W\(10em\) {
+  width: 10em;
+}
+.W\(20\%\) {
+  width: 20%;
+}

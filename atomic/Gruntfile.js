@@ -13,9 +13,12 @@ module.exports = function(grunt) {
             }
         },
         atomizer: {
+            options: {
+                configFile: './config.js'
+            },
             files: {
-                    src: ['./*.html'],
-                    dest: './style.css'
+                src: ['./*.html'],
+                dest: './style.css'
             }
         }
     });
