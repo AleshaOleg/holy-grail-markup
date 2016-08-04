@@ -1,6 +1,9 @@
 .Bdc\(\#fff\) {
   border-color: #fff;
 }
+.Bdc\(\#45f\) {
+  border-color: #45f;
+}
 .Bds\(s\) {
   border-style: solid;
 }
@@ -25,6 +28,9 @@
 .Bgc\(\#dde6ff\) {
   background-color: #dde6ff;
 }
+.Bgc\(\#d00\)\:h:hover {
+  background-color: #d00;
+}
 .Bgc\(\#293499\) {
   background-color: #293499;
 }
@@ -34,11 +40,23 @@
 .C\(\#000\) {
   color: #000;
 }
+.C\(\#fff\)\:h:hover {
+  color: #fff;
+}
+.C\(\#293499\) {
+  color: #293499;
+}
+.C\(\#d00\) {
+  color: #d00;
+}
 .D\(ib\) {
   display: inline-block;
 }
 .D\(b\) {
   display: block;
+}
+.D\(i\) {
+  display: inline;
 }
 .Fl\(end\) {
   float: right;
@@ -48,6 +66,9 @@
 }
 .Ff\(tahoma\) {
   font-family: Tahoma, sans-serif;
+}
+.Fw\(b\) {
+  font-weight: bold;
 }
 .Fz\(10pt\) {
   font-size: 10pt;
@@ -61,8 +82,20 @@
 .Fz\(7pt\) {
   font-size: 7pt;
 }
+.Fz\(130\%\) {
+  font-size: 130%;
+}
+.Fz\(100\%\) {
+  font-size: 100%;
+}
+.Fz\(70\%\) {
+  font-size: 70%;
+}
 .H\(100\%\) {
   height: 100%;
+}
+.H\(40px\) {
+  height: 40px;
 }
 .Lts\(1px\) {
   letter-spacing: 1px;
@@ -73,9 +106,18 @@
 .M\(0\) {
   margin: 0;
 }
+.M\(5px\) {
+  margin: 5px;
+}
 .Mx\(a\) {
   margin-left: auto;
   margin-right: auto;
+}
+.Mx\(5px\) {
+  margin-left: 5px;
+}
+.Mx\(5px\), .Mend\(5px\) {
+  margin-right: 5px;
 }
 .My\(0\) {
   margin-top: 0;
@@ -89,8 +131,26 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
+.My\(20px\), .Mt\(20px\) {
+  margin-top: 20px;
+}
+.My\(20px\), .Mb\(20px\) {
+  margin-bottom: 20px;
+}
+.Mend\(15px\) {
+  margin-right: 15px;
+}
+.Mb\(10px\) {
+  margin-bottom: 10px;
+}
+.Mb\(15px\) {
+  margin-bottom: 15px;
+}
 .Mih\(100\%\) {
   min-height: 100%;
+}
+.B\(0\) {
+  bottom: 0;
 }
 .Ov\(h\) {
   overflow: hidden;
@@ -101,13 +161,30 @@
 .P\(20px\) {
   padding: 20px;
 }
+.P\(5px\) {
+  padding: 5px;
+}
+.P\(10px\) {
+  padding: 10px;
+}
 .Px\(5px\) {
   padding-left: 5px;
   padding-right: 5px;
 }
+.Px\(15px\) {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .Py\(2px\) {
   padding-top: 2px;
   padding-bottom: 2px;
+}
+.Py\(1px\) {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.Pend\(13px\) {
+  padding-right: 13px;
 }
 .Pb\(42px\) {
   padding-bottom: 42px;
@@ -118,8 +195,14 @@
 .Pos\(r\) {
   position: relative;
 }
+.Pos\(a\) {
+  position: absolute;
+}
 .Td\(n\) {
   text-decoration: none;
+}
+.Tt\(u\) {
+  text-transform: uppercase;
 }
 .Va\(b\) {
   vertical-align: bottom;
@@ -132,4 +215,10 @@
 }
 .W\(20\%\) {
   width: 20%;
+}
+.W\(55\%\) {
+  width: 55%;
+}
+.W\(25\%\) {
+  width: 25%;
 }
