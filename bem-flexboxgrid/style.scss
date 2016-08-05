@@ -1,8 +1,6 @@
 @import 'node_modules/flexbox-grid-sass/src/flexbox-grid';
 
 body {
-  display: flex;
-  flex-direction: column;
   padding: 0;
   margin: 0;
   min-height: 100vh;
@@ -10,13 +8,29 @@ body {
   font: 10pt Tahoma, Sans-Serif;
 }
 
-.wrapper {
-  background: #FFF;
+.grid--width {
+  max-width: 700px;
+}
+
+.grid--full-height {
+  min-height: 100vh;
+}
+
+.grid--footer {
+  @extend .grid--full-height;
+  display: flex;
+  flex-direction: column;
+  > .row {
+    margin: 0 -.5rem;
+  }
+}
+
+.row--clearfix {
   flex: 1;
 }
 
-.grid--container {
-  max-width: 700px;
+.row--footer {
+  align-items: flex-end;
 }
 
 .row--no-indent {
@@ -87,6 +101,7 @@ body {
   @extend .col;
   @extend .col--sm-12;
   @extend .col--no-indent;
+  background: #FFF;
 }
 
 .nav {

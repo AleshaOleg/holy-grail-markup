@@ -17,7 +17,10 @@ gulp.task('sass', function(filepath) {
         gulp.src('*.scss'),
         cached('*.scss'),
         gulpif(isDevelopment, sourcemaps.init({loadMaps: true})),
-        autoprefixer(),
+        autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }),
         sass({
             outputStyle: "compressed"
         }),
