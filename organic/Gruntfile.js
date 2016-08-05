@@ -6,13 +6,13 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'style.css': './sass/app.scss'
+                    'style.css': 'scss/app.scss'
                 }
             }
         },
         watch: {
             sass: {
-                files: ['sass/**/*.scss'],
+                files: ['scss/**/*.scss'],
                 tasks: ['sass']
             }
         }
@@ -22,4 +22,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['sass', 'watch']);
-};
+
+}
