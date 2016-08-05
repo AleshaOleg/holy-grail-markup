@@ -1,0 +1,15 @@
+@mixin break-point-lower-than($point) {
+    @media all and (max-width: $point) {
+        @content;
+    }
+}
+@mixin break-point-higher-than($point) {
+    @media all and (min-width: $point) {
+        @content;
+    }
+}
+@mixin break-point-range($point-from, $point-to) {
+    @media all and (min-width: $point-from) and (max-width: $point-to) {
+        @content;
+    }
+}

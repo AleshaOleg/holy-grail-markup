@@ -1,181 +1,181 @@
 html {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background: #EEE;
-	font: 10pt Tahoma, Sans-Serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #EEE;
+    font: 10pt Tahoma, Sans-Serif;
 }
 
 .wrapper {
-	width: 700px;
-	min-height: 100%;
-	margin: 0 auto;
-	position: relative;
-	background: #FFF;
+    width: 700px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #FFF;
 }
 
 .header {
-	padding: 20px;
-	background: #45F;
+    padding: 20px;
+    background: #45F;
 }
 
 .header__title {
-	display: inline-block;
-	margin: 0;
-	padding-left: 40px;
-	color: #FFF;
-	font-size: 180%;
-	letter-spacing: 1px;
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+    color: #FFF;
+    font-size: 180%;
+    letter-spacing: 1px;
 }
 
 .header__search {
-	display: block;
-	float: right;
-	font-size: 80%;
+    display: block;
+    float: right;
+    font-size: 80%;
 }
 
 .label {
-	display: inline-block;
-	color: #FFF;
+    display: inline-block;
+    color: #FFF;
 }
 
 .label__field {
-	width: 10em;
-	display: block;
-	font-size: 7pt;
+    width: 10em;
+    display: block;
+    font-size: 7pt;
 }
 
 .button {
-	display: inline-block;
-	vertical-align: bottom;
-	font-size: 7pt;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 7pt;
 }
 
 .main {
-	overflow: hidden;
-	min-height: 100%;
-	padding-bottom: 42px;
+    overflow: hidden;
+    min-height: 100%;
+    padding-bottom: 42px;
 }
 
 .nav {
-	float: left;
-	width: 20%;
+    float: left;
+    width: 20%;
 }
 
 .nav__list {
-	margin: 50px 0;
-	padding: 0;
-	list-style: none;
+    margin: 50px 0;
+    padding: 0;
+    list-style: none;
 }
 
 .nav__link {
-	font-size: 80%;
-	display: block;
-	margin: 5px 0;
-	border: 1px solid #FFF;
-	border-right: 0;
-	border-left: 0;
-	padding: 2px 5px;
-	background: #DDE6FF;
-	color: #000;
-	text-decoration: none;
+    font-size: 80%;
+    display: block;
+    margin: 5px 0;
+    border: 1px solid #FFF;
+    border-right: 0;
+    border-left: 0;
+    padding: 2px 5px;
+    background: #DDE6FF;
+    color: #000;
+    text-decoration: none;
 }
 
 .nav__link--contact {
-	color: #FFF;
-	background: #293499;
+    color: #FFF;
+    background: #293499;
 }
 
 .nav__link:hover {
-	color: #FFF;
-	background: #D00;
+    color: #FFF;
+    background: #D00;
 }
 
 .content {
-	width: 55%;
-	float: left;
+    width: 55%;
+    float: left;
 }
 
 .content__title {
-	margin-top: 20px;
-	margin-bottom: 10px;
-	font-size: 130%;
-	padding: 0 15px;
-	color: #293499;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 130%;
+    padding: 0 15px;
+    color: #293499;
 }
 
 .content__article {
-	padding: 0 15px;
+    padding: 0 15px;
 }
 
 .content__image {
-	float: left;
-	padding: 5px;
-	border: 1px solid #45F;
-	margin: 0 15px 15px 0;
+    float: left;
+    padding: 5px;
+    border: 1px solid #45F;
+    margin: 0 15px 15px 0;
 }
 
 .news {
-	width: 25%;
-	float: right;
+    width: 25%;
+    float: right;
 }
 
 .news__title {
-	background: #DDE6FF;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #293499;
-	margin: 0 0 20px 0;
-	padding: 10px;
+    background: #DDE6FF;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #293499;
+    margin: 0 0 20px 0;
+    padding: 10px;
 }
 
 .news__article {
-	margin: 20px 5px;
-	font-size: 80%;
+    margin: 20px 5px;
+    font-size: 80%;
 }
 
 .news__date {
-	color: #293499;
-	font-size: 100%;
-	font-weight: bold;
-	float: left;
-	margin: 0 5px 0 0;
+    color: #293499;
+    font-size: 100%;
+    font-weight: bold;
+    float: left;
+    margin: 0 5px 0 0;
 }
 
 .news__text {
     display: inline;
-	color: #293499;
+    color: #293499;
 }
 
 .news__text p:last-of-type {
-	display: inline;
+    display: inline;
 }
 
 .news__link {
-	color: #D00;
-	padding-right: 13px;
+    color: #D00;
+    padding-right: 13px;
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
-	height: 40px;
-	padding: 1px 0;
-	width: 700px;
-	background: #45F;
-	color: #FFF;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    padding: 1px 0;
+    width: 700px;
+    background: #45F;
+    color: #FFF;
 }
 
 .footer__text {
-	display: block;
-	font-size: 70%;
-	margin: 5px;
+    display: block;
+    font-size: 70%;
+    margin: 5px;
 }
 
 .footer__link {
-	color: #FFF;
+    color: #FFF;
 }

@@ -1,0 +1,45 @@
+// margin
+%margin-reset { margin: 0; }
+%margin-centered { margin: 0 auto; }
+@include generate-placeholder('margin', 0, 100);
+@include generate-placeholder('margin-top', 0, 100);
+@include generate-placeholder('margin-right', 0, 100);
+@include generate-placeholder('margin-bottom', 0, 100);
+@include generate-placeholder('margin-left', 0, 100);
+
+// padding
+%padding-reset { padding: 0; }
+@include generate-placeholder('padding', 0, 100);
+@include generate-placeholder('padding-top', 0, 100);
+@include generate-placeholder('padding-right', 0, 100);
+@include generate-placeholder('padding-bottom', 0, 100);
+@include generate-placeholder('padding-left', 0, 100);
+
+// border
+%no-border { border: none; }
+@mixin border($top: none, $right: none, $bottom: none, $left: none) {
+    border-top: $top;
+    @if $right == none {
+        border-right: $top;
+    } @else {
+        border-right: $right;
+    }
+    @if $bottom == none {
+        border-bottom: $top;
+    } @else {
+        border-bottom: $bottom;
+    }
+    @if $left == none {
+        border-left: $top;
+    } @else {
+        border-left: $left;
+    }
+}
+
+// border-radius
+%no-border-radius { border-radius: none; }
+@include generate-placeholder('border-radius', 0, 100);
+@include generate-placeholder('border-top-left-radius', 0, 100);
+@include generate-placeholder('border-top-right-radius', 0, 100);
+@include generate-placeholder('border-bottom-left-radius', 0, 100);
+@include generate-placeholder('border-bottom-right-radius', 0, 100);

@@ -52,7 +52,6 @@ body {
     @extend .col;
     @extend .col--xs-12;
     @extend .col--sm-8;
-    @extend .col--md-9;
     @extend .col--no-indent;
     display: inline-block;
     margin: 0;
@@ -65,11 +64,14 @@ body {
     @extend .col;
     @extend .col--xs-12;
     @extend .col--sm-4;
-    @extend .col--md-3;
     @extend .col--no-indent;
     display: block;
     float: right;
     font-size: 80%;
+    text-align: right;
+  }
+  &__label {
+    text-align: left;
   }
 }
 
@@ -107,7 +109,7 @@ body {
 .nav {
   @extend .col;
   @extend .col--xs-12;
-  @extend .col--md-3;
+  @extend .col--sm-2;
   @extend .col--no-indent;
   float: left;
   &__list {
@@ -140,8 +142,7 @@ body {
 .content {
   @extend .col;
   @extend .col--xs-12;
-  @extend .col--sm-6;
-  @extend .col--md-6;
+  @extend .col--sm-7;
   @extend .col--no-indent;
   float: left;
   &__title {
@@ -159,6 +160,12 @@ body {
       border: 1px solid #45F;
       margin: 0 15px 15px 0;
     }
+  }
+  &__image {
+    float: left;
+    padding: 5px;
+    border: 1px solid #45F;
+    margin: 0 15px 15px 0;
   }
 }
 

@@ -1,0 +1,31 @@
+// ****** removes the first element of a list and returns it
+@function shift($list) {
+    $newList: ();
+    @for $i from 2 through length($list) {
+        $newList: append($newList, nth($list, $i));
+    }
+    @return $newList;
+}
+
+
+// ****** generates placeholders
+@mixin generate-placeholder($property, $from: 0, $to: 0, $unit: px) {
+    @for $i from $from through $to {
+        %#{$property}-#{$i} { #{$property}: #{$i}#{$unit}; }
+    }
+}
+
+
+// ****** defining atom
+@mixin define-atom($name) {
+    %#{$name} {
+        @content;
+    }
+}
+// ****** atoms
+@mixin atoms($collection: ()) {
+    @each $el in $collection {
+        @extend %#{$el};
+    }
+    @content;
+}

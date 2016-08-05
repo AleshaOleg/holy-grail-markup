@@ -1,0 +1,10 @@
+%block {
+    display: block;
+    @include vendor(box-sizing, border-box);
+}
+%inline {
+    display: inline;
+}
+%inline-block {
+    display: inline-block;
+}

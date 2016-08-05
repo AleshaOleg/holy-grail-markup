@@ -1,0 +1,49 @@
+%normal {
+    font-weight: normal;
+}
+%bold {
+    font-weight: bold;
+}
+%italic {
+    font-style: italic;
+}
+%underline {
+    text-decoration: underline;
+}
+%no-underline {
+    text-decoration: none;
+}
+%strike {
+    text-decoration: line-through;
+}
+%overline {
+    text-decoration: overline;
+}
+%no-overline {
+    text-decoration: none;
+}
+%justify {
+    text-align: justify;
+}
+%left-text {
+    text-align: left;
+}
+%right-text {
+    text-align: right;
+}
+%center-text {
+    text-align: center;
+}
+%no-style {
+    font-style: normal;
+}
+%word-wrap {
+    word-wrap: break-word;
+}
+
+@mixin font($f...) {
+    font-family: $f;
+}
+
+@include generate-placeholder('font-size', 1, 100);
+@include generate-placeholder('line-height', 1, 100);
