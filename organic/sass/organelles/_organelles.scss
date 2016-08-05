@@ -1,0 +1,59 @@
+.header {
+  @include atoms((
+    padding-20
+  ));
+  @include bg-color($color: #4455ff);
+  @include header-title;
+  @include header-search;
+  @include label;
+  @include label-field;
+  @include button;
+}
+
+.nav {
+  @include atoms((
+    left
+  ));
+  @include width($value: 20%);
+  @include nav-list;
+  @include nav-link;
+}
+
+.content {
+  @include atoms((
+    left
+  ));
+  @include width($value: 55%);
+  @include content-title;
+  @include content-article;
+  @include content-image;
+}
+
+.news {
+  @include atoms((
+    right
+  ));
+  @include width($value: 25%);
+  @include news-title;
+  @include news-article;
+  @include news-date;
+  @include news-text;
+  @include news-link;
+}
+
+.footer {
+  @include atoms((
+    white
+    padding-top-1
+    padding-bottom-1
+  )) {
+    position: absolute;
+    bottom: 0;
+  };
+  @include absolute($x: none, $y: none);
+  @include height($value: 40px);
+  @include width($value: 700px);
+  @include bg-color($color: #45F);
+  @include footer-text;
+  @include footer-link;
+}

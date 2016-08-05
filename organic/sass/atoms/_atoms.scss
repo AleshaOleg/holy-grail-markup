@@ -1,34 +1,23 @@
-$color-a: #5F7928;
-$color-b: #A7A7A7;
-
-
-@include define-atom("font-family") {
-    font-family: Georgia;
-}
-@include define-atom("code-font-family") {
-    font-family: "Courier New";
+@include define-atom("height-100") {
+    height: 100%;
 }
 
-
-@include define-atom("header-column-left-border") {
-    @include border(null, null, null, dotted 1px $color-b);
-}
-@include define-atom("header-bottom-border") {
-    @include border(null, null, solid 5px $color-b, null);
-}
-@include define-atom("header-text-color") {
-    @include color($color-a);
-}
-@include define-atom("header-title-shadow") {
-    @include text-shadow(1px, -1px, 1px, $color-b);
+@include define-atom("font") {
+    font: 10pt Tahoma, sans-serif;
 }
 
-@include define-atom("content-code-bg-color") {
-    @include bg-color($color-b, 30%);
+@include define-atom("font-size-80-per") {
+    font-size: 80%;
 }
-@include define-atom("content-top-border") {
-    @include border(dotted 1px $color-b, null, null, null);
+
+@include define-atom("font-size-100-per") {
+    font-size: 100%;
 }
-@include define-atom("content-description-text") {
-    @include color($color-b, 0, 20%);
+
+@include define-atom("font-size-130-per") {
+    font-size: 130%;
+}
+
+@include define-atom("font-size-7-pt") {
+    font-size: 7pt;
 }

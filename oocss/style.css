@@ -70,7 +70,6 @@ button {
 }
 
 .search {
-    display: inline-block;
     float: right;
     font-size: 80%;
 }

@@ -1,0 +1,19 @@
+@mixin label {
+  .label {
+    @include atoms((
+      inline-block
+      white
+    ))
+  };
+}
+
+@mixin label-field {
+  .label-field {
+    @include atoms((
+      font-size-7-pt
+    )) {
+      display: block;
+    };
+    @include width($value: 10em);
+  };
+}

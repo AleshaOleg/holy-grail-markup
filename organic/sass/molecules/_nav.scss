@@ -1,0 +1,38 @@
+@mixin nav-list {
+  .nav-list {
+    @include atoms((
+      padding-0
+    )) {
+      margin: 50px 0;
+      list-style: none;
+    }
+  }
+}
+
+@mixin nav-link {
+  .nav-link {
+    @include atoms((
+      block
+      black
+      no-underline
+      font-size-80-per
+    )) {
+      margin: 5px 0;
+      padding: 2px 5px;
+    };
+    @include bg-color($color: #DDE6FF);
+    @include border($top: 1px solid #FFF, $right: 0, $bottom: 1px solid #FFF, $left: 0);
+    &-contact {
+      @include atoms((
+        white
+      ));
+      @include bg-color($color: #293499);
+    }
+    &:hover {
+      @include atoms((
+        white
+      ));
+      @include bg-color($color: #D00);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@mixin content-title {
+  .content-title {
+    @include atoms((
+      margin-top-20
+      margin-bottom-10
+      font-size-130-per
+    )) {
+      padding: 0 15px;
+    };
+    @include color($color: #293499);
+  }
+}
+
+@mixin content-article {
+  .content-article {
+    @include atoms(()) {
+      padding: 0 15px;
+    };
+  }
+}
+
+@mixin content-image {
+  .content-image {
+    @include atoms((
+      left
+      padding-5
+      margin-0
+      margin-right-15
+      margin-bottom-15
+    ));
+    @include border($top: 1px solid #45F, $right: 1px solid #45F, $bottom: 1px solid #45F, $left: 1px solid #45F);
+  }
+}

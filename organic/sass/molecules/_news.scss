@@ -1,0 +1,60 @@
+@mixin news-title {
+  .news-title {
+    @include atoms((
+      bold
+      margin-0
+      margin-bottom-20
+      padding-10
+    )) {
+      text-transform: uppercase;
+    };
+    @include color($color: #293499);
+    @include bg-color($color: #DDE6FF);
+  }
+}
+
+@mixin news-article {
+  .news-article {
+    @include atoms((
+      font-size-80-per
+    )) {
+      margin: 20px 5px;
+    };
+  }
+}
+
+@mixin news-date {
+  .news-date {
+    @include atoms((
+      font-size-100-per
+      bold
+      left
+      margin-0
+      margin-right-5
+    ));
+    @include color($color: #293499);
+  }
+}
+
+@mixin news-text {
+  .news-text {
+    @include atoms((
+      inline
+    ));
+    @include color($color: #293499);
+    p:last-of-type {
+      @include atoms((
+        inline
+      ));
+    }
+  }
+}
+
+@mixin news-link {
+  .news-link {
+    @include atoms((
+      padding-right-13
+    ));
+    @include color($color: #D00);
+  }
+}

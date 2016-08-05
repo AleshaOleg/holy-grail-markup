@@ -1,0 +1,10 @@
+@mixin button {
+  .button {
+    @include atoms((
+      inline-block
+      font-size-7-pt
+    )) {
+      vertical-align: bottom;
+    };
+  }
+}

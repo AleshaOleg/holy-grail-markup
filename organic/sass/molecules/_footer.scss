@@ -1,0 +1,18 @@
+@mixin footer-text {
+  .footer-text {
+    @include atoms((
+      block
+    )) {
+      font-size: 70%;
+      margin: 5px;
+    };
+  }
+}
+
+@mixin footer-link {
+  .footer-link {
+    @include atoms((
+       white
+    ));
+  }
+}
