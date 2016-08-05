@@ -151,7 +151,7 @@ body {
 	color: #293499;
 }
 
-.news__text p:last-child {
+.news__text p:last-of-type {
 	display: inline;
 }
 
