@@ -42,7 +42,6 @@ gulp.task('watch', function(){
     });
 });
 
-
 gulp.task('server', function(){
     browsersync.init({
         server: './'
