@@ -10,7 +10,6 @@ body {
 
 .grid--general-width {
   max-width: 700px;
-  padding: 0;
 }
 
 .grid--sticky-footer {
@@ -22,6 +21,9 @@ body {
     &:nth-last-child(2) {
       flex: 1;
     }
+  }
+  &:last-child {
+    align-content: flex-end;
   }
 }
 
