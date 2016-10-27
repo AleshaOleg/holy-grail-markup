@@ -74,11 +74,11 @@ button {
     font-size: 80%;
 }
 
-.search label {
+label.search-label {
     display: inline-block;
 }
 
-.search button {
+button.search-button {
     display: inline-block;
     vertical-align: bottom;
 }
@@ -88,12 +88,12 @@ button {
     width: 20%;
 }
 
-.nav ul {
+ul.nav-list {
     font-size: 80%;
     margin: 50px 0;
 }
 
-.nav a {
+a.nav-link {
     display: block;
     border: 1px solid #FFF;
     border-right: 0;
@@ -103,7 +103,7 @@ button {
     text-decoration: none;
 }
 
-.nav a:hover {
+a.nav-link:hover {
     color: #FFF;
     background: #D00;
 }
@@ -118,14 +118,14 @@ button {
     width: 55%;
 }
 
-.content h2 {
+h2.content-title {
     color: #293499;
     margin-top: 20px;
     margin-bottom: 10px;
     padding: 0 15px;
 }
 
-.content img {
+img.content-image {
     float: left;
     padding: 5px;
     border: 1px solid #45F;
@@ -156,17 +156,17 @@ button {
     margin: 20px 5px;
 }
 
-.item h3 {
+h3.item-data {
     float: left;
     font-weight: bold;
     margin: 0 5px 0 0;
 }
 
-.item p {
+p.item-text {
     display: inline;
 }
 
-.item a {
+a.item-link {
     color: #D00;
     padding-right: 13px;
 }
@@ -181,13 +181,13 @@ button {
     bottom: 0;
 }
 
-.footer span {
+span.footer-text {
     clear: both;
     margin: 5px;
     display: block;
     font-size: 70%;
 }
 
-.footer a {
+a.footer-link {
     color: #FFF;
 }
