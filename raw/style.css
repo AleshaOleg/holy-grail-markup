@@ -87,19 +87,17 @@ h1 {
     font-size:7pt;
 }
 
-/* Colors ******************/
-
 html {
-    background:url(window-bg.png) #EEE;
+    background: #EEE;
 }
 
 body {
-    background:url(content-bg.png) white left top repeat-y;
+    background: white;
     color:black;
 }
 
 #title {
-    background:url(title-bg.png) #45F left top repeat-x;
+    background: #45F;
     color:white;
 }
 
@@ -156,8 +154,6 @@ h1 {
     background:url(logo.png) left top no-repeat;
     padding-left:60px;
 }
-
-/* Misc ********************/
 
 #sections h2 {
     display:none;
