@@ -13,7 +13,7 @@ One page, different code:
  - [Organic CSS](http://krasimir.github.io/organic-css/)
 5. BEM
  - [BEM CSS](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) (Harry Roberts style)
- - BEM CSS with (grid)[https://github.com/vivid-web/flexbox-grid-sass]
+ - BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
 
 ## How to use
 
