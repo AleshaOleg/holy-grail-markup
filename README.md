@@ -17,7 +17,7 @@ One page, different code:
 
 ## How to use
 
-Just download/clone repository and see examples of markup. 
+Just download/clone repository and see examples of markup. [Demo](https://aleshaoleg.github.io/holy-grail-markup) is here.
 
 ## Authors
 
