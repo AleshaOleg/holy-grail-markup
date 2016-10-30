@@ -84,7 +84,7 @@ body {
     text-decoration: none;
 }
 
-.nav__link--contact {
+.nav__link--active {
     color: #FFF;
     background: #293499;
 }
