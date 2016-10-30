@@ -22,7 +22,7 @@
     };
     @include bg-color($color: #DDE6FF);
     @include border($top: 1px solid #FFF, $right: 0, $bottom: 1px solid #FFF, $left: 0);
-    &-contact {
+    &-active {
       @include atoms((
         white
       ));

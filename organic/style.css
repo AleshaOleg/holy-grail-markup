@@ -127,7 +127,7 @@ body, .nav .nav-list {
   color: #000;
 }
 
-.header .header-title, .header .label, .nav .nav-link-contact, .nav .nav-link:hover, .footer, .footer .footer-link {
+.header .header-title, .header .label, .nav .nav-link-active, .nav .nav-link:hover, .footer, .footer .footer-link {
   color: #FFF;
 }
 
@@ -181,7 +181,7 @@ body {
   border-bottom: 1px solid #FFF;
   border-left: 0;
 }
-.nav .nav-link-contact {
+.nav .nav-link-active {
   background-color: #293499;
   background-color: #293499;
 }
