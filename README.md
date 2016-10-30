@@ -11,7 +11,9 @@ One page, different code:
 4. [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/):
  - [Atomic CSS](http://acss.io)
  - [Organic CSS](http://krasimir.github.io/organic-css/)
-5. [BEM CSS](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) (Harry Roberts style)
+5. BEM
+ - [BEM CSS](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) (Harry Roberts style)
+ - BEM CSS with grids
 
 ## How to use
 
