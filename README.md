@@ -3,7 +3,7 @@
 Simple examples of all popular css methodologies markup.
 One page, different code:
 
-![HolyGrailLayout](https://upload.wikimedia.org/wikipedia/commons/e/e4/Holy_Grail_Markup.png)
+![HolyGrailLayout](https://github.com/AleshaOleg/holy-grail-markup/blob/master/preview.png)
 
 1. Dirty 2000-s style
 2. [OOCSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
