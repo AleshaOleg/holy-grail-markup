@@ -13,7 +13,8 @@ body {
 
 #meta {
     position:absolute; bottom:0;
-    height:42px; width:100%;
+    height:40px; width:100%;
+    padding:1px 0;
 }
 
 #content {
@@ -38,7 +39,7 @@ body {
 }
 
 h1 {
-    margin:0; padding:20px;
+    margin:0; padding:20px 20px 20px 60px;
 }
 
 #search {
@@ -86,17 +87,19 @@ h1 {
     font-size:7pt;
 }
 
+/* Colors ******************/
+
 html {
-    background: #EEE;
+    background:#EEE;
 }
 
 body {
-    background: white;
+    background:white;
     color:black;
 }
 
 #title {
-    background: #45F;
+    background:#45F;
     color:white;
 }
 
@@ -134,7 +137,7 @@ body {
 }
 
 #news h2 {
-    background:#DDE6FF left top repeat-x;
+    background:#DDE6FF;
 }
 
 #main h2 {
@@ -149,9 +152,10 @@ body {
     color:white;
 }
 
-h1 {
-    background:left top no-repeat;
-    padding-left:60px;
+/* Misc ********************/
+
+#sections h2 {
+    display:none;
 }
 
 #sections ul {
@@ -178,11 +182,6 @@ h1 {
 
 #news p {
     margin:20px 5px;
-}
-
-#news a {
-    background:right center no-repeat;
-    padding-right:13px;
 }
 
 #main h2,
