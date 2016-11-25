@@ -154,10 +154,6 @@ body {
 
 /* Misc ********************/
 
-#sections h2 {
-    display:none;
-}
-
 #sections ul {
     list-style:none;
     margin:50px 0; padding:0;
