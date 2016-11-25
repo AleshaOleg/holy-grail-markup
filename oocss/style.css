@@ -74,11 +74,11 @@ button {
     font-size: 80%;
 }
 
-label.search-label {
+.search-label {
     display: inline-block;
 }
 
-button.search-button {
+.search-button {
     display: inline-block;
     vertical-align: bottom;
 }
@@ -88,12 +88,12 @@ button.search-button {
     width: 20%;
 }
 
-ul.nav-list {
+.nav-list {
     font-size: 80%;
     margin: 50px 0;
 }
 
-a.nav-link {
+.nav-link {
     display: block;
     border: 1px solid #FFF;
     border-right: 0;
@@ -103,7 +103,7 @@ a.nav-link {
     text-decoration: none;
 }
 
-a.nav-link:hover {
+.nav-link:hover {
     color: #FFF;
     background: #D00;
 }
@@ -118,14 +118,14 @@ a.nav-link:hover {
     width: 55%;
 }
 
-h2.content-title {
+.content-title {
     color: #293499;
     margin-top: 20px;
     margin-bottom: 10px;
     padding: 0 15px;
 }
 
-img.content-image {
+.content-image {
     float: left;
     padding: 5px;
     border: 1px solid #45F;
@@ -156,17 +156,17 @@ img.content-image {
     margin: 20px 5px;
 }
 
-h3.item-data {
+.item-data {
     float: left;
     font-weight: bold;
     margin: 0 5px 0 0;
 }
 
-p.item-text {
+.item-text {
     display: inline;
 }
 
-a.item-link {
+.item-link {
     color: #D00;
     padding-right: 13px;
 }
@@ -176,18 +176,17 @@ a.item-link {
     background: #45F;
     color: #FFF;
     width: 700px;
-    height: 40px;
-    padding: 1px 0;
+    height: 42px;
     bottom: 0;
 }
 
-span.footer-text {
+.footer-text {
     clear: both;
     margin: 5px;
     display: block;
     font-size: 70%;
 }
 
-a.footer-link {
+.footer-link {
     color: #FFF;
 }

@@ -13,8 +13,7 @@ body {
 
 #meta {
     position:absolute; bottom:0;
-    height:40px; width:100%;
-    padding:1px 0;
+    height:42px; width:100%;
 }
 
 #content {
@@ -135,7 +134,7 @@ body {
 }
 
 #news h2 {
-    background:url(news-head-bg.png) #DDE6FF left top repeat-x;
+    background:#DDE6FF left top repeat-x;
 }
 
 #main h2 {
@@ -151,12 +150,8 @@ body {
 }
 
 h1 {
-    background:url(logo.png) left top no-repeat;
+    background:left top no-repeat;
     padding-left:60px;
-}
-
-#sections h2 {
-    display:none;
 }
 
 #sections ul {
@@ -186,7 +181,7 @@ h1 {
 }
 
 #news a {
-    background:url(red-arrow.png) right center no-repeat;
+    background:right center no-repeat;
     padding-right:13px;
 }
 

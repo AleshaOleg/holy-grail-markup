@@ -44,14 +44,12 @@
 .footer {
   @include atoms((
     white
-    padding-top-1
-    padding-bottom-1
   )) {
     position: absolute;
     bottom: 0;
   };
   @include absolute($x: none, $y: none);
-  @include height($value: 40px);
+  @include height($value: 42px);
   @include width($value: 700px);
   @include bg-color($color: #45F);
   @include footer-text;

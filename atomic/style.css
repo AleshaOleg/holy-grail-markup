@@ -25,23 +25,23 @@
 .Bgc\(\#45f\) {
   background-color: #45f;
 }
-.Bgc\(\#dde6ff\) {
-  background-color: #dde6ff;
+.Bgc\(\#293499\) {
+  background-color: #293499;
 }
 .Bgc\(\#d00\)\:h:hover {
   background-color: #d00;
 }
-.Bgc\(\#293499\) {
-  background-color: #293499;
+.Bgc\(\#dde6ff\) {
+  background-color: #dde6ff;
 }
 .C\(\#fff\) {
   color: #fff;
 }
-.C\(\#000\) {
-  color: #000;
-}
 .C\(\#fff\)\:h:hover {
   color: #fff;
+}
+.C\(\#000\) {
+  color: #000;
 }
 .C\(\#293499\) {
   color: #293499;
@@ -94,8 +94,8 @@
 .H\(100\%\) {
   height: 100%;
 }
-.H\(40px\) {
-  height: 40px;
+.H\(42px\) {
+  height: 42px;
 }
 .Lts\(1px\) {
   letter-spacing: 1px;
@@ -178,10 +178,6 @@
 .Py\(2px\) {
   padding-top: 2px;
   padding-bottom: 2px;
-}
-.Py\(1px\) {
-  padding-top: 1px;
-  padding-bottom: 1px;
 }
 .Pend\(13px\) {
   padding-right: 13px;

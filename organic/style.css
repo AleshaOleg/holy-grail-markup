@@ -103,16 +103,8 @@ body, .nav .nav-list {
   padding: 20px;
 }
 
-.footer {
-  padding-top: 1px;
-}
-
 .news .news-link {
   padding-right: 13px;
-}
-
-.footer {
-  padding-bottom: 1px;
 }
 
 .main {
@@ -235,7 +227,7 @@ body {
   position: absolute;
   top: none;
   left: none;
-  height: 40px;
+  height: 42px;
   width: 700px;
   background-color: #45F;
   background-color: #4455ff;
