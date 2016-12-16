@@ -24,4 +24,4 @@ Created by [Oleh Aloshkin](https://github.com/AleshaOleg) and [Ihor Zenich](http
 
 ## Thanks
 
-Thanks to [Ivan Sagalaev](https://github.com/isagalaev) for his [MegaCorporation html markup example](http://softwaremaniacs.org/blog/2006/01/17/css-layout-example/)
+Thanks to [Ivan Sagalaev](https://github.com/isagalaev) for his [MegaCorporation html markup example](http://softwaremaniacs.org/blog/2006/01/17/css-layout-example/).
