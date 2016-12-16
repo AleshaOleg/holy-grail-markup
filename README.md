@@ -2,7 +2,7 @@
 
 We wrote simple html page with "[Holy Grail Layout](https://en.wikipedia.org/wiki/Holy_Grail_(web_design))" in different CSS methodologies as examples of all popular css methodologies markup. That's like "Hello world" example.
 
-![HolyGrailLayout](https://github.com/AleshaOleg/holy-grail-markup/blob/master/preview.png?raw=true)
+<img src="https://github.com/AleshaOleg/holy-grail-markup/blob/master/preview.png?raw=true" width="960">
 
 1. Dirty 2000-s style
 2. [OOCSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
