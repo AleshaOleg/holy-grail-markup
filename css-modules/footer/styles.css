@@ -1,0 +1,18 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 42px;
+    width: 700px;
+    background: #45F;
+    color: #FFF;
+}
+
+.text {
+    display: block;
+    font-size: 70%;
+    margin: 5px;
+}
+
+.link {
+    color: #FFF;
+}
