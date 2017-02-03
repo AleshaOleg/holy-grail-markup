@@ -1,0 +1,173 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #EEE;
+    font: 10pt Tahoma, Sans-Serif;
+}
+
+.wrapper__27cZE {
+    width: 700px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #FFF;
+}
+.root__35MYT {
+    padding: 20px;
+    background: #45F;
+}
+
+.title__2TVbb {
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+    color: #FFF;
+    font-size: 180%;
+    letter-spacing: 1px;
+}
+
+.search__zpMpE {
+    float: right;
+    font-size: 80%;
+}
+
+.label__3rwWT {
+    display: inline-block;
+    color: #FFF;
+}
+
+.field__1htn2 {
+    width: 10em;
+    display: block;
+    font-size: 7pt;
+}
+
+.button__1Nt1V {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 7pt;
+}
+.main__1ySw1 {
+    overflow: hidden;
+    min-height: 100%;
+    padding-bottom: 42px;
+}
+.nav__1T5wH {
+    float: left;
+    width: 20%;
+}
+
+.list__9uEF0 {
+    margin: 50px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.link__3oare {
+    font-size: 80%;
+    display: block;
+    margin: 5px 0;
+    border: 1px solid #FFF;
+    border-right: 0;
+    border-left: 0;
+    padding: 2px 5px;
+    background: #DDE6FF;
+    color: #000;
+    text-decoration: none;
+}
+
+.link__3oare:hover {
+    color: #FFF;
+    background: #D00;
+}
+
+.linkActive__2wMx1 {
+    color: #FFF;
+    background: #293499;
+}
+.content__cn9jY {
+    width: 55%;
+    float: left;
+}
+
+.title__RNXoc {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 130%;
+    padding: 0 15px;
+    color: #293499;
+}
+
+.article__26caC {
+    padding: 0 15px;
+}
+
+.image__3Db0t {
+    float: left;
+    padding: 5px;
+    border: 1px solid #45F;
+    margin: 0 15px 15px 0;
+}
+.news__2Tn9S {
+    width: 25%;
+    float: right;
+}
+
+.title__myeSf {
+    background: #DDE6FF;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #293499;
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+
+.article__1CapX {
+    margin: 20px 5px;
+    font-size: 80%;
+}
+
+.date__25CE2 {
+    color: #293499;
+    font-size: 100%;
+    font-weight: bold;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.text__35dVP {
+    display: inline;
+    color: #293499;
+}
+
+.text__35dVP p:last-of-type {
+    display: inline;
+}
+
+.link__1V2Ln {
+    color: #D00;
+    padding-right: 13px;
+}
+.footer__1KzCG {
+    position: absolute;
+    bottom: 0;
+    height: 42px;
+    width: 700px;
+    background: #45F;
+    color: #FFF;
+}
+
+.text__iv5CJ {
+    display: block;
+    font-size: 70%;
+    margin: 5px;
+}
+
+.link__1QgRB {
+    color: #FFF;
+}
