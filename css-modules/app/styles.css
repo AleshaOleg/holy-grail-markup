@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #EEE;
+    font: 10pt Tahoma, Sans-Serif;
+}
+
+.wrapper {
+    width: 700px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #FFF;
+}

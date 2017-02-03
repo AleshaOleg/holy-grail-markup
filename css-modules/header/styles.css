@@ -1,0 +1,35 @@
+.root {
+    padding: 20px;
+    background: #45F;
+}
+
+.title {
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+    color: #FFF;
+    font-size: 180%;
+    letter-spacing: 1px;
+}
+
+.search {
+    float: right;
+    font-size: 80%;
+}
+
+.label {
+    display: inline-block;
+    color: #FFF;
+}
+
+.field {
+    width: 10em;
+    display: block;
+    font-size: 7pt;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 7pt;
+}

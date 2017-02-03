@@ -1,0 +1,16 @@
+{
+  "name": "css-modules",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack",
+    "postbuild": "node build/bundle.js"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "2.0.0-rc.2",
+    "file-loader": "^0.10.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1"
+  }
+}

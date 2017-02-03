@@ -1,0 +1,33 @@
+.nav {
+    float: left;
+    width: 20%;
+}
+
+.list {
+    margin: 50px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.link {
+    font-size: 80%;
+    display: block;
+    margin: 5px 0;
+    border: 1px solid #FFF;
+    border-right: 0;
+    border-left: 0;
+    padding: 2px 5px;
+    background: #DDE6FF;
+    color: #000;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #FFF;
+    background: #D00;
+}
+
+.linkActive {
+    color: #FFF;
+    background: #293499;
+}
