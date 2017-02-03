@@ -1,8 +1,8 @@
-.Bdc\(\#fff\) {
-  border-color: #fff;
-}
 .Bdc\(\#45f\) {
   border-color: #45f;
+}
+.Bdc\(\#fff\) {
+  border-color: #fff;
 }
 .Bds\(s\) {
   border-style: solid;
@@ -16,17 +16,11 @@
 .Bdstartw\(0\) {
   border-left-width: 0;
 }
-.Bgc\(\#eee\) {
-  background-color: #eee;
-}
-.Bgc\(\#fff\) {
-  background-color: #fff;
+.Bgc\(\#293499\) {
+  background-color: #293499;
 }
 .Bgc\(\#45f\) {
   background-color: #45f;
-}
-.Bgc\(\#293499\) {
-  background-color: #293499;
 }
 .Bgc\(\#d00\)\:h:hover {
   background-color: #d00;
@@ -34,11 +28,11 @@
 .Bgc\(\#dde6ff\) {
   background-color: #dde6ff;
 }
-.C\(\#fff\) {
-  color: #fff;
+.Bgc\(\#eee\) {
+  background-color: #eee;
 }
-.C\(\#fff\)\:h:hover {
-  color: #fff;
+.Bgc\(\#fff\) {
+  background-color: #fff;
 }
 .C\(\#000\) {
   color: #000;
@@ -49,14 +43,20 @@
 .C\(\#d00\) {
   color: #d00;
 }
-.D\(ib\) {
-  display: inline-block;
+.C\(\#fff\) {
+  color: #fff;
+}
+.C\(\#fff\)\:h:hover {
+  color: #fff;
 }
 .D\(b\) {
   display: block;
 }
 .D\(i\) {
   display: inline;
+}
+.D\(ib\) {
+  display: inline-block;
 }
 .Fl\(end\) {
   float: right;
@@ -70,26 +70,26 @@
 .Fw\(b\) {
   font-weight: bold;
 }
+.Fz\(100\%\) {
+  font-size: 100%;
+}
 .Fz\(10pt\) {
   font-size: 10pt;
-}
-.Fz\(180\%\) {
-  font-size: 180%;
-}
-.Fz\(80\%\) {
-  font-size: 80%;
-}
-.Fz\(7pt\) {
-  font-size: 7pt;
 }
 .Fz\(130\%\) {
   font-size: 130%;
 }
-.Fz\(100\%\) {
-  font-size: 100%;
+.Fz\(180\%\) {
+  font-size: 180%;
 }
 .Fz\(70\%\) {
   font-size: 70%;
+}
+.Fz\(7pt\) {
+  font-size: 7pt;
+}
+.Fz\(80\%\) {
+  font-size: 80%;
 }
 .H\(100\%\) {
   height: 100%;
@@ -109,19 +109,25 @@
 .M\(5px\) {
   margin: 5px;
 }
-.Mx\(a\) {
-  margin-left: auto;
-  margin-right: auto;
-}
 .Mx\(5px\) {
   margin-left: 5px;
 }
 .Mx\(5px\), .Mend\(5px\) {
   margin-right: 5px;
 }
+.Mx\(a\) {
+  margin-left: auto;
+  margin-right: auto;
+}
 .My\(0\) {
   margin-top: 0;
   margin-bottom: 0;
+}
+.My\(20px\), .Mt\(20px\) {
+  margin-top: 20px;
+}
+.My\(20px\), .Mb\(20px\) {
+  margin-bottom: 20px;
 }
 .My\(50px\) {
   margin-top: 50px;
@@ -130,12 +136,6 @@
 .My\(5px\) {
   margin-top: 5px;
   margin-bottom: 5px;
-}
-.My\(20px\), .Mt\(20px\) {
-  margin-top: 20px;
-}
-.My\(20px\), .Mb\(20px\) {
-  margin-bottom: 20px;
 }
 .Mend\(15px\) {
   margin-right: 15px;
@@ -158,22 +158,22 @@
 .P\(0\) {
   padding: 0;
 }
+.P\(10px\) {
+  padding: 10px;
+}
 .P\(20px\) {
   padding: 20px;
 }
 .P\(5px\) {
   padding: 5px;
 }
-.P\(10px\) {
-  padding: 10px;
+.Px\(15px\) {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .Px\(5px\) {
   padding-left: 5px;
   padding-right: 5px;
-}
-.Px\(15px\) {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .Py\(2px\) {
   padding-top: 2px;
@@ -188,11 +188,11 @@
 .Pstart\(40px\) {
   padding-left: 40px;
 }
-.Pos\(r\) {
-  position: relative;
-}
 .Pos\(a\) {
   position: absolute;
+}
+.Pos\(r\) {
+  position: relative;
 }
 .Td\(n\) {
   text-decoration: none;
@@ -203,18 +203,18 @@
 .Va\(b\) {
   vertical-align: bottom;
 }
-.W\(700px\) {
-  width: 700px;
-}
 .W\(10em\) {
   width: 10em;
 }
 .W\(20\%\) {
   width: 20%;
 }
+.W\(25\%\) {
+  width: 25%;
+}
 .W\(55\%\) {
   width: 55%;
 }
-.W\(25\%\) {
-  width: 25%;
+.W\(700px\) {
+  width: 700px;
 }

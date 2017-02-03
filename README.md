@@ -13,6 +13,7 @@ We wrote simple html page with "[Holy Grail Layout](https://en.wikipedia.org/wik
 5. BEM
  - [BEM CSS](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) (Harry Roberts style)
  - BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
+6. [CSS Modules](https://github.com/css-modules/css-modules)
 
 ## How to use
 

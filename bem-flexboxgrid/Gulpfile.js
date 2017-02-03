@@ -35,14 +35,14 @@ gulp.task('sass', function(filepath) {
     }));
 });
 
-gulp.task('watch', function(){
-    gulp.watch('*.scss', gulp.series('sass')).on('unlink', function(filepath) {
+gulp.task('watch', function() {
+    gulp.watch('*.scss', ['sass']).on('unlink', function(filepath) {
         remember.forget('sass', path.resolve(filepath));
         delete cached.caches.sass[path.resolve(filepath)];
     });
 });
 
-gulp.task('server', function(){
+gulp.task('server', function() {
     browsersync.init({
         server: './'
     });
@@ -50,4 +50,4 @@ gulp.task('server', function(){
     browsersync.watch('*.scss').on('change', browsersync.reload);
 });
 
-gulp.task('default', gulp.series('sass', gulp.parallel('watch', 'server')));
+gulp.task('default', ['sass', 'watch', 'server']);
