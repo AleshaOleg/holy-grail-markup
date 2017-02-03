@@ -15,7 +15,7 @@ const items = [
 
 function Link(link) {
   const activeCls = link.id === active ? s.linkActive : "";
-  return `<li class="${s.item}">
+  return `<li>
     <a href="${root}${link.id}" class="${s.link} ${activeCls}">
       ${link.name}
     </a>

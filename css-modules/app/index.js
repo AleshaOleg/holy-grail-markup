@@ -4,8 +4,18 @@ import Main from "../main";
 import Footer from "../footer";
 
 export default function App() {
-  const el = document.createElement("div");
-  el.className = s.wrapper;
-  el.innerHTML = [ Header(), Main(), Footer() ].join("\n");
-  return el;
+  return `<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Holy Grail Markup</title>
+        <link rel="stylesheet" href="build/style.css">
+    </head>
+    <body>
+      <div class=${s.wrapper}>
+        ${Header()}
+        ${Main()}
+        ${Footer()}
+      </div>
+    </body>
+    </html>`;
 }

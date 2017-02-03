@@ -1,9 +1,4 @@
 import App from "./app";
+import fs from 'fs';
 
-function render(container) {
-  container.appendChild(App());
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  render(document.body);
-});
+fs.writeFileSync('./index.html', App());
