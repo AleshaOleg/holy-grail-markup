@@ -46,197 +46,145 @@ Here a statistics for each of implementation. Declarations, selectors, rules, se
 ### Atomic
 
 #### Number of lines
-HTML: 104
-
-CSS: 220
+HTML | CSS
+------------ | -------------
+104 | 220
 
 #### File size
-HTML: 6.5 KB
 
-CSS: 2.7 KB
+HTML | CSS
+------------ | -------------
+6.5 KB | 2.7 KB
 
 #### CSS statistics
-Selectors: 74
-
-Declarations: 78
-
-Rules: 71
-
-S/R: 1.0
-
-D/R: 1.1
+Selectors | Declarations | Rules | S/R | D/R
+------------ | -------------
+74 | 78 | 71 | 1.0 | 1.1
 
 ### BEM CSS
 
 #### Number of lines
-HTML: 104
-
-CSS: 179
+HTML | CSS
+------------ | -------------
+104 | 179
 
 #### File size
-HTML: 4.93 KB
-
-CSS: 2.38 KB
+HTML | CSS
+------------ | -------------
+4.93 KB | 2.38 KB
 
 #### CSS statistics
-Selectors: 29
-
-Declarations: 93
-
-Rules: 29
-
-S/R: 1.0
-
-D/R: 3.2
+Selectors | Declarations | Rules | S/R | D/R
+------------ | -------------
+29 | 93 | 29 | 1.0 | 3.2
 
 ### BEM Flexboxgrid
 
 #### Number of lines
-HTML: 109
-
-CSS: 151
+HTML | CSS
+------------ | -------------
+109 | 151
 
 #### File size
-HTML: 5.36 KB
-
-CSS: 4 KB
+HTML | CSS
+------------ | -------------
+5.36 KB | 4 KB
 
 #### CSS statistics (With library)
-Selectors: 276
-
-Declarations: 394
-
-Rules: 243
-
-S/R: 1.1
-
-D/R: 1.6
+Selectors | Declarations | Rules | S/R | D/R
+------------ | -------------
+276 | 394 | 243 | 1.1 | 1.6
 
 #### CSS statistics (Clear)
-Selectors: 45
-
-Declarations: 100
-
-Rules: 37
-
-S/R: 1.2
-
-D/R: 2.7
+Selectors | Declarations | Rules | S/R | D/R
+------------ | -------------
+45 | 100 | 37 | 1.2 | 2.7
 
 ### CSS Modules
 
 #### Number of lines
-HTML: 124
-
-CSS: 173
+HTML | CSS
+------------ | -------------
+124 | 173
 
 #### File size
-HTML: 4.1 KB
-
-CSS: 2.43 KB
+HTML | CSS
+------------ | -------------
+4.1 KB | 2.43 KB
 
 #### CSS statistics
-Selectors: 29
-
-Declarations: 93
-
-Rules: 29
-
-S/R: 1.0
-
-D/R: 3.2
+Selectors | Declarations | Rules | S/R | D/R
+------------ | -------------
+29 | 93 | 29 | 1.0 | 3.2
 
 ### OOCSS
 
 #### Number of lines
-HTML: 98
-
-CSS: 192
+HTML | CSS
+------------ | -------------
+98 | 192
 
 #### File size
-HTML: 4.72 KB
-
-CSS: 2.31 KB
+HTML | CSS
+------------ | -------------
+4.72 KB | 2.31 KB
 
 #### CSS statistics
-Selectors: 34
-
-Declarations: 91
-
-Rules: 34
-
-S/R: 1.0
-
-D/R: 2.7
+Selectors | Declarations | Rules | S/R | D/R
+------------ | -------------
+34 | 91 | 34 | 1.0 | 2.7
 
 ### Organic
 
 #### Number of lines
-HTML: 104
-
-CSS: 238
+HTML | CSS
+------------ | -------------
+104 | 238
 
 #### File size
-HTML: 4.86 KB
-
-CSS: 3.55 KB
+HTML | CSS
+------------ | -------------
+4.86 KB | 3.55 KB
 
 #### CSS statistics
-Selectors: 78
-
-Declarations: 93
-
-Rules: 54
-
-S/R: 1.4
-
-D/R: 1.7
+Selectors | Declarations | Rules | S/R | D/R
+------------ | -------------
+78 | 93 | 54 | 1.4 | 1.7
 
 ### Raw
 
 #### Number of lines
-HTML: 78
-
-CSS: 210
+HTML | CSS
+------------ | -------------
+78 | 210
 
 #### File size
-HTML: 3.89 KB
-
-CSS: 2.59 KB
+HTML | CSS
+------------ | -------------
+3.89 KB | 2.59 KB
 
 #### CSS statistics
-Selectors: 48
-
-Declarations: 86
-
-Rules: 43
-
-S/R: 1.1
-
-D/R: 2.0
+Selectors | Declarations | Rules | S/R | D/R
+------------ | -------------
+48 | 86 | 43 | 1.1 | 2.0
 
 ### SMACSS
 
 #### Number of lines
-HTML: 108
-
-CSS: 180 (Sum of all files)
+HTML | CSS
+------------ | -------------
+108 | 180 (Sum of all files)
 
 #### File size
-HTML: 5.5 KB
-
-CSS: 2.37 KB (Sum of all files)
+HTML | CSS
+------------ | -------------
+5.5 KB | 2.37 KB (Sum of all files)
 
 #### CSS statistics (Sum of all files)
-Selectors: 30
+Selectors | Declarations | Rules | S/R | D/R
+------------ | -------------
+30 | 91 | 30 | 1.0 | 2.54
 
-Declarations: 91
-
-Rules: 30
-
-S/R: 1.0
-
-D/R: 2.54
 
 ## Graphics statistics
 
