@@ -1,4 +1,4 @@
-# Сomparison of OOCSS, SMACSS, Atomic and BEM markup
+# CSS-methodologies "101" examples: SMACSS, Atomic, BEM and so on.
 
 We wrote simple html page with "[Holy Grail Layout](https://en.wikipedia.org/wiki/Holy_Grail_(web_design))" in different CSS methodologies as examples of all popular css methodologies markup. That's like "Hello world" example.
 
@@ -25,4 +25,5 @@ Created by [Oleh Aloshkin](https://github.com/AleshaOleg) and [Ihor Zenich](http
 
 ## Thanks
 
-Thanks to [Ivan Sagalaev](https://github.com/isagalaev) for his [MegaCorporation html markup example](http://softwaremaniacs.org/blog/2006/01/17/css-layout-example/).
+* [Ivan Sagalaev](https://github.com/isagalaev) for his [MegaCorporation html markup example](http://softwaremaniacs.org/blog/2006/01/17/css-layout-example/).
+* [Boris Serdiuk](hhttps://github.com/just-boris) and [Artem Sapegin](https://github.com/sapegin) for CSS-Modules example.
