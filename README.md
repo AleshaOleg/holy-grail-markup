@@ -38,150 +38,204 @@ The code is available under the [WTFPL](http://www.wtfpl.net/) license.
 Here a statistics for each of implementation. Declarations, selectors, rules, selectors per rule and declarations per rule for CSS files gets with a help of [grunt-css-count](https://www.npmjs.com/package/grunt-css-count) module. You can see this statics by run Gruntfile.js:
 
 `npm i`
+
 `npm i grunt -g`
+
 `grunt`
 
 ### Atomic
 
 #### Number of lines
 HTML: 104
+
 CSS: 220
 
 #### File size
 HTML: 6.5 KB
+
 CSS: 2.7 KB
 
 #### CSS statistics
 Selectors: 74
+
 Declarations: 78
+
 Rules: 71
+
 S/R: 1.0
+
 D/R: 1.1
 
 ### BEM CSS
 
 #### Number of lines
 HTML: 104
+
 CSS: 179
 
 #### File size
 HTML: 4.93 KB
+
 CSS: 2.38 KB
 
 #### CSS statistics
 Selectors: 29
+
 Declarations: 93
+
 Rules: 29
+
 S/R: 1.0
+
 D/R: 3.2
 
 ### BEM Flexboxgrid
 
 #### Number of lines
 HTML: 109
+
 CSS: 151
 
 #### File size
 HTML: 5.36 KB
+
 CSS: 4 KB
 
 #### CSS statistics (With library)
 Selectors: 276
+
 Declarations: 394
+
 Rules: 243
+
 S/R: 1.1
+
 D/R: 1.6
 
 #### CSS statistics (Clear)
 Selectors: 45
+
 Declarations: 100
+
 Rules: 37
+
 S/R: 1.2
+
 D/R: 2.7
 
 ### CSS Modules
 
 #### Number of lines
 HTML: 124
+
 CSS: 173
 
 #### File size
 HTML: 4.1 KB
+
 CSS: 2.43 KB
 
 #### CSS statistics
 Selectors: 29
+
 Declarations: 93
+
 Rules: 29
+
 S/R: 1.0
+
 D/R: 3.2
 
 ### OOCSS
 
 #### Number of lines
 HTML: 98
+
 CSS: 192
 
 #### File size
 HTML: 4.72 KB
+
 CSS: 2.31 KB
 
 #### CSS statistics
 Selectors: 34
+
 Declarations: 91
+
 Rules: 34
+
 S/R: 1.0
+
 D/R: 2.7
 
 ### Organic
 
 #### Number of lines
 HTML: 104
+
 CSS: 238
 
 #### File size
 HTML: 4.86 KB
+
 CSS: 3.55 KB
 
 #### CSS statistics
 Selectors: 78
+
 Declarations: 93
+
 Rules: 54
+
 S/R: 1.4
+
 D/R: 1.7
 
 ### Raw
 
 #### Number of lines
 HTML: 78
+
 CSS: 210
 
 #### File size
 HTML: 3.89 KB
+
 CSS: 2.59 KB
 
 #### CSS statistics
 Selectors: 48
+
 Declarations: 86
+
 Rules: 43
+
 S/R: 1.1
+
 D/R: 2.0
 
 ### SMACSS
 
 #### Number of lines
 HTML: 108
+
 CSS: 180 (Sum of all files)
 
 #### File size
 HTML: 5.5 KB
+
 CSS: 2.37 KB (Sum of all files)
 
 #### CSS statistics (Sum of all files)
 Selectors: 30
+
 Declarations: 91
+
 Rules: 30
+
 S/R: 1.0
+
 D/R: 2.54
 
 ## Graphics statistics
