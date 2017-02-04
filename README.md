@@ -34,4 +34,4 @@ The code is available under the [WTFPL](http://www.wtfpl.net/) license.
 - [CSS Modules](https://github.com/css-modules/css-modules)
 
 ## Statistics
-You can see statistics for each of example [here](https://github.com/AleshaOleg/holy-grail-markup/blob/master/STATISTICS.md)
+You can see statistics for each of example [here](https://github.com/AleshaOleg/holy-grail-markup/blob/master/STATISTICS.md).
