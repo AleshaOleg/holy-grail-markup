@@ -8,7 +8,7 @@ Here a statistics for each of implementation. Declarations, selectors, rules, se
 
 `grunt`
 
-
+<br />
 ### Atomic
 
 #### Number of lines
@@ -27,7 +27,7 @@ Selectors | Declarations | Rules | S/R | D/R
 ------------ | ------------- | ------------ | ------------- | ------------
 74 | 78 | 71 | 1.0 | 1.1
 
-
+<br />
 ### BEM CSS
 
 #### Number of lines
@@ -45,7 +45,7 @@ Selectors | Declarations | Rules | S/R | D/R
 ------------ | ------------- | ------------ | ------------- | ------------
 29 | 93 | 29 | 1.0 | 3.2
 
-
+<br />
 ### BEM Flexboxgrid
 
 #### Number of lines
@@ -68,7 +68,7 @@ Selectors | Declarations | Rules | S/R | D/R
 ------------ | ------------- | ------------ | ------------- | ------------
 45 | 100 | 37 | 1.2 | 2.7
 
-
+<br />
 ### CSS Modules
 
 #### Number of lines
@@ -86,7 +86,7 @@ Selectors | Declarations | Rules | S/R | D/R
 ------------ | ------------- | ------------ | ------------- | ------------
 29 | 93 | 29 | 1.0 | 3.2
 
-
+<br />
 ### OOCSS
 
 #### Number of lines
@@ -104,7 +104,7 @@ Selectors | Declarations | Rules | S/R | D/R
 ------------ | ------------- | ------------ | ------------- | ------------
 34 | 91 | 34 | 1.0 | 2.7
 
-
+<br />
 ### Organic
 
 #### Number of lines
@@ -122,7 +122,7 @@ Selectors | Declarations | Rules | S/R | D/R
 ------------ | ------------- | ------------ | ------------- | ------------
 78 | 93 | 54 | 1.4 | 1.7
 
-
+<br />
 ### Raw
 
 #### Number of lines
@@ -140,7 +140,7 @@ Selectors | Declarations | Rules | S/R | D/R
 ------------ | ------------- | ------------ | ------------- | ------------
 48 | 86 | 43 | 1.1 | 2.0
 
-
+<br />
 ### SMACSS
 
 #### Number of lines

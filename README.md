@@ -32,3 +32,6 @@ The code is available under the [WTFPL](http://www.wtfpl.net/) license.
  - [BEM CSS](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) (Harry Roberts style)
  - BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
 - [CSS Modules](https://github.com/css-modules/css-modules)
+
+## Statistics
+You can see statistics for each of example [here](https://github.com/AleshaOleg/holy-grail-markup/blob/master/STATISTICS.md)
