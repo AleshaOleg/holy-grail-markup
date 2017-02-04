@@ -92,7 +92,7 @@ HTML | CSS
 
 #### CSS statistics (With library)
 Selectors | Declarations | Rules | S/R | D/R
------------- | -------------
+------------ | ------------- | ------------ | ------------- | ------------
 276 | 394 | 243 | 1.1 | 1.6
 
 #### CSS statistics (Clear)
