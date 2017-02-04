@@ -12,7 +12,6 @@
     "flexbox-grid-sass": "^4.1.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-cached": "^1.1.0",

@@ -7,8 +7,7 @@ var gulp            = require('gulp'),
     gulpif          = require('gulp-if'),
     path            = require('path'),
     multipipe       = require('multipipe'),
-    notify          = require('gulp-notify'),
-    browsersync     = require('browser-sync').create();
+    notify          = require('gulp-notify');
 
 var isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
 
@@ -21,9 +20,7 @@ gulp.task('sass', function(filepath) {
             browsers: ['last 2 versions'],
             cascade: false
         }),
-        sass({
-            outputStyle: "compressed"
-        }),
+        sass(),
         gulpif(isDevelopment, sourcemaps.write()),
         remember('*.scss'),
         gulp.dest('./')
@@ -42,12 +39,4 @@ gulp.task('watch', function() {
     });
 });
 
-gulp.task('server', function() {
-    browsersync.init({
-        server: './'
-    });
-
-    browsersync.watch('*.scss').on('change', browsersync.reload);
-});
-
-gulp.task('default', ['sass', 'watch', 'server']);
+gulp.task('default', ['sass', 'watch']);

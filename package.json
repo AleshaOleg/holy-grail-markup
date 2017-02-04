@@ -1,0 +1,33 @@
+{
+  "name": "holy-grail-markup",
+  "version": "1.0.0",
+  "description": "“Hello world” markup using different CSS methodologies: OOCSS, SMACSS, Atomic & Organic, BEM and CSS Modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleshaOleg/holy-grail-markup.git"
+  },
+  "keywords": [
+    "atomic",
+    "bem",
+    "oocss",
+    "smacss",
+    "atomic",
+    "css-modules",
+    "organic"
+  ],
+  "author": "Oleh Aloshkin",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/AleshaOleg/holy-grail-markup/issues"
+  },
+  "homepage": "https://github.com/AleshaOleg/holy-grail-markup#readme",
+  "devDependencies": {
+    "analyze-css": "^0.10.2",
+    "grunt": "^1.0.1",
+    "grunt-css-count": "^0.3.1"
+  }
+}
