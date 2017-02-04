@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/AleshaOleg/holy-grail-markup#readme",
   "devDependencies": {
-    "analyze-css": "^0.10.2",
     "grunt": "^1.0.1",
     "grunt-css-count": "^0.3.1"
   }
