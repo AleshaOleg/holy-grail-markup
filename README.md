@@ -58,7 +58,7 @@ HTML | CSS
 
 #### CSS statistics
 Selectors | Declarations | Rules | S/R | D/R
------------- | -------------
+------------ | ------------- | ------------ | ------------- | ------------
 74 | 78 | 71 | 1.0 | 1.1
 
 ### BEM CSS
@@ -75,7 +75,7 @@ HTML | CSS
 
 #### CSS statistics
 Selectors | Declarations | Rules | S/R | D/R
------------- | -------------
+------------ | ------------- | ------------ | ------------- | ------------
 29 | 93 | 29 | 1.0 | 3.2
 
 ### BEM Flexboxgrid
@@ -97,7 +97,7 @@ Selectors | Declarations | Rules | S/R | D/R
 
 #### CSS statistics (Clear)
 Selectors | Declarations | Rules | S/R | D/R
------------- | -------------
+------------ | ------------- | ------------ | ------------- | ------------
 45 | 100 | 37 | 1.2 | 2.7
 
 ### CSS Modules
@@ -114,7 +114,7 @@ HTML | CSS
 
 #### CSS statistics
 Selectors | Declarations | Rules | S/R | D/R
------------- | -------------
+------------ | ------------- | ------------ | ------------- | ------------
 29 | 93 | 29 | 1.0 | 3.2
 
 ### OOCSS
@@ -131,7 +131,7 @@ HTML | CSS
 
 #### CSS statistics
 Selectors | Declarations | Rules | S/R | D/R
------------- | -------------
+------------ | ------------- | ------------ | ------------- | ------------
 34 | 91 | 34 | 1.0 | 2.7
 
 ### Organic
@@ -148,7 +148,7 @@ HTML | CSS
 
 #### CSS statistics
 Selectors | Declarations | Rules | S/R | D/R
------------- | -------------
+------------ | ------------- | ------------ | ------------- | ------------
 78 | 93 | 54 | 1.4 | 1.7
 
 ### Raw
@@ -165,7 +165,7 @@ HTML | CSS
 
 #### CSS statistics
 Selectors | Declarations | Rules | S/R | D/R
------------- | -------------
+------------ | ------------- | ------------ | ------------- | ------------
 48 | 86 | 43 | 1.1 | 2.0
 
 ### SMACSS
@@ -182,7 +182,7 @@ HTML | CSS
 
 #### CSS statistics (Sum of all files)
 Selectors | Declarations | Rules | S/R | D/R
------------- | -------------
+------------ | ------------- | ------------ | ------------- | ------------
 30 | 91 | 30 | 1.0 | 2.54
 
 
