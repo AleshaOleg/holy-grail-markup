@@ -16,14 +16,18 @@ We wrote simple html page with "[Holy Grail Layout](https://en.wikipedia.org/wik
 6. [CSS Modules](https://github.com/css-modules/css-modules)
 
 ## How to use
-
 Just download/clone repository and see examples of markup. [Demo](https://aleshaoleg.github.io/holy-grail-markup/raw) is here.
 
 ## Authors
-
 Created by [Oleh Aloshkin](https://github.com/AleshaOleg) and [Ihor Zenich](https://github.com/IhorZenich).
 
-## Thanks
+## Contributors
+* [Boris Serdiuk](https://github.com/just-boris) and [Artem Sapegin](https://github.com/sapegin) for CSS-Modules example.
 
+Anyone and everyone is welcome to contribute, just send Pull Request!
+
+## Thanks
 * [Ivan Sagalaev](https://github.com/isagalaev) for his [MegaCorporation html markup example](http://softwaremaniacs.org/blog/2006/01/17/css-layout-example/).
-* [Boris Serdiuk](hhttps://github.com/just-boris) and [Artem Sapegin](https://github.com/sapegin) for CSS-Modules example.
+
+## License
+The code is available under the [WTFPL](http://www.wtfpl.net/) license.
