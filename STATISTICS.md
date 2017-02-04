@@ -1,6 +1,6 @@
 ## Statistics
 
-Here a statistics for each of implementation. Declarations, selectors, rules, selectors per rule and declarations per rule for CSS files gets with a help of [grunt-css-count](https://www.npmjs.com/package/grunt-css-count) module. You can see this statics by run Gruntfile.js:
+Here a statistics for each of implementation/examples. Also available as `.xlsx` file in the root of project - `statistics.xlsx` Declarations, selectors, rules, selectors per rule and declarations per rule for CSS files gets with a help of [grunt-css-count](https://www.npmjs.com/package/grunt-css-count) module. You can see this statics by run Gruntfile.js:
 
 `npm i`
 
