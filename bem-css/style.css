@@ -11,7 +11,7 @@ body {
 }
 
 .h2 {
-  font-size: 130%;
+  font-size: 16.9px;
   color: #293499;
 }
 
@@ -53,12 +53,12 @@ body {
 
 .title {
   color: #FFF;
-  font-size: 180%;
+  font-size: 23.4px;
   letter-spacing: 1px;
 }
 
 .search {
-  font-size: 80%;
+  font-size: 10.4px;
 }
 
 .label {
@@ -95,7 +95,7 @@ body {
 }
 
 .nav__link {
-  font-size: 80%;
+  font-size: 10.4px;
   display: block;
   margin: 5px 0;
   padding: 2px 5px;
@@ -152,14 +152,14 @@ body {
 
 .news__article {
   margin: 20px 5px;
-  font-size: 80%;
+  font-size: 10.4px;
 }
 
 .news__date {
   float: left;
   margin: 0 5px 0 0;
   color: #293499;
-  font-size: 100%;
+  font-size: 10.4px;
   font-weight: bold;
 }
 
@@ -189,7 +189,7 @@ body {
 .footer__text {
   display: block;
   margin: 5px;
-  font-size: 70%;
+  font-size: 9.1px;
 }
 
 .footer__link {
