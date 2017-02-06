@@ -1,11 +1,14 @@
 ## CSS-methodologies "101" examples: SMACSS, Atomic, BEM and so on.
 
-We wrote simple html page with "[Holy Grail Layout](https://en.wikipedia.org/wiki/Holy_Grail_(web_design))" in different CSS methodologies as examples of all popular css methodologies markup. That's like "Hello world" example.
+We wrote simple html page with "[Holy Grail Layout](https://en.wikipedia.org/wiki/Holy_Grail_(web_design))"
+in different CSS methodologies as an example of all popular css methodologies markup,
+in order to help people compare, learn and start using them.
+That's like an advanced "Hello world".
 
 <img src="https://github.com/AleshaOleg/holy-grail-markup/blob/master/pictures/preview.png?raw=true" width="960">
 
 ## How to use
-Just download/clone repository and see examples of markup.  
+Just download/clone repository and see examples of markup.
 [Demo](https://aleshaoleg.github.io/holy-grail-markup/raw) is here.
 
 ## Authors
