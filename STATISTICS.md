@@ -12,7 +12,7 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 ### Number of lines
 
 |Implementation|HTML|CSS|
-|-|-|-|
+------------ | ------------- | -------------
 |OOCSS|98|195|
 |SMACSS|108|180|
 |Atomic|104|221|
@@ -26,7 +26,7 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 #### File size
 
 |Implementation|HTML|CSS|
-|-|-|-|
+------------ | ------------- | -------------
 |OOCSS|4.7 KB|2.32 KB|
 |SMACSS|5.5 KB|2.373 KB|
 |Atomic|6.49 KB|2.7 KB|
@@ -40,7 +40,7 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 ### CSS statistics
 
 |Implementation|Selectors|Declarations|Rules|S/R|D/R|
-|-|-|-|-|-|-|
+------------ | ------------- | ------------- | ------------- | ------------- | -------------
 |OOCSS|37|91|34|1.1|2.7|
 |SMACSS|30|91|30|1.0|2.56|
 |Atomic|74|78|71|1.0|1.1|
