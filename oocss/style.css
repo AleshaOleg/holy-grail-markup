@@ -16,16 +16,19 @@ ul {
     list-style-type: none;
 }
 
-h1 {
+h1,
+.h1 {
     font-size: 180%;
     letter-spacing: 1px;
 }
 
-h2 {
+h2,
+.h2 {
     font-size: 130%;
 }
 
-h3 {
+h3,
+.h3 {
     font-size: 100%;
 }
 
