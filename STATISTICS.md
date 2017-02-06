@@ -9,154 +9,47 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 `grunt`
 
 <br />
-### Atomic
+### Number of lines
 
-#### Number of lines
-HTML | CSS
------------- | -------------
-104 | 220
-
-#### File size
-
-HTML | CSS
------------- | -------------
-6.5 KB | 2.7 KB
-
-#### CSS statistics
-Selectors | Declarations | Rules | S/R | D/R
------------- | ------------- | ------------ | ------------- | ------------
-74 | 78 | 71 | 1.0 | 1.1
-
-<br />
-### BEM CSS
-
-#### Number of lines
-HTML | CSS
------------- | -------------
-104 | 179
+|Implementation|HTML|CSS|
+------------ | ------------- | -------------
+|OOCSS|98|195|
+|SMACSS|108|180|
+|Atomic|104|221|
+|Organic|104|241|
+|BEM CSS|104|181|
+|BEM Flexboxgrid|108|707|
+|BEM Flexboxgrid (Clear)|108|152|
+|CSS Modules|124|175|
+|Raw|78|210|
 
 #### File size
-HTML | CSS
------------- | -------------
-4.93 KB | 2.38 KB
 
-#### CSS statistics
-Selectors | Declarations | Rules | S/R | D/R
------------- | ------------- | ------------ | ------------- | ------------
-29 | 93 | 29 | 1.0 | 3.2
+|Implementation|HTML|CSS|
+------------ | ------------- | -------------
+|OOCSS|4.7 KB|2.32 KB|
+|SMACSS|5.5 KB|2.373 KB|
+|Atomic|6.49 KB|2.7 KB|
+|Organic|4.85 KB|3.57 KB|
+|BEM CSS|4.91 KB|2.4 KB|
+|BEM Flexboxgrid|5.21 KB|42.6 KB|
+|BEM Flexboxgrid (Clear)|5.21 KB|2.96 KB|
+|CSS Modules|4.1 KB|2.45 KB|
+|Raw|3.89 KB|2.57 KB|
 
-<br />
-### BEM Flexboxgrid
+### CSS statistics
 
-#### Number of lines
-HTML | CSS
------------- | -------------
-109 | 151
-
-#### File size
-HTML | CSS
------------- | -------------
-5.36 KB | 4 KB
-
-#### CSS statistics (With library)
-Selectors | Declarations | Rules | S/R | D/R
------------- | ------------- | ------------ | ------------- | ------------
-276 | 394 | 243 | 1.1 | 1.6
-
-#### CSS statistics (Clear)
-Selectors | Declarations | Rules | S/R | D/R
------------- | ------------- | ------------ | ------------- | ------------
-45 | 100 | 37 | 1.2 | 2.7
-
-<br />
-### CSS Modules
-
-#### Number of lines
-HTML | CSS
------------- | -------------
-124 | 173
-
-#### File size
-HTML | CSS
------------- | -------------
-4.1 KB | 2.43 KB
-
-#### CSS statistics
-Selectors | Declarations | Rules | S/R | D/R
------------- | ------------- | ------------ | ------------- | ------------
-29 | 93 | 29 | 1.0 | 3.2
-
-<br />
-### OOCSS
-
-#### Number of lines
-HTML | CSS
------------- | -------------
-98 | 192
-
-#### File size
-HTML | CSS
------------- | -------------
-4.72 KB | 2.31 KB
-
-#### CSS statistics
-Selectors | Declarations | Rules | S/R | D/R
------------- | ------------- | ------------ | ------------- | ------------
-34 | 91 | 34 | 1.0 | 2.7
-
-<br />
-### Organic
-
-#### Number of lines
-HTML | CSS
------------- | -------------
-104 | 238
-
-#### File size
-HTML | CSS
------------- | -------------
-4.86 KB | 3.55 KB
-
-#### CSS statistics
-Selectors | Declarations | Rules | S/R | D/R
------------- | ------------- | ------------ | ------------- | ------------
-78 | 93 | 54 | 1.4 | 1.7
-
-<br />
-### Raw
-
-#### Number of lines
-HTML | CSS
------------- | -------------
-78 | 210
-
-#### File size
-HTML | CSS
------------- | -------------
-3.89 KB | 2.59 KB
-
-#### CSS statistics
-Selectors | Declarations | Rules | S/R | D/R
------------- | ------------- | ------------ | ------------- | ------------
-48 | 85 | 43 | 1.1 | 2.0
-
-<br />
-### SMACSS
-
-#### Number of lines
-HTML | CSS
------------- | -------------
-108 | 180 (Sum of all files)
-
-#### File size
-HTML | CSS
------------- | -------------
-5.5 KB | 2.37 KB (Sum of all files)
-
-#### CSS statistics (Sum of all files)
-Selectors | Declarations | Rules | S/R | D/R
------------- | ------------- | ------------ | ------------- | ------------
-30 | 91 | 30 | 1.0 | 2.54
+|Implementation|Selectors|Declarations|Rules|S/R|D/R|
+------------ | ------------- | ------------- | ------------- | ------------- | -------------
+|OOCSS|37|91|34|1.1|2.7|
+|SMACSS|30|91|30|1.0|2.56|
+|Atomic|74|78|71|1.0|1.1|
+|Organic|79|93|54|1.5|1.7|
+|BEM CSS|29|94|29|1.0|3.2|
+|BEM Flexboxgrid|276|395|243|1.1|1.6|
+|BEM Flexboxgrid (Clear)|45|101|37|1.2|2.7|
+|CSS Modules|29|94|29|1.0|3.2|
+|Raw|48|85|43|1.1|2.0|
 
 
 ## Graphics statistics
@@ -199,8 +92,8 @@ Selectors | Declarations | Rules | S/R | D/R
 
 ### S/R
 
-<img src="https://github.com/AleshaOleg/holy-grail-markup/blob/master/pictures/S:R.png?raw=true">
+<img src="https://github.com/AleshaOleg/holy-grail-markup/blob/master/pictures/SR.png?raw=true">
 
 ### D/R
 
-<img src="https://github.com/AleshaOleg/holy-grail-markup/blob/master/pictures/D:R.png?raw=true">
+<img src="https://github.com/AleshaOleg/holy-grail-markup/blob/master/pictures/DR.png?raw=true">
