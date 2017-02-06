@@ -10,7 +10,7 @@
 @mixin label-field {
   .label-field {
     @include atoms((
-      font-size-7-pt
+      font-size-9-px
     )) {
       display: block;
     };

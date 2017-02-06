@@ -3,7 +3,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background: #EEE;
-  font: 10pt Tahoma, Sans-Serif; }
+  font: 13px Tahoma, Sans-Serif; }
 
 .grid--general-width {
   max-width: 700px; }
@@ -57,10 +57,10 @@ body {
   .label__field {
     width: 10em;
     display: block;
-    font-size: 7pt; }
+    font-size: 9px; }
 
 .button {
-  font-size: 7pt;
+  font-size: 9px;
   display: inline-block;
   vertical-align: bottom; }
 

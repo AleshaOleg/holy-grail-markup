@@ -3,7 +3,7 @@
 }
 
 @include define-atom("font") {
-    font: 10pt Tahoma, sans-serif;
+    font: 13px Tahoma, sans-serif;
 }
 
 @include define-atom("font-size-80-per") {
@@ -18,6 +18,6 @@
     font-size: 130%;
 }
 
-@include define-atom("font-size-7-pt") {
-    font-size: 7pt;
+@include define-atom("font-size-9-px") {
+    font-size: 9px;
 }

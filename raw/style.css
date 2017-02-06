@@ -50,7 +50,7 @@ h1 {
 /* Fonts *******************/
 
 body {
-    font:10pt Tahoma, Sans-Serif;
+    font:13px Tahoma, Sans-Serif;
 }
 
 h1 {
@@ -83,7 +83,7 @@ h1 {
 
 #search input,
 #search button {
-    font-size:7pt;
+    font-size:9px;
 }
 
 /* Colors ******************/

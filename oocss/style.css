@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background: #EEE;
-    font: 10pt Tahoma, Sans-Serif;
+    font: 13px Tahoma, Sans-Serif;
 }
 
 ul {
@@ -32,11 +32,11 @@ h3 {
 input {
     display: block;
     width: 10em;
-    font-size: 7pt;
+    font-size: 9px;
 }
 
 button {
-    font-size: 7pt;
+    font-size: 9px;
 }
 
 .blue {

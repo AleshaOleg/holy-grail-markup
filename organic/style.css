@@ -3,7 +3,7 @@ html, body, .header .header-title {
 }
 
 body {
-  font: 10pt Tahoma, sans-serif;
+  font: 13px Tahoma, sans-serif;
 }
 
 .header .header-search, .nav .nav-link, .news .news-article {
@@ -19,7 +19,7 @@ body {
 }
 
 .header .label-field, .header .button {
-  font-size: 7pt;
+  font-size: 9px;
 }
 
 .nav .nav-link, .footer .footer-text {

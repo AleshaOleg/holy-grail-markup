@@ -2,7 +2,7 @@
   .button {
     @include atoms((
       inline-block
-      font-size-7-pt
+      font-size-9-px
     )) {
       vertical-align: bottom;
     };

@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background: #EEE;
-    font: 10pt Tahoma, Sans-Serif;
+    font: 13px Tahoma, Sans-Serif;
 }
 
 .wrapper {
@@ -45,13 +45,13 @@ body {
 .label__field {
     width: 10em;
     display: block;
-    font-size: 7pt;
+    font-size: 9px;
 }
 
 .button {
     display: inline-block;
     vertical-align: bottom;
-    font-size: 7pt;
+    font-size: 9px;
 }
 
 .main {
