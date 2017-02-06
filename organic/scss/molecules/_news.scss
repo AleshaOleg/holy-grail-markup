@@ -1,6 +1,7 @@
 @mixin news-title {
   .news-title {
     @include atoms((
+      font-size-100-per
       bold
       margin-0
       margin-bottom-20

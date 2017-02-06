@@ -300,7 +300,7 @@ function Article(article) {
 
 function News() {
   return `<div class="${__WEBPACK_IMPORTED_MODULE_0__styles_css___default.a.news}">
-      <div class="${__WEBPACK_IMPORTED_MODULE_0__styles_css___default.a.title}">News</div>
+      <h2 class="${__WEBPACK_IMPORTED_MODULE_0__styles_css___default.a.title}">News</h2>
       ${articles.map(article => Article(article)).join("\n")}
   </div>`;
 }

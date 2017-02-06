@@ -10,7 +10,7 @@ body {
   font-size: 80%;
 }
 
-.news .news-date {
+.news .news-title, .news .news-date {
   font-size: 100%;
 }
 

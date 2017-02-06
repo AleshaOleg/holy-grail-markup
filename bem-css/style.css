@@ -126,6 +126,7 @@ body {
 .news__title {
     background: #DDE6FF;
     text-transform: uppercase;
+    font-size: 13px;
     font-weight: bold;
     color: #293499;
     margin: 0 0 20px 0;

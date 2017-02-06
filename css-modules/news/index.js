@@ -41,7 +41,7 @@ function Article(article) {
 
 export default function News() {
   return `<div class="${s.news}">
-      <div class="${s.title}">News</div>
+      <h2 class="${s.title}">News</h2>
       ${articles.map(article => Article(article)).join("\n")}
   </div>`;
 }
