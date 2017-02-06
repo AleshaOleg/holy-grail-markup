@@ -9,9 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-atomizer": "^3.0.2",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "gulp": "^3.9.1",
+    "gulp-atomizer": "^3.0.7",
+    "gulp-cached": "^1.1.1",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-remember": "^0.3.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "multipipe": "^1.0.2",
+    "path": "^0.12.7"
   }
 }
