@@ -1,39 +1,48 @@
 @import 'node_modules/flexbox-grid-sass/src/flexbox-grid';
 
 body {
-  padding: 0;
-  margin: 0;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
   background: #EEE;
   font: 13px Tahoma, Sans-Serif;
 }
 
-.grid--general-width {
-  max-width: 700px;
-}
+.grid {
+  &--general-width {
+    max-width: 700px;
+  }
 
-.grid--sticky-footer {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  > .row {
-    margin: 0;
-    &:nth-last-child(2) {
-      flex: 1;
+  &--sticky-footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    &:last-child {
+      align-content: flex-end;
+    }
+
+    > .row {
+      margin: 0;
+
+      &:nth-last-child(2) {
+        flex: 1;
+      }
     }
   }
-  &:last-child {
-    align-content: flex-end;
+}
+
+.row {
+  &--no-indent {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
-.row--no-indent {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.col--no-indent {
-  padding: 0;
+.col {
+  &--no-indent {
+    padding: 0;
+  }
 }
 
 .header {
@@ -41,8 +50,9 @@ body {
   @extend .col--xl-12;
   @extend .col--sm-12;
   @extend .col--no-indent;
-  background: #45F;
   padding: 20px;
+  background: #45F;
+
   &__title {
     @extend .col;
     @extend .col--xs-12;
@@ -54,7 +64,12 @@ body {
     color: #FFF;
     font-size: 180%;
     letter-spacing: 1px;
+
+    @media (max-width: 544px) {
+      padding: 0 0 10px;
+    }
   }
+
   &__search {
     @extend .col;
     @extend .col--xs-12;
@@ -64,33 +79,27 @@ body {
     font-size: 80%;
     text-align: right;
   }
+
   &__label {
     text-align: left;
-  }
-}
-
-@media (max-width: 544px) {
-  .header {
-    &__title {
-      padding: 0 0 10px;
-    }
   }
 }
 
 .label {
   display: inline-block;
   color: #FFF;
+
   &__field {
-    width: 10em;
     display: block;
+    width: 10em;
     font-size: 9px;
   }
 }
 
 .button {
-  font-size: 9px;
   display: inline-block;
   vertical-align: bottom;
+  font-size: 9px;
 }
 
 .main {
@@ -107,30 +116,34 @@ body {
   @extend .col--md-2;
   @extend .col--no-indent;
   float: left;
+
   &__list {
     margin: 50px 0;
     padding: 0;
     list-style: none;
   }
+
   &__link {
     font-size: 80%;
     display: block;
     margin: 5px 0;
+    padding: 2px 5px;
     border: 1px solid #FFF;
     border-right: 0;
     border-left: 0;
-    padding: 2px 5px;
-    background: #DDE6FF;
     color: #000;
     text-decoration: none;
+    background: #DDE6FF;
+
     &:hover {
       color: #FFF;
       background: #D00;
     }
-  }
-  &__link--active {
-    color: #FFF;
-    background: #293499;
+
+    &--active {
+      color: #FFF;
+      background: #293499;
+    }
   }
 }
 
@@ -141,27 +154,31 @@ body {
   @extend .col--md-7;
   @extend .col--no-indent;
   float: left;
+
   &__title {
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 130%;
     padding: 0 15px;
+    font-size: 130%;
     color: #293499;
   }
+
   &__article {
     padding: 0 15px;
+
     &__image {
       float: left;
+      margin: 0 15px 15px 0;
       padding: 5px;
       border: 1px solid #45F;
-      margin: 0 15px 15px 0;
     }
   }
+
   &__image {
     float: left;
+    margin: 0 15px 15px 0;
     padding: 5px;
     border: 1px solid #45F;
-    margin: 0 15px 15px 0;
   }
 }
 
@@ -172,36 +189,42 @@ body {
   @extend .col--md-3;
   @extend .col--no-indent;
   float: right;
+
   &__title {
-    background: #DDE6FF;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: bold;
-    color: #293499;
     margin: 0 0 20px 0;
     padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #293499;
+    background: #DDE6FF;
   }
+
   &__article {
     margin: 20px 5px;
     font-size: 80%;
   }
+
   &__date {
+    float: left;
+    margin: 0 5px 0 0;
     color: #293499;
     font-size: 100%;
     font-weight: bold;
-    float: left;
-    margin: 0 5px 0 0;
   }
+
   &__text {
     display: inline;
     color: #293499;
+
     p:last-of-type {
       display: inline;
     }
   }
+
   &__link {
-    color: #D00;
     padding-right: 13px;
+    color: #D00;
   }
 }
 
@@ -209,14 +232,16 @@ body {
   @extend .col;
   @extend .col--sm-12;
   @extend .col--no-indent;
-  background: #45F;
-  color: #FFF;
   height: 42px;
+  color: #FFF;
+  background: #45F;
+
   &__text {
     display: block;
-    font-size: 70%;
     margin: 5px;
+    font-size: 70%;
   }
+
   &__link {
     color: #FFF;
   }
