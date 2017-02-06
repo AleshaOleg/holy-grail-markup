@@ -45,6 +45,19 @@ body {
   }
 }
 
+.h2 {
+  font-size: 130%;
+  color: #293499;
+}
+
+.h3 {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #293499;
+  background: #DDE6FF;
+}
+
 .header {
   @extend .col;
   @extend .col--xl-12;
@@ -61,9 +74,6 @@ body {
     display: inline-block;
     margin: 0;
     padding-left: 40px;
-    color: #FFF;
-    font-size: 180%;
-    letter-spacing: 1px;
 
     @media (max-width: 544px) {
       padding: 0 0 10px;
@@ -76,17 +86,26 @@ body {
     @extend .col--sm-4;
     @extend .col--no-indent;
     float: right;
-    font-size: 80%;
     text-align: right;
   }
 
   &__label {
+    display: inline-block;
     text-align: left;
   }
 }
 
+.title {
+  color: #FFF;
+  font-size: 180%;
+  letter-spacing: 1px;
+}
+
+.search {
+  font-size: 80%;
+}
+
 .label {
-  display: inline-block;
   color: #FFF;
 
   &__field {
@@ -159,8 +178,6 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
     padding: 0 15px;
-    font-size: 130%;
-    color: #293499;
   }
 
   &__article {
@@ -193,11 +210,6 @@ body {
   &__title {
     margin: 0 0 20px 0;
     padding: 10px;
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #293499;
-    background: #DDE6FF;
   }
 
   &__article {

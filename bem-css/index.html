@@ -7,9 +7,14 @@
 <body>
 <div class="wrapper">
     <div class="header">
-        <h1 class="header__title">CompanyName</h1>
-        <form class="header__search">
-            <label class="label">Type to search:
+        <!--
+            We specially use 'title' class here instead of 'logo'
+            in order to set a example of problems with the same classnames in different parts of site
+            The same block called 'title' also located in div.content.
+        -->
+        <h1 class="header__title title">CompanyName</h1>
+        <form class="header__search search">
+            <label class="header__label label">Type to search:
                 <input class="label__field" type="text">
             </label>
             <button class="button" type="submit">Search</button>
@@ -45,7 +50,11 @@
             </ul>
         </div>
         <div class="content">
-            <h2 class="content__title">About Company</h2>
+            <!--
+                The same block called 'title' also located in div.header,
+                so as the result we have to figure out some other name for it.
+            -->
+            <h2 class="content__title h2">About Company</h2>
             <div class="content__article">
                 <img src="imgpsh_fullsize.jpg" class="content__image" alt="Image">
                 <p>Lorem ipsum dolor sit amet,
@@ -64,7 +73,7 @@
             </div>
         </div>
         <div class="news">
-            <h2 class="news__title">News</h2>
+            <h2 class="news__title h3">News</h2>
             <div class="news__article">
                 <h3 class="news__date">01.01.16</h3>
                 <div class="news__text">
