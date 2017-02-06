@@ -138,7 +138,7 @@ HTML | CSS
 #### CSS statistics
 Selectors | Declarations | Rules | S/R | D/R
 ------------ | ------------- | ------------ | ------------- | ------------
-48 | 86 | 43 | 1.1 | 2.0
+48 | 85 | 43 | 1.1 | 2.0
 
 <br />
 ### SMACSS

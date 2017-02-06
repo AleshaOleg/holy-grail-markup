@@ -13,8 +13,7 @@ body {
 
 #meta {
     position:absolute; bottom:0;
-    height:40px; width:100%;
-    padding:1px 0;
+    height:42px; width:100%;
 }
 
 #content {
