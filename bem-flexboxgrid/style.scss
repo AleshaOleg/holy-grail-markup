@@ -183,12 +183,20 @@ body {
   &__article {
     padding: 0 15px;
   }
+}
 
-  &__image {
+.text {
+  /* There can be some styles for content imported from backed */
+
+  img {
     float: left;
     margin: 0 15px 15px 0;
     padding: 5px;
     border: 1px solid #45F;
+  }
+
+  p {
+    /* There can be some styles for html-elements in text-content block */
   }
 }
 
