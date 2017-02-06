@@ -3,6 +3,7 @@
 We wrote simple html page with "[Holy Grail Layout](https://en.wikipedia.org/wiki/Holy_Grail_(web_design))"
 in different CSS methodologies as an example of all popular css methodologies markup,
 in order to help people compare, learn and start using them.
+
 That's like an advanced "Hello world".
 
 <img src="https://github.com/AleshaOleg/holy-grail-markup/blob/master/pictures/preview.png?raw=true" width="960">
@@ -17,7 +18,7 @@ Created by [Oleh Aloshkin](https://github.com/AleshaOleg) and [Ihor Zenich](http
 ## Contributors
 * [Boris Serdiuk](https://github.com/just-boris) and [Artem Sapegin](https://github.com/sapegin) for CSS-Modules example.
 
-Anyone and everyone is welcome to contribute, just send Pull Request!
+Anyone and everyone is welcome to contribute, just send Pull Request or [create](https://github.com/AleshaOleg/holy-grail-markup/issues/new)/[answer](https://github.com/AleshaOleg/holy-grail-markup/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) to issue!
 
 ## Thanks
 * [Ivan Sagalaev](https://github.com/isagalaev) for his [MegaCorporation html markup example](http://softwaremaniacs.org/blog/2006/01/17/css-layout-example/).
