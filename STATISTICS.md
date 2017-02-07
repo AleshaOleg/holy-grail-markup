@@ -1,5 +1,7 @@
 ## Statistics
 
+This statistics file, can have some old data, from previous commits. We tried to frequently update it.
+
 Here a statistics for each of implementation/example. Also available as `.xlsx` file in the root of project - `statistics.xlsx` Declarations, selectors, rules, selectors per rule and declarations per rule for CSS files got with a help of [grunt-css-count](https://www.npmjs.com/package/grunt-css-count) module. You can also see this statics by run Gruntfile.js:
 
 `npm i`
