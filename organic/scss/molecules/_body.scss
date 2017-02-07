@@ -1,9 +1,9 @@
 body {
-  @include bg-color($color: #EEE);
   @include atoms((
     height-100
     margin-0
     padding-0
     font
   ));
+  @include bg-color($color: #EEE);
 }
