@@ -27,7 +27,7 @@ body {
 
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
-          box-sizing: border-box; 
+          box-sizing: border-box;
 
       -ms-box-sizing: border-box;
        -o-box-sizing: border-box;
@@ -132,7 +132,7 @@ body {
 
 .wrapper {
   width: 700px;
-  min-height: 100%; 
+  min-height: 100%;
 
   background-color: #FFF;
   background-color: white;
@@ -152,7 +152,7 @@ body {
   vertical-align: bottom;
 }
 .header .label-field {
-  display: block; 
+  display: block;
 
   width: 10em;
 }
@@ -167,7 +167,7 @@ body {
 }
 .nav .nav-link {
   margin: 5px 0;
-  padding: 2px 5px; 
+  padding: 2px 5px;
 
   border-top: 1px solid #FFF;
   border-right: 0;
@@ -206,7 +206,7 @@ body {
   padding: 0 15px;
 }
 .content .content-title {
-  padding: 0 15px; 
+  padding: 0 15px;
 
   color: #293499;
 }
@@ -227,7 +227,7 @@ body {
   margin: 20px 5px;
 }
 .news .news-title {
-  text-transform: uppercase; 
+  text-transform: uppercase;
 
   color: #293499;
   background-color: #DDE6FF;
@@ -238,7 +238,7 @@ body {
   position: absolute;
   position: absolute;
   top: none;
-  bottom: 0; 
+  bottom: 0;
   left: none;
 
   width: 700px;

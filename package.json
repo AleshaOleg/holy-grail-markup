@@ -4,7 +4,8 @@
   "description": "“Hello world” markup using different CSS methodologies: OOCSS, SMACSS, Atomic & Organic, BEM and CSS Modules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "csscomb": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,10 @@
   "homepage": "https://github.com/AleshaOleg/holy-grail-markup#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-css-count": "^0.3.1"
-  }
+    "grunt-css-count": "^0.3.1",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "csscomb"
+  ]
 }
