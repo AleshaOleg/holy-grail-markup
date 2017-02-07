@@ -1,18 +1,25 @@
-.footer {
+.footer
+{
     position: absolute;
     bottom: 0;
-    height: 42px;
+
     width: 700px;
-    background: #45F;
-    color: #FFF;
+    height: 42px;
+
+    color: #fff;
+    background: #45f;
 }
 
-.text {
-    display: block;
+.text
+{
     font-size: 70%;
+
+    display: block;
+
     margin: 5px;
 }
 
-.link {
-    color: #FFF;
+.link
+{
+    color: #fff;
 }

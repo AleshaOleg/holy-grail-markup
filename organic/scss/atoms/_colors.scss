@@ -1,22 +1,22 @@
 %black {
-    color: #000;
+  color: #000;
 }
 %white {
-    color: #FFF;
+  color: #FFF;
 }
 @mixin color($color: #000, $light: 0, $dark: 0) {
-    color: $color;
-    @if $light != 0 {
-        color: lighten($color, $light);
-    } @else if $dark != 0 {
-        color: darken($color, $dark);
-    }
+  color: $color;
+  @if $light != 0 {
+    color: lighten($color, $light);
+  } @else if $dark != 0 {
+    color: darken($color, $dark);
+  }
 }
 @mixin bg-color($color: #000, $light: 0, $dark: 0) {
-    background-color: $color;
-    @if $light != 0 {
-        background-color: lighten($color, $light);
-    } @else if $dark != -1 {
-        background-color: darken($color, $dark);
-    }
+  background-color: $color;
+  @if $light != 0 {
+    background-color: lighten($color, $light);
+  } @else if $dark != -1 {
+    background-color: darken($color, $dark);
+  }
 }

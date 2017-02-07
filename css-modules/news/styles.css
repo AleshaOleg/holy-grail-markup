@@ -1,16 +1,16 @@
 .news {
-    width: 25%;
     float: right;
+    width: 25%;
 }
 
 .title {
-    background: #DDE6FF;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: bold;
-    color: #293499;
     margin: 0 0 20px 0;
     padding: 10px;
+    background: #DDE6FF;
+    color: #293499;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .article {
@@ -19,11 +19,11 @@
 }
 
 .date {
-    color: #293499;
-    font-size: 100%;
-    font-weight: bold;
     float: left;
     margin: 0 5px 0 0;
+    color: #293499;
+    font-weight: bold;
+    font-size: 100%;
 }
 
 .text {
@@ -36,6 +36,6 @@
 }
 
 .link {
-    color: #D00;
     padding-right: 13px;
+    color: #D00;
 }

@@ -4,7 +4,9 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+
   background: #EEE;
+
   font: 13px Tahoma, Sans-Serif;
 }
 
@@ -16,6 +18,7 @@ body {
   &--sticky-footer {
     display: flex;
     flex-direction: column;
+
     min-height: 100vh;
 
     &:last-child {
@@ -46,34 +49,41 @@ body {
 }
 
 .h2 {
-  font-size: 16.9px;
   color: #293499;
+
+  font-size: 16.9px;
 }
 
 .h3 {
-  font-size: 13px;
-  font-weight: bold;
   text-transform: uppercase;
+
   color: #293499;
   background: #DDE6FF;
+
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .header {
-  @extend .col;
-  @extend .col--xl-12;
-  @extend .col--sm-12;
-  @extend .col--no-indent;
   padding: 20px;
+
   background: #45F;
 
+  @extend .col--no-indent;
+  @extend .col--sm-12;
+  @extend .col--xl-12;
+  @extend .col;
+
   &__title {
-    @extend .col;
-    @extend .col--xs-12;
-    @extend .col--sm-8;
-    @extend .col--no-indent;
     display: inline-block;
+
     margin: 0;
     padding-left: 40px;
+
+    @extend .col--no-indent;
+    @extend .col--sm-8;
+    @extend .col--xs-12;
+    @extend .col;
 
     @media (max-width: 544px) {
       padding: 0 0 10px;
@@ -81,24 +91,29 @@ body {
   }
 
   &__search {
-    @extend .col;
-    @extend .col--xs-12;
-    @extend .col--sm-4;
-    @extend .col--no-indent;
     float: right;
+
     text-align: right;
+
+    @extend .col--no-indent;
+    @extend .col--sm-4;
+    @extend .col--xs-12;
+    @extend .col;
   }
 
   &__label {
     display: inline-block;
+
     text-align: left;
   }
 }
 
 .title {
-  color: #FFF;
-  font-size: 23.4px;
   letter-spacing: 1px;
+
+  color: #FFF;
+
+  font-size: 23.4px;
 }
 
 .search {
@@ -110,35 +125,42 @@ body {
 
   &__field {
     display: block;
+
     width: 10em;
+
     font-size: 9px;
   }
 }
 
 .button {
   display: inline-block;
+
   vertical-align: bottom;
+
   font-size: 9px;
 }
 
 .main {
-  @extend .col;
-  @extend .col--sm-12;
-  @extend .col--no-indent;
   background: #FFF;
+
+  @extend .col--no-indent;
+  @extend .col--sm-12;
+  @extend .col;
 }
 
 .nav {
-  @extend .col;
-  @extend .col--xs-12;
-  @extend .col--sm-12;
-  @extend .col--md-2;
-  @extend .col--no-indent;
   float: left;
+
+  @extend .col--no-indent;
+  @extend .col--md-2;
+  @extend .col--sm-12;
+  @extend .col--xs-12;
+  @extend .col;
 
   &__list {
     margin: 50px 0;
     padding: 0;
+
     list-style: none;
   }
 
@@ -149,16 +171,20 @@ body {
   }
 
   &__link {
-    font-size: 10.4px;
     display: block;
+
     margin: 5px 0;
     padding: 2px 5px;
+
+    text-decoration: none;
+
+    color: #000;
     border: 1px solid #FFF;
     border-right: 0;
     border-left: 0;
-    color: #000;
-    text-decoration: none;
     background: #DDE6FF;
+
+    font-size: 10.4px;
 
     &:hover {
       color: #FFF;
@@ -173,12 +199,13 @@ body {
 }
 
 .content {
-  @extend .col;
-  @extend .col--xs-12;
-  @extend .col--sm-6;
-  @extend .col--md-7;
-  @extend .col--no-indent;
   float: left;
+
+  @extend .col--no-indent;
+  @extend .col--md-7;
+  @extend .col--sm-6;
+  @extend .col--xs-12;
+  @extend .col;
 
   &__title {
     margin-top: 20px;
@@ -196,8 +223,10 @@ body {
 
   img {
     float: left;
+
     margin: 0 15px 15px 0;
     padding: 5px;
+
     border: 1px solid #45F;
   }
 
@@ -207,12 +236,13 @@ body {
 }
 
 .news {
-  @extend .col;
-  @extend .col--xs-12;
-  @extend .col--sm-6;
-  @extend .col--md-3;
-  @extend .col--no-indent;
   float: right;
+
+  @extend .col--no-indent;
+  @extend .col--md-3;
+  @extend .col--sm-6;
+  @extend .col--xs-12;
+  @extend .col;
 
   &__title {
     margin: 0 0 20px 0;
@@ -221,19 +251,24 @@ body {
 
   &__article {
     margin: 20px 5px;
+
     font-size: 10.4px;
   }
 
   &__date {
     float: left;
+
     margin: 0 5px 0 0;
+
     color: #293499;
+
     font-size: 10.4px;
     font-weight: bold;
   }
 
   &__text {
     display: inline;
+
     color: #293499;
 
     p:last-of-type {
@@ -243,21 +278,26 @@ body {
 
   &__link {
     padding-right: 13px;
+
     color: #D00;
   }
 }
 
 .footer {
-  @extend .col;
-  @extend .col--sm-12;
-  @extend .col--no-indent;
   height: 42px;
+
   color: #FFF;
   background: #45F;
 
+  @extend .col--no-indent;
+  @extend .col--sm-12;
+  @extend .col;
+
   &__text {
     display: block;
+
     margin: 5px;
+
     font-size: 9.1px;
   }
 

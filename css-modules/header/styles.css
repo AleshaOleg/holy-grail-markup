@@ -8,8 +8,8 @@
     margin: 0;
     padding-left: 40px;
     color: #FFF;
-    font-size: 180%;
     letter-spacing: 1px;
+    font-size: 180%;
 }
 
 .search {
@@ -23,8 +23,8 @@
 }
 
 .field {
-    width: 10em;
     display: block;
+    width: 10em;
     font-size: 9px;
 }
 

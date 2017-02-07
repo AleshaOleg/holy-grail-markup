@@ -1,42 +1,51 @@
 .l-wrapper {
-    width: 700px;
-    min-height: 100%;
-    margin: 0 auto;
-    position: relative;
-    background: #FFF;
+  position: relative;
+
+  width: 700px;
+  min-height: 100%;
+  margin: 0 auto;
+
+  background: #FFF;
 }
 
 .l-header {
-    padding: 20px;
-    background: #45F;
+  padding: 20px;
+
+  background: #45F;
 }
 
 .l-main {
-    overflow: hidden;
-    min-height: 100%;
-    padding-bottom: 42px;
+  overflow: hidden;
+
+  min-height: 100%;
+  padding-bottom: 42px;
 }
 
 .l-nav {
-    float: left;
-    width: 20%;
+  float: left;
+
+  width: 20%;
 }
 
 .l-content {
-    width: 55%;
-    float: left;
+  float: left;
+
+  width: 55%;
 }
 
 .l-news {
-    width: 25%;
-    float: right;
+  float: right;
+
+  width: 25%;
 }
 
 .l-footer {
-    position: absolute;
-    bottom: 0;
-    height: 42px;
-    width: 700px;
-    background: #45F;
-    color: #FFF;
+  position: absolute;
+  bottom: 0;
+
+  width: 700px;
+  height: 42px;
+
+  color: #FFF;
+  background: #45F;
 }

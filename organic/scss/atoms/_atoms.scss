@@ -1,23 +1,23 @@
-@include define-atom("height-100") {
-    height: 100%;
+@include define-atom('height-100') {
+  height: 100%;
 }
 
-@include define-atom("font") {
-    font: 13px Tahoma, sans-serif;
+@include define-atom('font') {
+  font: 13px Tahoma, sans-serif;
 }
 
-@include define-atom("font-size-80-per") {
-    font-size: 80%;
+@include define-atom('font-size-80-per') {
+  font-size: 80%;
 }
 
-@include define-atom("font-size-100-per") {
-    font-size: 100%;
+@include define-atom('font-size-100-per') {
+  font-size: 100%;
 }
 
-@include define-atom("font-size-130-per") {
-    font-size: 130%;
+@include define-atom('font-size-130-per') {
+  font-size: 130%;
 }
 
-@include define-atom("font-size-9-px") {
-    font-size: 9px;
+@include define-atom('font-size-9-px') {
+  font-size: 9px;
 }

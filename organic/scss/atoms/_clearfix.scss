@@ -1,7 +1,8 @@
 %clearfix {
-    &:after {
-        display: table;
-        content: "";
-        clear: both;
-    }
+  &:after {
+    display: table;
+    clear: both;
+
+    content: '';
+  }
 }

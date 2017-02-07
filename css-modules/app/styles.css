@@ -1,19 +1,26 @@
-html {
+html
+{
     height: 100%;
 }
 
-body {
+body
+{
+    font: 13px Tahoma, Sans-Serif;
+
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #EEE;
-    font: 13px Tahoma, Sans-Serif;
+
+    background: #eee;
 }
 
-.wrapper {
+.wrapper
+{
+    position: relative;
+
     width: 700px;
     min-height: 100%;
     margin: 0 auto;
-    position: relative;
-    background: #FFF;
+
+    background: #fff;
 }

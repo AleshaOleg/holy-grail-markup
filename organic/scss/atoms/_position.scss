@@ -1,13 +1,13 @@
 @mixin absolute($x: 0, $y: 0) {
-    position: absolute;
-    top: $x;
-    left: $y;
+  position: absolute;
+  top: $x;
+  left: $y;
 }
 @mixin fixed($x: 0, $y: 0) {
-    position: fixed;
-    top: $x;
-    left: $y;
+  position: fixed;
+  top: $x;
+  left: $y;
 }
 %relative {
-    position: relative;
+  position: relative;
 }

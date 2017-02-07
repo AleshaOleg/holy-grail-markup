@@ -2,7 +2,8 @@
   @include atoms((
     padding-bottom-42
   )) {
-    min-height: 100%;
     overflow: hidden;
+
+    min-height: 100%;
   };
 }

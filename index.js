@@ -1,0 +1,10 @@
+var Comb = require('csscomb');
+var config = require('./.csscomb.json');
+var comb = new Comb(config);
+comb.processPath('./bem-css');
+comb.processPath('./bem-flexboxgrid');
+comb.processPath('./css-modules/build');
+comb.processPath('./oocss');
+comb.processPath('./organic');
+comb.processPath('./raw');
+comb.processPath('./smacss');

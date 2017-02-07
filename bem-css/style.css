@@ -6,38 +6,47 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+
   background: #EEE;
+
   font: 13px Tahoma, Sans-Serif;
 }
 
 .h2 {
-  font-size: 16.9px;
   color: #293499;
+
+  font-size: 16.9px;
 }
 
 .h3 {
-  font-size: 13px;
-  font-weight: bold;
   text-transform: uppercase;
+
   color: #293499;
   background: #DDE6FF;
+
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .wrapper {
+  position: relative;
+
   width: 700px;
   min-height: 100%;
   margin: 0 auto;
-  position: relative;
+
   background: #FFF;
 }
 
 .header {
   padding: 20px;
+
   background: #45F;
 }
 
 .header__title {
   display: inline-block;
+
   margin: 0;
   padding-left: 40px;
 }
@@ -52,9 +61,11 @@ body {
 }
 
 .title {
-  color: #FFF;
-  font-size: 23.4px;
   letter-spacing: 1px;
+
+  color: #FFF;
+
+  font-size: 23.4px;
 }
 
 .search {
@@ -67,30 +78,37 @@ body {
 
 .label__field {
   display: block;
+
   width: 10em;
+
   font-size: 9px;
 }
 
 .button {
   display: inline-block;
+
   vertical-align: bottom;
+
   font-size: 9px;
 }
 
 .main {
   overflow: hidden;
+
   min-height: 100%;
   padding-bottom: 42px;
 }
 
 .nav {
   float: left;
+
   width: 20%;
 }
 
 .nav__list {
   margin: 50px 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -99,16 +117,20 @@ body {
 }
 
 .nav__link {
-  font-size: 10.4px;
   display: block;
+
   margin: 5px 0;
   padding: 2px 5px;
+
+  text-decoration: none;
+
+  color: #000;
   border: 1px solid #FFF;
   border-right: 0;
   border-left: 0;
-  color: #000;
-  text-decoration: none;
   background: #DDE6FF;
+
+  font-size: 10.4px;
 }
 
 .nav__link:hover {
@@ -122,8 +144,9 @@ body {
 }
 
 .content {
-  width: 55%;
   float: left;
+
+  width: 55%;
 }
 
 .content__title {
@@ -142,8 +165,10 @@ body {
 
 .text img {
   float: left;
+
   margin: 0 15px 15px 0;
   padding: 5px;
+
   border: 1px solid #45F;
 }
 
@@ -152,8 +177,9 @@ body {
 }
 
 .news {
-  width: 25%;
   float: right;
+
+  width: 25%;
 }
 
 .news__title {
@@ -163,19 +189,24 @@ body {
 
 .news__article {
   margin: 20px 5px;
+
   font-size: 10.4px;
 }
 
 .news__date {
   float: left;
+
   margin: 0 5px 0 0;
+
   color: #293499;
+
   font-size: 10.4px;
   font-weight: bold;
 }
 
 .news__text {
   display: inline;
+
   color: #293499;
 }
 
@@ -185,21 +216,26 @@ body {
 
 .news__link {
   padding-right: 13px;
+
   color: #D00;
 }
 
 .footer {
   position: absolute;
   bottom: 0;
+
   width: 700px;
   height: 42px;
+
   color: #FFF;
   background: #45F;
 }
 
 .footer__text {
   display: block;
+
   margin: 5px;
+
   font-size: 9.1px;
 }
 
