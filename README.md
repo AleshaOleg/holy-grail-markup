@@ -24,7 +24,7 @@ Anyone and everyone is welcome to contribute, just send Pull Request or [create]
 * [Ivan Sagalaev](https://github.com/isagalaev) for his [MegaCorporation html markup example](http://softwaremaniacs.org/blog/2006/01/17/css-layout-example/).
 
 ## License
-The code is available under the [WTFPL](http://www.wtfpl.net/) license.
+The code is available under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. This applies to all documents in this repository.
 
 ## Documentation
 - [OOCSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
