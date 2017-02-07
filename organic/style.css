@@ -124,6 +124,8 @@ body {
   .nav .nav-list {
     margin: 50px 0;
     list-style: none; }
+  .nav .nav-item--separate {
+    margin: 22px 0; }
   .nav .nav-link {
     margin: 5px 0;
     padding: 2px 5px;

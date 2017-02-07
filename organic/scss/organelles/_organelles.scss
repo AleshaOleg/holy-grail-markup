@@ -16,6 +16,7 @@
   ));
   @include width($value: 20%);
   @include nav-list;
+  @include nav-item;
   @include nav-link;
 }
 

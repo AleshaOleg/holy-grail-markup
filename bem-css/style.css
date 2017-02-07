@@ -94,6 +94,10 @@ body {
   list-style: none;
 }
 
+.nav__item--separate {
+  margin: 22px 0;
+}
+
 .nav__link {
   font-size: 10.4px;
   display: block;
@@ -116,7 +120,6 @@ body {
   color: #FFF;
   background: #293499;
 }
-
 
 .content {
   width: 55%;

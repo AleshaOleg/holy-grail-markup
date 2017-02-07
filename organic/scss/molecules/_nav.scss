@@ -9,6 +9,14 @@
   }
 }
 
+@mixin nav-item {
+  .nav-item {
+    &--separate {
+      margin: 22px 0;
+    }
+  }
+}
+
 @mixin nav-link {
   .nav-link {
     @include atoms((

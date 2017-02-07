@@ -45,6 +45,10 @@
     color: #FFF;
 }
 
+.nav-item-separate {
+    margin: 22px 0;
+}
+
 .content-title {
     margin-top: 20px;
     margin-bottom: 10px;

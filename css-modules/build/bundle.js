@@ -220,21 +220,23 @@ function Main() {
 
 const root = "https://aleshaoleg.github.io/holy-grail-markup/";
 const active = "css-modules";
+const separate = "raw"
 const items = [
+  { id: "oocss", name: "OOCSS" },
+  { id: "smacss", name: "SMACSS" },
   { id: "atomic", name: "Atomic" },
+  { id: "organic", name: "Organic" },
   { id: "bem-css", name: "BEM CSS" },
   { id: "bem-flexboxgrid", name: "BEM Flexbox Grid" },
   { id: "css-modules", name: "CSS-modules" },
-  { id: "oocss", name: "OOCSS" },
-  { id: "organic", name: "Organic" },
-  { id: "raw", name: "Raw" },
-  { id: "smacss", name: "SMACSS" }
+  { id: "raw", name: "Raw" }
 ];
 
 function Link(link) {
   const activeCls = link.id === active ? __WEBPACK_IMPORTED_MODULE_0__styles_css___default.a.linkActive : "";
+  const separateCls = link.id === separate ? __WEBPACK_IMPORTED_MODULE_0__styles_css___default.a.linkSeparate : "";
   return `<li>
-    <a href="${root}${link.id}" class="${__WEBPACK_IMPORTED_MODULE_0__styles_css___default.a.link} ${activeCls}">
+    <a href="${root}${link.id}" class="${__WEBPACK_IMPORTED_MODULE_0__styles_css___default.a.link} ${separateCls} ${activeCls}">
       ${link.name}
     </a>
   </li>`;
@@ -311,49 +313,49 @@ function News() {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"wrapper":"wrapper__2Fz57"};
+module.exports = {"wrapper":"wrapper__27cZE"};
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"content":"content__SeK6e","title":"title__3wTCe","article":"article__2eVqk","image":"image__2CQtM"};
+module.exports = {"content":"content__cn9jY","title":"title__RNXoc","article":"article__26caC","image":"image__3Db0t"};
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"footer":"footer__3Bmq_","text":"text__2KSd6","link":"link__1oZtu"};
+module.exports = {"footer":"footer__1KzCG","text":"text__iv5CJ","link":"link__1QgRB"};
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"root":"root__2FscM","title":"title__1n5kF","search":"search__1257K","label":"label__41qWd","field":"field__43J_1","button":"button__2-Izj"};
+module.exports = {"root":"root__35MYT","title":"title__2TVbb","search":"search__zpMpE","label":"label__3rwWT","field":"field__1htn2","button":"button__1Nt1V"};
 
 /***/ }),
 /* 12 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"main":"main__p0hcC"};
+module.exports = {"main":"main__1ySw1"};
 
 /***/ }),
 /* 13 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"nav":"nav__1Tcay","list":"list__eB6q8","link":"link__3rFsx","linkActive":"linkActive__20h6k"};
+module.exports = {"nav":"nav__1T5wH","list":"list__9uEF0","link":"link__3oare","linkActive":"linkActive__2wMx1","linkSeparate":"linkSeparate__2VooR"};
 
 /***/ }),
 /* 14 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"news":"news__3dCiN","title":"title__2CGVP","article":"article__2aY8E","date":"date__rMi7P","text":"text__3moyQ","link":"link__3a5fm"};
+module.exports = {"news":"news__2Tn9S","title":"title__myeSf","article":"article__1CapX","date":"date__25CE2","text":"text__35dVP","link":"link__1V2Ln"};
 
 /***/ }),
 /* 15 */

@@ -118,6 +118,10 @@ body {
     color:black;
 }
 
+#sections li a.separate {
+    margin: 22px 0;
+}
+
 #sections li a {
     border-color:white;
 }
