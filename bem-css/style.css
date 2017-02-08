@@ -99,13 +99,13 @@ html {
   padding-bottom: 42px;
 }
 
-.nav {
+.sidebar {
   float: left;
 
   width: 20%;
 }
 
-.nav__list {
+.nav {
   margin: 50px 0;
   padding: 0;
 
