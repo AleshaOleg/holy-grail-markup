@@ -24,8 +24,7 @@
   "vendor-prefix-align": true,
   "exclude": [
       ".git/**",
-      "node_modules/**",
-      "*.scss"
+      "node_modules/**"
   ],
   "sort-order": [
     [

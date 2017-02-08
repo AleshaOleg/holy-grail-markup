@@ -112,80 +112,80 @@
 
 .col--xs {
   max-width: 100%;
-  padding: 1rem 0.5rem 0 0.5rem; 
+  padding: 1rem 0.5rem 0 0.5rem;
 
   flex-basis: 0;
   flex-grow: 1;
 }
 
 .col--xs-1 {
-  flex: none; 
+  flex: none;
 
   width: 8.33333%;
 }
 
 .col--xs-2 {
-  flex: none; 
+  flex: none;
 
   width: 16.66667%;
 }
 
 .col--xs-3 {
-  flex: none; 
+  flex: none;
 
   width: 25%;
 }
 
 .col--xs-4 {
-  flex: none; 
+  flex: none;
 
   width: 33.33333%;
 }
 
 .col--xs-5 {
-  flex: none; 
+  flex: none;
 
   width: 41.66667%;
 }
 
 .col--xs-6 {
-  flex: none; 
+  flex: none;
 
   width: 50%;
 }
 
 .col--xs-7 {
-  flex: none; 
+  flex: none;
 
   width: 58.33333%;
 }
 
 .col--xs-8 {
-  flex: none; 
+  flex: none;
 
   width: 66.66667%;
 }
 
 .col--xs-9 {
-  flex: none; 
+  flex: none;
 
   width: 75%;
 }
 
 .col--xs-10 {
-  flex: none; 
+  flex: none;
 
   width: 83.33333%;
 }
 
 .col--xs-11 {
-  flex: none; 
+  flex: none;
 
   width: 91.66667%;
 }
 
 .col--xs-12, .header__title, .header__search, .nav, .content, .news {
-  flex: none; 
+  flex: none;
 
   width: 100%;
 }
@@ -283,68 +283,68 @@
   }
   .col--sm {
     max-width: 100%;
-    padding: 1rem 0.5rem 0 0.5rem; 
+    padding: 1rem 0.5rem 0 0.5rem;
 
     flex-basis: 0;
     flex-grow: 1;
   }
   .col--sm-1 {
-    flex: none; 
+    flex: none;
 
     width: 8.33333%;
   }
   .col--sm-2 {
-    flex: none; 
+    flex: none;
 
     width: 16.66667%;
   }
   .col--sm-3 {
-    flex: none; 
+    flex: none;
 
     width: 25%;
   }
   .col--sm-4, .header__search {
-    flex: none; 
+    flex: none;
 
     width: 33.33333%;
   }
   .col--sm-5 {
-    flex: none; 
+    flex: none;
 
     width: 41.66667%;
   }
   .col--sm-6, .content, .news {
-    flex: none; 
+    flex: none;
 
     width: 50%;
   }
   .col--sm-7 {
-    flex: none; 
+    flex: none;
 
     width: 58.33333%;
   }
   .col--sm-8, .header__title {
-    flex: none; 
+    flex: none;
 
     width: 66.66667%;
   }
   .col--sm-9 {
-    flex: none; 
+    flex: none;
 
     width: 75%;
   }
   .col--sm-10 {
-    flex: none; 
+    flex: none;
 
     width: 83.33333%;
   }
   .col--sm-11 {
-    flex: none; 
+    flex: none;
 
     width: 91.66667%;
   }
   .col--sm-12, .header, .main, .nav, .footer {
-    flex: none; 
+    flex: none;
 
     width: 100%;
   }
@@ -431,68 +431,68 @@
   }
   .col--md {
     max-width: 100%;
-    padding: 1rem 0.5rem 0 0.5rem; 
+    padding: 1rem 0.5rem 0 0.5rem;
 
     flex-basis: 0;
     flex-grow: 1;
   }
   .col--md-1 {
-    flex: none; 
+    flex: none;
 
     width: 8.33333%;
   }
   .col--md-2, .nav {
-    flex: none; 
+    flex: none;
 
     width: 16.66667%;
   }
   .col--md-3, .news {
-    flex: none; 
+    flex: none;
 
     width: 25%;
   }
   .col--md-4 {
-    flex: none; 
+    flex: none;
 
     width: 33.33333%;
   }
   .col--md-5 {
-    flex: none; 
+    flex: none;
 
     width: 41.66667%;
   }
   .col--md-6 {
-    flex: none; 
+    flex: none;
 
     width: 50%;
   }
   .col--md-7, .content {
-    flex: none; 
+    flex: none;
 
     width: 58.33333%;
   }
   .col--md-8 {
-    flex: none; 
+    flex: none;
 
     width: 66.66667%;
   }
   .col--md-9 {
-    flex: none; 
+    flex: none;
 
     width: 75%;
   }
   .col--md-10 {
-    flex: none; 
+    flex: none;
 
     width: 83.33333%;
   }
   .col--md-11 {
-    flex: none; 
+    flex: none;
 
     width: 91.66667%;
   }
   .col--md-12 {
-    flex: none; 
+    flex: none;
 
     width: 100%;
   }
@@ -579,68 +579,68 @@
   }
   .col--lg {
     max-width: 100%;
-    padding: 1rem 0.5rem 0 0.5rem; 
+    padding: 1rem 0.5rem 0 0.5rem;
 
     flex-basis: 0;
     flex-grow: 1;
   }
   .col--lg-1 {
-    flex: none; 
+    flex: none;
 
     width: 8.33333%;
   }
   .col--lg-2 {
-    flex: none; 
+    flex: none;
 
     width: 16.66667%;
   }
   .col--lg-3 {
-    flex: none; 
+    flex: none;
 
     width: 25%;
   }
   .col--lg-4 {
-    flex: none; 
+    flex: none;
 
     width: 33.33333%;
   }
   .col--lg-5 {
-    flex: none; 
+    flex: none;
 
     width: 41.66667%;
   }
   .col--lg-6 {
-    flex: none; 
+    flex: none;
 
     width: 50%;
   }
   .col--lg-7 {
-    flex: none; 
+    flex: none;
 
     width: 58.33333%;
   }
   .col--lg-8 {
-    flex: none; 
+    flex: none;
 
     width: 66.66667%;
   }
   .col--lg-9 {
-    flex: none; 
+    flex: none;
 
     width: 75%;
   }
   .col--lg-10 {
-    flex: none; 
+    flex: none;
 
     width: 83.33333%;
   }
   .col--lg-11 {
-    flex: none; 
+    flex: none;
 
     width: 91.66667%;
   }
   .col--lg-12 {
-    flex: none; 
+    flex: none;
 
     width: 100%;
   }
@@ -727,68 +727,68 @@
   }
   .col--xl {
     max-width: 100%;
-    padding: 1rem 0.5rem 0 0.5rem; 
+    padding: 1rem 0.5rem 0 0.5rem;
 
     flex-basis: 0;
     flex-grow: 1;
   }
   .col--xl-1 {
-    flex: none; 
+    flex: none;
 
     width: 8.33333%;
   }
   .col--xl-2 {
-    flex: none; 
+    flex: none;
 
     width: 16.66667%;
   }
   .col--xl-3 {
-    flex: none; 
+    flex: none;
 
     width: 25%;
   }
   .col--xl-4 {
-    flex: none; 
+    flex: none;
 
     width: 33.33333%;
   }
   .col--xl-5 {
-    flex: none; 
+    flex: none;
 
     width: 41.66667%;
   }
   .col--xl-6 {
-    flex: none; 
+    flex: none;
 
     width: 50%;
   }
   .col--xl-7 {
-    flex: none; 
+    flex: none;
 
     width: 58.33333%;
   }
   .col--xl-8 {
-    flex: none; 
+    flex: none;
 
     width: 66.66667%;
   }
   .col--xl-9 {
-    flex: none; 
+    flex: none;
 
     width: 75%;
   }
   .col--xl-10 {
-    flex: none; 
+    flex: none;
 
     width: 83.33333%;
   }
   .col--xl-11 {
-    flex: none; 
+    flex: none;
 
     width: 91.66667%;
   }
   .col--xl-12, .header {
-    flex: none; 
+    flex: none;
 
     width: 100%;
   }
@@ -849,19 +849,19 @@ body {
   display: flex;
       flex-direction: column;
 
-  min-height: 100vh; 
+  min-height: 100vh;
 
   -ms-flex-direction: column;
 }
 .grid--sticky-footer:last-child {
-  align-content: flex-end; 
+  align-content: flex-end;
   -ms-flex-line-pack: end;
 }
 .grid--sticky-footer > .row {
   margin: 0;
 }
 .grid--sticky-footer > .row:nth-last-child(2) {
-      flex: 1; 
+      flex: 1;
 
   -ms-flex: 1;
 }
