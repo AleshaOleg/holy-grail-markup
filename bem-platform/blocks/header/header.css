@@ -1,0 +1,21 @@
+.header {
+  padding: 20px;
+
+  background: #45F;
+}
+
+.header__title {
+  display: inline-block;
+
+  margin: 0;
+  padding-left: 40px;
+}
+
+.header__search {
+  float: right;
+}
+
+.header__label {
+  display: inline-block;
+  color: #fff;
+}

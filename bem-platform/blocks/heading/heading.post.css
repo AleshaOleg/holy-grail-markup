@@ -1,0 +1,30 @@
+.heading {
+    font-weight: normal;
+
+    margin: 0 0 16px 0;
+
+    &_level {
+        &_1 {
+            font-size: 23.4px;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        &_2 {
+            color: #293499;
+
+            font-size: 16.9px;
+        }
+
+        &_3 {
+            text-transform: uppercase;
+
+            color: #293499;
+            background: #dde6ff;
+
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+
+}

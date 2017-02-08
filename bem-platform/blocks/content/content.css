@@ -1,0 +1,15 @@
+.content {
+  float: left;
+
+  width: 55%;
+}
+
+.content__title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.content__article {
+  padding: 0 15px;
+}
