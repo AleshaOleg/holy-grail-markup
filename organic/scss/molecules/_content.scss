@@ -1,5 +1,6 @@
 @mixin content-title {
   .content-title {
+    @include color($color: #293499);
     @include atoms((
       margin-top-20
       margin-bottom-10
@@ -7,7 +8,6 @@
     )) {
       padding: 0 15px;
     };
-    @include color($color: #293499);
   }
 }
 
@@ -21,6 +21,7 @@
 
 @mixin content-image {
   .content-image {
+    @include border($top: 1px solid #45F, $right: 1px solid #45F, $bottom: 1px solid #45F, $left: 1px solid #45F);
     @include atoms((
       left
       padding-5
@@ -28,6 +29,5 @@
       margin-right-15
       margin-bottom-15
     ));
-    @include border($top: 1px solid #45F, $right: 1px solid #45F, $bottom: 1px solid #45F, $left: 1px solid #45F);
   }
 }
