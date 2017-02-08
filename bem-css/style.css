@@ -2,7 +2,7 @@ html {
   height: 100%;
 }
 
-body {
+.page {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -12,30 +12,31 @@ body {
   font: 13px Tahoma, Sans-Serif;
 }
 
-.h2 {
-  color: #293499;
-
-  font-size: 16.9px;
-}
-
-.h3 {
-  text-transform: uppercase;
-
-  color: #293499;
-  background: #DDE6FF;
-
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.wrapper {
+.page__inner {
   position: relative;
 
   width: 700px;
   min-height: 100%;
-  margin: 0 auto;
+  margin: auto;
 
   background: #FFF;
+}
+
+.heading {
+  color: #293499;
+}
+
+.heading--level_2 {
+  font-size: 16.9px;
+}
+
+.heading--level_3 {
+  text-transform: uppercase;
+
+  background: #DDE6FF;
+
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .header {
@@ -50,7 +51,6 @@ body {
   margin: 0;
   padding-left: 40px;
 }
-
 
 .header__search {
   float: right;
@@ -76,7 +76,7 @@ body {
   color: #FFF;
 }
 
-.label__field {
+.search__field {
   display: block;
 
   width: 10em;
@@ -99,13 +99,13 @@ body {
   padding-bottom: 42px;
 }
 
-.nav {
+.sidebar {
   float: left;
 
   width: 20%;
 }
 
-.nav__list {
+.nav {
   margin: 50px 0;
   padding: 0;
 
