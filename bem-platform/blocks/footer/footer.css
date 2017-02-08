@@ -1,0 +1,20 @@
+.footer {
+  /*position: absolute;
+  bottom: 0;*/
+
+  width: 700px;
+  height: 42px;
+
+  color: #fff;
+  background: #45F;
+}
+
+.footer__text {
+  margin: 5px;
+
+  font-size: 9.1px;
+}
+
+.footer__link {
+  color: #fff;
+}

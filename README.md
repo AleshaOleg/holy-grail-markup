@@ -38,6 +38,7 @@ The code is available under the [CC BY 4.0](https://creativecommons.org/licenses
 - BEM
  - [BEM CSS](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) (Harry Roberts style)
  - BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
+ - [BEM Platform](https://en.bem.info/platform/)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 
 ## Statistics

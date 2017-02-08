@@ -1,0 +1,37 @@
+.nav {
+  margin: 50px 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__item_separate {
+  margin: 22px 0;
+}
+
+.nav__link {
+  display: block;
+
+  margin: 5px 0;
+  padding: 2px 5px;
+
+  text-decoration: none;
+
+  color: #000;
+  border: 1px solid #fff;
+  border-right: 0;
+  border-left: 0;
+  background: #dde6ff;
+
+  font-size: 10.4px;
+}
+
+.nav__link:hover {
+  color: #fff;
+  background: #d00;
+}
+
+.nav__link_current {
+  color: #fff;
+  background: #293499;
+}
