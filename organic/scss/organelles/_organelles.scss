@@ -1,58 +1,58 @@
 .header {
+  @include button;
+  @include label-field;
+  @include label;
+  @include header-search;
+  @include header-title;
+  @include bg-color($color: #45F);
   @include atoms((
     padding-20
   ));
-  @include bg-color($color: #45F);
-  @include header-title;
-  @include header-search;
-  @include label;
-  @include label-field;
-  @include button;
 }
 
 .nav {
+  @include nav-link;
+  @include nav-item;
+  @include nav-list;
+  @include width($value: 20%);
   @include atoms((
     left
   ));
-  @include width($value: 20%);
-  @include nav-list;
-  @include nav-item;
-  @include nav-link;
 }
 
 .content {
+  @include content-image;
+  @include content-article;
+  @include content-title;
+  @include width($value: 55%);
   @include atoms((
     left
   ));
-  @include width($value: 55%);
-  @include content-title;
-  @include content-article;
-  @include content-image;
 }
 
 .news {
+  @include news-link;
+  @include news-text;
+  @include news-date;
+  @include news-article;
+  @include news-title;
+  @include width($value: 25%);
   @include atoms((
     right
   ));
-  @include width($value: 25%);
-  @include news-title;
-  @include news-article;
-  @include news-date;
-  @include news-text;
-  @include news-link;
 }
 
 .footer {
+  @include footer-link;
+  @include footer-text;
+  @include bg-color($color: #45F);
+  @include width($value: 700px);
+  @include height($value: 42px);
+  @include absolute($x: none, $y: none);
   @include atoms((
     white
   )) {
     position: absolute;
     bottom: 0;
   };
-  @include absolute($x: none, $y: none);
-  @include height($value: 42px);
-  @include width($value: 700px);
-  @include bg-color($color: #45F);
-  @include footer-text;
-  @include footer-link;
 }

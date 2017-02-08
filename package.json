@@ -28,10 +28,6 @@
   "homepage": "https://github.com/AleshaOleg/holy-grail-markup#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-css-count": "^0.3.1",
-    "pre-commit": "^1.2.2"
-  },
-  "pre-commit": [
-    "csscomb"
-  ]
+    "grunt-css-count": "^0.3.1"
+  }
 }
