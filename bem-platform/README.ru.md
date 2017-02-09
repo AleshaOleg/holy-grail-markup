@@ -1,68 +1,18 @@
-# BEM project stub
-
-Project-stub – это шаблонный репозиторий для создания БЭМ-проектов. Он содержит необходимый минимум конфигурационных файлов и директорий, который позволяет быстро развернуть проект с нуля.
-
-[![Build Status](https://travis-ci.org/bem/project-stub.svg?branch=master)](https://travis-ci.org/bem/project-stub)
-
-В project-stub по умолчанию подключены основные БЭМ-библиотеки:
-
-* [bem-core](https://ru.bem.info/libs/bem-core/)
-* [bem-components](https://ru.bem.info/libs/bem-components/)
-
-## Требования к установке
-
-* [Node.js 4+](https://nodejs.org) – это программная платформа, основанная на языке JavaScript и позволяющая легко создавать быстрые и масштабируемые сетевые приложения.
-* [Git Bash](https://git-for-windows.github.io/) – для пользователей операционной системы Windows.
-
-**Важно** Пользователям Windows необходимо выполнять все команды в Git Bash. Убедитесь, что Git Bash запущен от имени администратора.
-
 ## Поддерживаемые браузеры
 
 Список поддерживаемых браузеров зависит от версий библиотек [bem-core](https://ru.bem.info/libs/bem-core/current/#Поддерживаемые-браузеры) и [bem-components](https://ru.bem.info/libs/bem-components/current/#Поддерживаемые-браузеры).
 
 **Важно:** Internet Explorer 8.0 не входит в перечень браузеров, поддерживаемых библиотеками по умолчанию. При необходимости можно [подключить поддержку IE8](https://ru.bem.info/libs/bem-components/current/#Поддержка-internet-explorer-8) в project-stub.
 
-## Установка
-
-Клонируем репозиторий и устанавливаем все необходимые зависимости:
-
-```bash
-git clone https://github.com/bem/project-stub.git --depth 1 my-bem-project
-cd my-bem-project
-npm install
-```
-
-**Важно:** Не используйте права суперпользователя (`root`) при установке npm-зависимостей.
-
-## Практическое применение
-
-Собрать проект можно с помощью [ENB](https://ru.bem.info/toolbox/enb/) или `gulp`.
-
-Вызов всех команд `ENB` возможен с помощью `./node_modules/.bin/enb`.
-
 ### Сборка проекта
 
 ```bash
-./node_modules/.bin/enb make
-```
-или
-```bash
-./node_modules/.bin/gulp
-```
-
-Чтобы не указывать путь к исполняемому файлу (`./node_modules/.bin/enb`) используйте:
-
-```bash
-export PATH=./node_modules/.bin:$PATH
-```
-
-Теперь исполняемые файлы локальных npm-модулей доступны из корня проекта:
-
-```bash
+npm install
 enb make
 ```
 или
 ```bash
+npm install
 gulp
 ```
 
