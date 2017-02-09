@@ -12,7 +12,10 @@ That's like an ~~"Hello world"~~ [TodoMVC](https://github.com/tastejs/todomvc) f
 <img src="https://github.com/AleshaOleg/holy-grail-markup/blob/master/pictures/preview.png?raw=true" width="960">
 
 ## How to use
-Just download/clone repository and see examples of markup.
+Just download/clone repository and see examples of markup in each folder.
+Keep in mind: `raw` is just example of default old ugly 2000-style css markup *without* any methodologie (just to compare),
+but with trying to structuring code some way we did it before methodoligies coming.
+
 [Demo](https://aleshaoleg.github.io/holy-grail-markup/raw) is here.
 
 ## Authors
@@ -20,6 +23,7 @@ Created by [Oleh Aloshkin](https://github.com/AleshaOleg) and [Ihor Zenich](http
 
 ## Contributors
 * [Boris Serdiuk](https://github.com/just-boris) and [Artem Sapegin](https://github.com/sapegin) for CSS-Modules example.
+* [Vladimir Grinenko](https://github.com/tadatuta) for Yandex-way BEM-realization example.
 
 Anyone and everyone is welcome to contribute, just send Pull Request or [create](https://github.com/AleshaOleg/holy-grail-markup/issues/new)/[answer](https://github.com/AleshaOleg/holy-grail-markup/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) to issue!
 
@@ -35,11 +39,12 @@ The code is available under the [CC BY 4.0](https://creativecommons.org/licenses
 - [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/):
  - [Atomic CSS](http://acss.io)
  - [Organic CSS](http://krasimir.github.io/organic-css/)
-- BEM
- - [BEM CSS](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) (Harry Roberts style)
- - BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
+- [BEM](https://en.bem.info/methodology/quick-start/)
+ - [BEM CSS](https://en.bem.info/methodology/css/) (Harry Roberts style)(http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/)
  - [BEM Platform](https://en.bem.info/platform/)
+ - BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
 - [CSS Modules](https://github.com/css-modules/css-modules)
+- waithing for React css-in-js
 
 ## Statistics
 You can see statistics for each of example [here](https://github.com/AleshaOleg/holy-grail-markup/blob/master/STATISTICS.md).
