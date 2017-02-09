@@ -1,3 +1,7 @@
+# holy-grail-markup implementation on BEM Platform
+
+Based on [project-stub](https://github.com/bem/project-stub).
+
 ## Supported browsers
 
 The list of supported browsers depends on the [bem-core](https://en.bem.info/libs/bem-core/current/#supported-browsers) and [bem-components](https://en.bem.info/libs/bem-components/current/#supported-browsers) library versions.
