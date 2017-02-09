@@ -1,3 +1,7 @@
+# Реализация holy-grail-markup на БЭМ-платформе
+
+Основано на [project-stub](https://github.com/bem/project-stub).
+
 ## Поддерживаемые браузеры
 
 Список поддерживаемых браузеров зависит от версий библиотек [bem-core](https://ru.bem.info/libs/bem-core/current/#Поддерживаемые-браузеры) и [bem-components](https://ru.bem.info/libs/bem-components/current/#Поддерживаемые-браузеры).

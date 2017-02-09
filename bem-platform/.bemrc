@@ -2,11 +2,10 @@ module.exports = {
     root: true,
 
     levels: {
-        'common.blocks': {
+        'blocks': {
             default: true
         },
-        'desktop.blocks': {},
-        'desktop.bundles': {}
+        'blocks': {}
     },
 
     modules: {
@@ -18,12 +17,12 @@ module.exports = {
                     },
                     techs: ['css', 'js'],
                     levels: {
-                        'desktop.bundles': {
+                        'pages': {
                             techs: [
                                 'bemjson.js',
                             ],
                         },
-                        'common.blocks': {
+                        'blocks': {
                             default: true
                         }
                     }

@@ -1,6 +1,6 @@
 {
   "author": "",
-  "name": "bem-project-stub",
+  "name": "bem-platform-holy-grail-markup",
   "version": "2.0.0",
   "browserslist": [
     "ie >= 10",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/bem/project-stub.git"
+    "url": "git://github.com/AleshaOleg/holy-grail-markup.git"
   },
   "engines": {
     "node": ">=4"
