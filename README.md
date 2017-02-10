@@ -40,7 +40,7 @@ The code is available under the [CC BY 4.0](https://creativecommons.org/licenses
  - [Atomic CSS](http://acss.io)
  - [Organic CSS](http://krasimir.github.io/organic-css/)
 - [BEM](https://en.bem.info/methodology/quick-start/)
- - [BEM CSS](https://en.bem.info/methodology/css/) (Harry Roberts style)(http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/)
+ - [BEM CSS](https://en.bem.info/methodology/css/) ([Harry Roberts style](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/))
  - [BEM Platform](https://en.bem.info/platform/)
  - BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
 - [CSS Modules](https://github.com/css-modules/css-modules)
