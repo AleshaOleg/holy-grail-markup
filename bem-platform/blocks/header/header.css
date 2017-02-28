@@ -9,6 +9,9 @@
 
   margin: 0;
   padding-left: 40px;
+
+  font-size: 23.4px;
+  letter-spacing: 1px;
 }
 
 .header__search {

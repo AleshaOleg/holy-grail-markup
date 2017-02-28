@@ -1,6 +1,21 @@
-.page__inner {
-    width: 700px;
-    margin: auto;
+html {
+  height: 100%;
+}
 
-    background: #fff;
+.page {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: #eee;
+
+  font: 13px Tahoma, Sans-Serif;
+}
+
+.page__inner {
+  width: 700px;
+  margin: auto;
+  min-height: 100%;
+
+  background: #fff;
 }

@@ -1,6 +1,4 @@
 .heading {
-    font-weight: normal;
-
     margin: 0 0 16px 0;
 
     &_level {
@@ -23,7 +21,6 @@
             background: #dde6ff;
 
             font-size: 13px;
-            font-weight: bold;
         }
     }
 
