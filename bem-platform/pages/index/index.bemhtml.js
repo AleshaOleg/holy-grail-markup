@@ -1,10 +1,4 @@
-var BEMHTML;
-
-(function(global) {
-    function buildBemXjst(__bem_xjst_libs__) {
-        var exports = {};
-
-        /// -------------------------------------
+/// -------------------------------------
 /// --------- BEM-XJST Runtime Start ----
 /// -------------------------------------
 var BEMHTML = function(module, exports) {
@@ -2217,7 +2211,6 @@ var api = new BEMHTML({"elemJsInstances":true});
 /// ------ BEM-XJST User-code Start -----
 /// -------------------------------------
 api.compile(function(match, wrap, block, elem, mode, mod, elemMod, def, tag, attrs, cls, js, bem, mix, content, replace, extend, oninit, xjstOptions, appendContent, prependContent, local, applyCtx, applyNext, apply) {
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
 block('page')(
 
     mode('doctype')(function() {
@@ -2291,8 +2284,6 @@ block('page')(
 
 );
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/blocks/page/page.bemhtml.js */
 block('page').content()(function() {
     return {
         elem: 'inner',
@@ -2300,8 +2291,15 @@ block('page').content()(function() {
     };
 });
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/blocks/page/page.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-core/common.blocks/ua/ua.bemhtml.js */
+block('page').elem('css')(
+    bem()(false),
+    tag()('style'),
+    match(function() { return this.ctx.url; })(
+        tag()('link'),
+        attrs()(function() { return { rel : 'stylesheet', href : this.ctx.url }; })
+    )
+);
+
 block('ua')(
     tag()('script'),
     bem()(false),
@@ -2312,19 +2310,6 @@ block('ua')(
     ])
 );
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-core/common.blocks/ua/ua.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-core/common.blocks/page/__css/page__css.bemhtml.js */
-block('page').elem('css')(
-    bem()(false),
-    tag()('style'),
-    match(function() { return this.ctx.url; })(
-        tag()('link'),
-        attrs()(function() { return { rel : 'stylesheet', href : this.ctx.url }; })
-    )
-);
-
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-core/common.blocks/page/__css/page__css.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
 block('page').elem('js')(
     bem()(false),
     tag()('script'),
@@ -2340,21 +2325,15 @@ block('page').elem('js')(
     })
 );
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/blocks/heading/heading.bemhtml.js */
 block('heading').tag()(function() {
     return 'h' + (this.mods.level || 1);
 });
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/blocks/heading/heading.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/blocks/form/form.bemhtml.js */
 block('form')(
     tag()('form'),
     elem('label').tag()('label')
 );
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/blocks/form/form.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-components/common.blocks/button/button.bemhtml.js */
 block('button')(
     def()(function() {
         var tag = apply('tag'),
@@ -2419,29 +2398,19 @@ block('button')(
     )
 );
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-components/common.blocks/button/button.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-components/common.blocks/button/_focused/button_focused.bemhtml.js */
 block('button').mod('focused', true).js()(function() {
     return this.extend(applyNext(), { lazyInit : false });
 });
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-components/common.blocks/button/_focused/button_focused.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-components/common.blocks/button/__text/button__text.bemhtml.js */
 block('button').elem('text').tag()('span');
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-components/common.blocks/button/__text/button__text.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/blocks/main/main.bemhtml.js */
 block('main').mix()('clearfix');
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/blocks/main/main.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/blocks/nav/nav.bemhtml.js */
 block('nav')(
     tag()('ul'),
     elem('item').tag()('li')
 );
 
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/blocks/nav/nav.bemhtml.js */
-/* begin: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-components/common.blocks/link/link.bemhtml.js */
 block('link')(
     def()(function() {
         var ctx = this.ctx;
@@ -2486,63 +2455,9 @@ block('link')(
             return this.extend(applyNext(), { url : this.ctx.url });
         })
 );
-
-/* end: /Users/tadatuta/projects/bem/holy-grail-markup/bem-platform/node_modules/bem-components/common.blocks/link/link.bemhtml.js */
-oninit(function(exports, context) {
-    var BEMContext = exports.BEMContext || context.BEMContext;
-    // Provides third-party libraries from different modular systems
-    BEMContext.prototype.require = function(lib) {
-       return __bem_xjst_libs__[lib];
-    };
-});;
+;
 });
 api.exportApply(exports);
 /// -------------------------------------
 /// ------ BEM-XJST User-code End -------
 /// -------------------------------------
-
-
-        return exports;
-    };
-
-    
-
-    var defineAsGlobal = true;
-
-    // Provide with CommonJS
-    if (typeof module === 'object' && typeof module.exports === 'object') {
-        exports['BEMHTML'] = buildBemXjst({
-    
-}
-);
-        defineAsGlobal = false;
-    }
-
-    // Provide to YModules
-    if (typeof modules === 'object') {
-        modules.define(
-            'BEMHTML',
-            [],
-            function(
-                provide
-                
-                ) {
-                    provide(buildBemXjst({
-    
-}
-));
-                }
-            );
-
-        defineAsGlobal = false;
-    }
-
-    // Provide to global scope
-    if (defineAsGlobal) {
-        BEMHTML = buildBemXjst({
-    
-}
-);
-        global['BEMHTML'] = BEMHTML;
-    }
-})(typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : this);
