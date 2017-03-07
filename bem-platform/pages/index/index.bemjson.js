@@ -8,7 +8,6 @@ module.exports = {
         { elem: 'css', url: 'index.min.css' }
     ],
     scripts: [{ elem: 'js', url: 'index.min.js' }],
-    mods: { theme: 'islands' },
     content: [
         {
             block: 'header',
@@ -32,10 +31,13 @@ module.exports = {
                             content: [
                                 'Type to search: ',
                                 {
-                                    block: 'input'
+                                    block: 'search',
+                                    elem: 'field',
+                                    tag: 'input'
                                 }
                             ]
                         },
+                        ' ',
                         {
                             block: 'button',
                             mods: { type: 'submit' },
@@ -129,28 +131,28 @@ module.exports = {
                                 {
                                     tag: 'p',
                                     content: [
-                                        'Lorem ipsum dolor sit amet,',
-                                        'consectetur adipiscing elit. Sed erat diam, posuere rhoncus',
-                                        'justo tempus, ornare vehicula lorem. Donec egestas et nisl',
-                                        'non dapibus. Morbi congue, purus ac lobortis feugiat, nunc',
-                                        'nulla facilisis lacus, ac laoreet urna dui a lorem. Quisque',
+                                        'Lorem ipsum dolor sit amet, ',
+                                        'consectetur adipiscing elit. Sed erat diam, posuere rhoncus ',
+                                        'justo tempus, ornare vehicula lorem. Donec egestas et nisl ',
+                                        'non dapibus. Morbi congue, purus ac lobortis feugiat, nunc ',
+                                        'nulla facilisis lacus, ac laoreet urna dui a lorem. Quisque ',
                                         'ligula nisi, tristique in ligula vitae, dapibus tempus lectus.'
                                     ]
                                 },
                                 {
                                     tag: 'p',
                                     content: [
-                                        'Cras eget ipsum mattis, pharetra',
+                                        'Cras eget ipsum mattis, pharetra ',
                                         'nulla vitae, laoreet dui.'
                                     ]
                                 },
                                 {
                                     tag: 'p',
                                     content: [
-                                        'Duis in erat a lectus consequat',
-                                        'auctor quis vel ligula. Quisque rhoncus sapien sit amet augue',
-                                        'mollis convallis. Curabitur pharetra nunc a massa dictum, eu',
-                                        'iaculis dolor egestas. Suspendisse potenti. Nam id lorem risus.',
+                                        'Duis in erat a lectus consequat ',
+                                        'auctor quis vel ligula. Quisque rhoncus sapien sit amet augue ',
+                                        'mollis convallis. Curabitur pharetra nunc a massa dictum, eu ',
+                                        'iaculis dolor egestas. Suspendisse potenti. Nam id lorem risus. ',
                                         'Suspendisse potenti.'
                                     ]
                                 }

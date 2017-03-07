@@ -1,3 +1,9 @@
 .search {
     font-size: 10.4px;
 }
+
+.search__field {
+    display: block;
+    width: 10em;
+    font-size: 9px;
+}
