@@ -6,7 +6,7 @@ module.exports = function(grunt) {
           'atomic/style.css',
           'bem-css/style.css',
           'bem-flexboxgrid/style.css',
-          'bem-flexboxgrid/style_clear.css',
+          'bem-platform/pages/index/index.css',
           'css-modules/build/style.css',
           'oocss/style.css',
           'organic/style.css',
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
           'smacss/modules.css',
           'smacss/states.css',
           'smacss/themes.css'
-        ],
+        ]
       }
     }
   });
@@ -24,4 +24,4 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-css-count');
    
   grunt.registerTask('default', ['csscount']);
-}
+};
