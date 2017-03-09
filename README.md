@@ -44,7 +44,7 @@ The code is available under the [CC BY 4.0](https://creativecommons.org/licenses
  - [BEM Platform](https://en.bem.info/platform/)
  - BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
 - [CSS Modules](https://github.com/css-modules/css-modules)
-- waithing for React css-in-js
+- css-in-js (React), and ITCSS will be added soon!
 
 ## Statistics
 You can see statistics for each of example [here](https://github.com/AleshaOleg/holy-grail-markup/blob/master/STATISTICS.md).
