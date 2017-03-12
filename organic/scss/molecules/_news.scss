@@ -1,5 +1,7 @@
 @mixin news-title {
   .news-title {
+    @include bg-color($color: #DDE6FF);
+    @include color($color: #293499);
     @include atoms((
       font-size-100-per
       bold
@@ -9,8 +11,6 @@
     )) {
       text-transform: uppercase;
     };
-    @include color($color: #293499);
-    @include bg-color($color: #DDE6FF);
   }
 }
 
@@ -26,6 +26,7 @@
 
 @mixin news-date {
   .news-date {
+    @include color($color: #293499);
     @include atoms((
       font-size-100-per
       bold
@@ -33,16 +34,15 @@
       margin-0
       margin-right-5
     ));
-    @include color($color: #293499);
   }
 }
 
 @mixin news-text {
   .news-text {
+    @include color($color: #293499);
     @include atoms((
       inline
     ));
-    @include color($color: #293499);
     p:last-of-type {
       @include atoms((
         inline
@@ -53,9 +53,9 @@
 
 @mixin news-link {
   .news-link {
+    @include color($color: #D00);
     @include atoms((
       padding-right-13
     ));
-    @include color($color: #D00);
   }
 }
