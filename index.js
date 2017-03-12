@@ -15,6 +15,8 @@ comb.processPath('./organic');
 comb.processPath('./raw');
 comb.processPath('./smacss');
 
+console.log('csscomb finished work successfully');
+
 
 fs.readFile('./atomic/style.css', 'utf8', function(err, data) {
   specificityGraph('./atomic/specificity-graph', data, function(directory) {
