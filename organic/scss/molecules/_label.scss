@@ -9,11 +9,11 @@
 
 @mixin label-field {
   .label-field {
-    @include width($value: 10em);
     @include atoms((
       font-size-9-px
     )) {
       display: block;
     };
+    @include width($value: 10em);
   };
 }
