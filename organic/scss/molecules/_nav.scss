@@ -20,8 +20,6 @@
 
 @mixin nav-link {
   .nav-link {
-    @include border($top: 1px solid #FFF, $right: 0, $bottom: 1px solid #FFF, $left: 0);
-    @include bg-color($color: #DDE6FF);
     @include atoms((
       block
       black
@@ -31,17 +29,19 @@
       margin: 5px 0;
       padding: 2px 5px;
     };
+    @include bg-color($color: #DDE6FF);
+    @include border($top: 1px solid #FFF, $right: 0, $bottom: 1px solid #FFF, $left: 0);
     &-active {
-      @include bg-color($color: #293499);
       @include atoms((
         white
       ));
+      @include bg-color($color: #293499);
     }
     &:hover {
-      @include bg-color($color: #D00);
       @include atoms((
         white
       ));
+      @include bg-color($color: #D00);
     }
   }
 }

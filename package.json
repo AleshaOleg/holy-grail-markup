@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "csscomb": "node index.js"
+    "build": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,14 @@
   },
   "homepage": "https://github.com/AleshaOleg/holy-grail-markup#readme",
   "devDependencies": {
+    "concat-files": "^0.1.1",
     "grunt": "^1.0.1",
-    "grunt-css-count": "^0.3.1"
-  }
+    "grunt-css-count": "^0.3.1",
+    "pre-commit": "^1.2.2",
+    "specificity-graph": "^0.1.7"
+  },
+  "precommit.silent": true,
+  "pre-commit": [
+    "build"
+  ]
 }

@@ -1,0 +1,166 @@
+<!;DOCTYPE; html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' >
+
+    <title>Specificity Graph - Example</title>
+
+    <style>
+      * {
+        padding: 0; margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 100%;
+        font-family: 'Helvetica', sans-serif;
+        padding-top: 2em;
+        padding-bottom: 1em;
+      }
+      small {
+        font-size: 0.8em;
+      }
+      .abs-top-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .center-wrapper {
+        text-align: center;
+      }
+      .main-header {
+        padding: 0 0.5em;
+      }
+        .main-title {
+          font-family: 'Gill sans', sans-serif;
+          margin-bottom: 4px;
+        }
+        .main-info {
+          color: #606060;
+        }
+        .main-header-link {
+          text-decoration: none;
+          color: #999;
+        }
+
+      .svg-container {
+        margin-bottom: 1em;
+      }
+      @media(min-width: 1000px){
+        .svg-container {
+          width: 1000px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 2em;
+        }
+      }
+      .padding-height {
+        width: 100%;
+        height: 0;
+        padding-top: 40%;
+        position: relative;
+      }
+
+      .vis {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        font-family: sans-serif;
+        font-size: 1.6em;
+      }
+      @media(min-width: 500px){
+        .vis {
+          font-size: 1.3em;
+        }
+      }
+      @media(min-width: 700px){
+        .vis {
+          font-size: 0.9em;
+        }
+      }
+        .vis path {
+          fill: none;
+          stroke: steelblue;
+          stroke-width: 4px;
+        }
+
+        .vis .axis {
+          opacity: 0.6;
+        }
+          .vis .axis .tick {
+            display: none;
+          }
+          .vis .axis--show-ticks .tick {
+            display: block;
+          }
+
+        .vis .domain-label {
+          font-size: 0.9em;
+          fill: steelblue;
+        }
+
+
+        .vis .overlay {
+          fill: none;
+          pointer-events: all;
+        }
+        .vis .focus {
+          position: relative;
+        }
+          .vis .focus-text-background {
+            fill: #333;
+          }
+            .vis .focus-text {
+              font-size: 0.9em;
+              fill: #eee;
+            }
+
+          .vis .focus circle {
+            fill: none;
+            stroke-width: 2.5px;
+            stroke: #0c0;
+          }
+
+        @media(min-width: 600px){
+          .mobile-focus-controls {
+            display: none;
+          }
+        }
+
+        button {
+          display: inline-block;
+          width: 50%;
+          text-align: center;
+          background: #e0e0e0;
+          border: 0;
+          border-right: 1px solid white;
+          padding: 1em 0;
+          margin-bottom: 1em;
+        }
+    </style>
+  </head>
+  <body>
+    <header class='main-header center-wrapper'>
+      <h1 class='main-title'>CSS Specificity Graph</h1>
+      <p class="main-info">Spikes are bad, and the general trend should be towards higher specificity later in the stylesheet. <small><a class='main-header-link' href='http://csswizardry.com/2014/10/the-specificity-graph/'/>More info</a></small></p>
+    </header>
+
+    <div class='svg-container'>
+      <div class='padding-height'>
+        <svg class='vis js-graph' viewBox='0 0 1000 400'>
+        </svg>
+      </div>
+    </div>
+
+    <div class='mobile-focus-controls'>
+      <button type="button" class="js-prev">Previous</button><button type="button" class="js-next">Next</button>
+    </div>
+
+    <script src='specificity-graph-standalone.js'></script>
+    <script>var embeddedJsonData = [{"selectorIndex":0,"line":1,"specificity":1,"selectors":"html"},{"selectorIndex":1,"line":5,"specificity":1,"selectors":"body"},{"selectorIndex":2,"line":13,"specificity":10,"selectors":".wrapper__27cZE"},{"selectorIndex":3,"line":21,"specificity":10,"selectors":".root__35MYT"},{"selectorIndex":4,"line":26,"specificity":10,"selectors":".title__2TVbb"},{"selectorIndex":5,"line":35,"specificity":10,"selectors":".search__zpMpE"},{"selectorIndex":6,"line":40,"specificity":10,"selectors":".label__3rwWT"},{"selectorIndex":7,"line":45,"specificity":10,"selectors":".field__1htn2"},{"selectorIndex":8,"line":51,"specificity":10,"selectors":".button__1Nt1V"},{"selectorIndex":9,"line":57,"specificity":10,"selectors":".main__1ySw1"},{"selectorIndex":10,"line":63,"specificity":10,"selectors":".nav__1T5wH"},{"selectorIndex":11,"line":68,"specificity":10,"selectors":".list__9uEF0"},{"selectorIndex":12,"line":74,"specificity":10,"selectors":".link__3oare"},{"selectorIndex":13,"line":87,"specificity":20,"selectors":".link__3oare:hover"},{"selectorIndex":14,"line":92,"specificity":10,"selectors":".linkActive__2wMx1"},{"selectorIndex":15,"line":97,"specificity":10,"selectors":".linkSeparate__2VooR"},{"selectorIndex":16,"line":101,"specificity":10,"selectors":".content__cn9jY"},{"selectorIndex":17,"line":106,"specificity":10,"selectors":".title__RNXoc"},{"selectorIndex":18,"line":114,"specificity":10,"selectors":".article__26caC"},{"selectorIndex":19,"line":118,"specificity":10,"selectors":".image__3Db0t"},{"selectorIndex":20,"line":125,"specificity":10,"selectors":".news__2Tn9S"},{"selectorIndex":21,"line":130,"specificity":10,"selectors":".title__myeSf"},{"selectorIndex":22,"line":140,"specificity":10,"selectors":".article__1CapX"},{"selectorIndex":23,"line":145,"specificity":10,"selectors":".date__25CE2"},{"selectorIndex":24,"line":153,"specificity":10,"selectors":".text__35dVP"},{"selectorIndex":25,"line":158,"specificity":21,"selectors":".text__35dVP p:last-of-type"},{"selectorIndex":26,"line":162,"specificity":10,"selectors":".link__1V2Ln"},{"selectorIndex":27,"line":167,"specificity":10,"selectors":".footer__1KzCG"},{"selectorIndex":28,"line":176,"specificity":10,"selectors":".text__iv5CJ"},{"selectorIndex":29,"line":182,"specificity":10,"selectors":".link__1QgRB"}];</script>
+    <script src='example.js'></script>
+  </body>
+</html>

@@ -1,9 +1,9 @@
 .wrapper {
-  @include bg-color($color: #FFF);
-  @include width($value: 700px);
   @include atoms((
     margin-centered
   )) {
     min-height: 100%;
   };
+  @include width($value: 700px);
+  @include bg-color($color: #FFF);
 }

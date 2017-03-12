@@ -1,0 +1,166 @@
+<!;DOCTYPE; html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' >
+
+    <title>Specificity Graph - Example</title>
+
+    <style>
+      * {
+        padding: 0; margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 100%;
+        font-family: 'Helvetica', sans-serif;
+        padding-top: 2em;
+        padding-bottom: 1em;
+      }
+      small {
+        font-size: 0.8em;
+      }
+      .abs-top-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .center-wrapper {
+        text-align: center;
+      }
+      .main-header {
+        padding: 0 0.5em;
+      }
+        .main-title {
+          font-family: 'Gill sans', sans-serif;
+          margin-bottom: 4px;
+        }
+        .main-info {
+          color: #606060;
+        }
+        .main-header-link {
+          text-decoration: none;
+          color: #999;
+        }
+
+      .svg-container {
+        margin-bottom: 1em;
+      }
+      @media(min-width: 1000px){
+        .svg-container {
+          width: 1000px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 2em;
+        }
+      }
+      .padding-height {
+        width: 100%;
+        height: 0;
+        padding-top: 40%;
+        position: relative;
+      }
+
+      .vis {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        font-family: sans-serif;
+        font-size: 1.6em;
+      }
+      @media(min-width: 500px){
+        .vis {
+          font-size: 1.3em;
+        }
+      }
+      @media(min-width: 700px){
+        .vis {
+          font-size: 0.9em;
+        }
+      }
+        .vis path {
+          fill: none;
+          stroke: steelblue;
+          stroke-width: 4px;
+        }
+
+        .vis .axis {
+          opacity: 0.6;
+        }
+          .vis .axis .tick {
+            display: none;
+          }
+          .vis .axis--show-ticks .tick {
+            display: block;
+          }
+
+        .vis .domain-label {
+          font-size: 0.9em;
+          fill: steelblue;
+        }
+
+
+        .vis .overlay {
+          fill: none;
+          pointer-events: all;
+        }
+        .vis .focus {
+          position: relative;
+        }
+          .vis .focus-text-background {
+            fill: #333;
+          }
+            .vis .focus-text {
+              font-size: 0.9em;
+              fill: #eee;
+            }
+
+          .vis .focus circle {
+            fill: none;
+            stroke-width: 2.5px;
+            stroke: #0c0;
+          }
+
+        @media(min-width: 600px){
+          .mobile-focus-controls {
+            display: none;
+          }
+        }
+
+        button {
+          display: inline-block;
+          width: 50%;
+          text-align: center;
+          background: #e0e0e0;
+          border: 0;
+          border-right: 1px solid white;
+          padding: 1em 0;
+          margin-bottom: 1em;
+        }
+    </style>
+  </head>
+  <body>
+    <header class='main-header center-wrapper'>
+      <h1 class='main-title'>CSS Specificity Graph</h1>
+      <p class="main-info">Spikes are bad, and the general trend should be towards higher specificity later in the stylesheet. <small><a class='main-header-link' href='http://csswizardry.com/2014/10/the-specificity-graph/'/>More info</a></small></p>
+    </header>
+
+    <div class='svg-container'>
+      <div class='padding-height'>
+        <svg class='vis js-graph' viewBox='0 0 1000 400'>
+        </svg>
+      </div>
+    </div>
+
+    <div class='mobile-focus-controls'>
+      <button type="button" class="js-prev">Previous</button><button type="button" class="js-next">Next</button>
+    </div>
+
+    <script src='specificity-graph-standalone.js'></script>
+    <script>var embeddedJsonData = [{"selectorIndex":0,"line":1,"specificity":10,"selectors":".col"},{"selectorIndex":1,"line":1,"specificity":10,"selectors":".header"},{"selectorIndex":2,"line":1,"specificity":10,"selectors":".header__title"},{"selectorIndex":3,"line":1,"specificity":10,"selectors":".header__search"},{"selectorIndex":4,"line":1,"specificity":10,"selectors":".main"},{"selectorIndex":5,"line":1,"specificity":10,"selectors":".nav"},{"selectorIndex":6,"line":1,"specificity":10,"selectors":".content"},{"selectorIndex":7,"line":1,"specificity":10,"selectors":".news"},{"selectorIndex":8,"line":1,"specificity":10,"selectors":".footer"},{"selectorIndex":9,"line":8,"specificity":10,"selectors":".col--no-gutters"},{"selectorIndex":10,"line":12,"specificity":10,"selectors":".grid"},{"selectorIndex":11,"line":17,"specificity":10,"selectors":".grid--no-gutters"},{"selectorIndex":12,"line":21,"specificity":10,"selectors":".grid--container"},{"selectorIndex":13,"line":27,"specificity":10,"selectors":".row"},{"selectorIndex":14,"line":38,"specificity":10,"selectors":".row--no-gutters"},{"selectorIndex":15,"line":42,"specificity":20,"selectors":".row:last-child"},{"selectorIndex":16,"line":46,"specificity":10,"selectors":".text--right"},{"selectorIndex":17,"line":50,"specificity":10,"selectors":".text--center"},{"selectorIndex":18,"line":54,"specificity":10,"selectors":".text--left"},{"selectorIndex":19,"line":58,"specificity":10,"selectors":".text--xs-right"},{"selectorIndex":20,"line":62,"specificity":10,"selectors":".text--xs-left"},{"selectorIndex":21,"line":66,"specificity":10,"selectors":".text--xs-center"},{"selectorIndex":22,"line":70,"specificity":10,"selectors":".col--xs-align-top"},{"selectorIndex":23,"line":74,"specificity":10,"selectors":".col--xs-align-center"},{"selectorIndex":24,"line":78,"specificity":10,"selectors":".col--xs-align-bottom"},{"selectorIndex":25,"line":82,"specificity":10,"selectors":".col--xs-first"},{"selectorIndex":26,"line":86,"specificity":10,"selectors":".col--xs-last"},{"selectorIndex":27,"line":90,"specificity":10,"selectors":".col--xs-reset"},{"selectorIndex":28,"line":94,"specificity":10,"selectors":".row--xs-reverse"},{"selectorIndex":29,"line":98,"specificity":10,"selectors":".col--xs-flex"},{"selectorIndex":30,"line":102,"specificity":10,"selectors":".row--xs-top"},{"selectorIndex":31,"line":106,"specificity":10,"selectors":".row--xs-center"},{"selectorIndex":32,"line":110,"specificity":10,"selectors":".row--xs-bottom"},{"selectorIndex":33,"line":114,"specificity":10,"selectors":".col--xs"},{"selectorIndex":34,"line":121,"specificity":10,"selectors":".col--xs-1"},{"selectorIndex":35,"line":126,"specificity":10,"selectors":".col--xs-2"},{"selectorIndex":36,"line":131,"specificity":10,"selectors":".col--xs-3"},{"selectorIndex":37,"line":136,"specificity":10,"selectors":".col--xs-4"},{"selectorIndex":38,"line":141,"specificity":10,"selectors":".col--xs-5"},{"selectorIndex":39,"line":146,"specificity":10,"selectors":".col--xs-6"},{"selectorIndex":40,"line":151,"specificity":10,"selectors":".col--xs-7"},{"selectorIndex":41,"line":156,"specificity":10,"selectors":".col--xs-8"},{"selectorIndex":42,"line":161,"specificity":10,"selectors":".col--xs-9"},{"selectorIndex":43,"line":166,"specificity":10,"selectors":".col--xs-10"},{"selectorIndex":44,"line":171,"specificity":10,"selectors":".col--xs-11"},{"selectorIndex":45,"line":176,"specificity":10,"selectors":".col--xs-12"},{"selectorIndex":46,"line":176,"specificity":10,"selectors":".header__title"},{"selectorIndex":47,"line":176,"specificity":10,"selectors":".header__search"},{"selectorIndex":48,"line":176,"specificity":10,"selectors":".nav"},{"selectorIndex":49,"line":176,"specificity":10,"selectors":".content"},{"selectorIndex":50,"line":176,"specificity":10,"selectors":".news"},{"selectorIndex":51,"line":181,"specificity":10,"selectors":".col--xs-offset-1"},{"selectorIndex":52,"line":185,"specificity":10,"selectors":".col--xs-offset-2"},{"selectorIndex":53,"line":189,"specificity":10,"selectors":".col--xs-offset-3"},{"selectorIndex":54,"line":193,"specificity":10,"selectors":".col--xs-offset-4"},{"selectorIndex":55,"line":197,"specificity":10,"selectors":".col--xs-offset-5"},{"selectorIndex":56,"line":201,"specificity":10,"selectors":".col--xs-offset-6"},{"selectorIndex":57,"line":205,"specificity":10,"selectors":".col--xs-offset-7"},{"selectorIndex":58,"line":209,"specificity":10,"selectors":".col--xs-offset-8"},{"selectorIndex":59,"line":213,"specificity":10,"selectors":".col--xs-offset-9"},{"selectorIndex":60,"line":217,"specificity":10,"selectors":".col--xs-offset-10"},{"selectorIndex":61,"line":221,"specificity":10,"selectors":".col--xs-offset-11"},{"selectorIndex":62,"line":225,"specificity":10,"selectors":".col--xs-offset-12"},{"selectorIndex":63,"line":230,"specificity":10,"selectors":".text--sm-right"},{"selectorIndex":64,"line":234,"specificity":10,"selectors":".text--sm-left"},{"selectorIndex":65,"line":238,"specificity":10,"selectors":".text--sm-center"},{"selectorIndex":66,"line":242,"specificity":10,"selectors":".col--sm-align-top"},{"selectorIndex":67,"line":246,"specificity":10,"selectors":".col--sm-align-center"},{"selectorIndex":68,"line":250,"specificity":10,"selectors":".col--sm-align-bottom"},{"selectorIndex":69,"line":254,"specificity":10,"selectors":".col--sm-first"},{"selectorIndex":70,"line":258,"specificity":10,"selectors":".col--sm-last"},{"selectorIndex":71,"line":262,"specificity":10,"selectors":".col--sm-reset"},{"selectorIndex":72,"line":266,"specificity":10,"selectors":".row--sm-reverse"},{"selectorIndex":73,"line":270,"specificity":10,"selectors":".col--sm-flex"},{"selectorIndex":74,"line":274,"specificity":10,"selectors":".row--sm-top"},{"selectorIndex":75,"line":278,"specificity":10,"selectors":".row--sm-center"},{"selectorIndex":76,"line":282,"specificity":10,"selectors":".row--sm-bottom"},{"selectorIndex":77,"line":286,"specificity":10,"selectors":".col--sm"},{"selectorIndex":78,"line":293,"specificity":10,"selectors":".col--sm-1"},{"selectorIndex":79,"line":298,"specificity":10,"selectors":".col--sm-2"},{"selectorIndex":80,"line":303,"specificity":10,"selectors":".col--sm-3"},{"selectorIndex":81,"line":308,"specificity":10,"selectors":".col--sm-4"},{"selectorIndex":82,"line":308,"specificity":10,"selectors":".header__search"},{"selectorIndex":83,"line":313,"specificity":10,"selectors":".col--sm-5"},{"selectorIndex":84,"line":318,"specificity":10,"selectors":".col--sm-6"},{"selectorIndex":85,"line":318,"specificity":10,"selectors":".content"},{"selectorIndex":86,"line":318,"specificity":10,"selectors":".news"},{"selectorIndex":87,"line":323,"specificity":10,"selectors":".col--sm-7"},{"selectorIndex":88,"line":328,"specificity":10,"selectors":".col--sm-8"},{"selectorIndex":89,"line":328,"specificity":10,"selectors":".header__title"},{"selectorIndex":90,"line":333,"specificity":10,"selectors":".col--sm-9"},{"selectorIndex":91,"line":338,"specificity":10,"selectors":".col--sm-10"},{"selectorIndex":92,"line":343,"specificity":10,"selectors":".col--sm-11"},{"selectorIndex":93,"line":348,"specificity":10,"selectors":".col--sm-12"},{"selectorIndex":94,"line":348,"specificity":10,"selectors":".header"},{"selectorIndex":95,"line":348,"specificity":10,"selectors":".main"},{"selectorIndex":96,"line":348,"specificity":10,"selectors":".nav"},{"selectorIndex":97,"line":348,"specificity":10,"selectors":".footer"},{"selectorIndex":98,"line":353,"specificity":10,"selectors":".col--sm-offset-1"},{"selectorIndex":99,"line":357,"specificity":10,"selectors":".col--sm-offset-2"},{"selectorIndex":100,"line":361,"specificity":10,"selectors":".col--sm-offset-3"},{"selectorIndex":101,"line":365,"specificity":10,"selectors":".col--sm-offset-4"},{"selectorIndex":102,"line":369,"specificity":10,"selectors":".col--sm-offset-5"},{"selectorIndex":103,"line":373,"specificity":10,"selectors":".col--sm-offset-6"},{"selectorIndex":104,"line":377,"specificity":10,"selectors":".col--sm-offset-7"},{"selectorIndex":105,"line":381,"specificity":10,"selectors":".col--sm-offset-8"},{"selectorIndex":106,"line":385,"specificity":10,"selectors":".col--sm-offset-9"},{"selectorIndex":107,"line":389,"specificity":10,"selectors":".col--sm-offset-10"},{"selectorIndex":108,"line":393,"specificity":10,"selectors":".col--sm-offset-11"},{"selectorIndex":109,"line":397,"specificity":10,"selectors":".col--sm-offset-12"},{"selectorIndex":110,"line":403,"specificity":10,"selectors":".text--md-right"},{"selectorIndex":111,"line":407,"specificity":10,"selectors":".text--md-left"},{"selectorIndex":112,"line":411,"specificity":10,"selectors":".text--md-center"},{"selectorIndex":113,"line":415,"specificity":10,"selectors":".col--md-align-top"},{"selectorIndex":114,"line":419,"specificity":10,"selectors":".col--md-align-center"},{"selectorIndex":115,"line":423,"specificity":10,"selectors":".col--md-align-bottom"},{"selectorIndex":116,"line":427,"specificity":10,"selectors":".col--md-first"},{"selectorIndex":117,"line":431,"specificity":10,"selectors":".col--md-last"},{"selectorIndex":118,"line":435,"specificity":10,"selectors":".col--md-reset"},{"selectorIndex":119,"line":439,"specificity":10,"selectors":".row--md-reverse"},{"selectorIndex":120,"line":443,"specificity":10,"selectors":".col--md-flex"},{"selectorIndex":121,"line":447,"specificity":10,"selectors":".row--md-top"},{"selectorIndex":122,"line":451,"specificity":10,"selectors":".row--md-center"},{"selectorIndex":123,"line":455,"specificity":10,"selectors":".row--md-bottom"},{"selectorIndex":124,"line":459,"specificity":10,"selectors":".col--md"},{"selectorIndex":125,"line":466,"specificity":10,"selectors":".col--md-1"},{"selectorIndex":126,"line":471,"specificity":10,"selectors":".col--md-2"},{"selectorIndex":127,"line":471,"specificity":10,"selectors":".nav"},{"selectorIndex":128,"line":476,"specificity":10,"selectors":".col--md-3"},{"selectorIndex":129,"line":476,"specificity":10,"selectors":".news"},{"selectorIndex":130,"line":481,"specificity":10,"selectors":".col--md-4"},{"selectorIndex":131,"line":486,"specificity":10,"selectors":".col--md-5"},{"selectorIndex":132,"line":491,"specificity":10,"selectors":".col--md-6"},{"selectorIndex":133,"line":496,"specificity":10,"selectors":".col--md-7"},{"selectorIndex":134,"line":496,"specificity":10,"selectors":".content"},{"selectorIndex":135,"line":501,"specificity":10,"selectors":".col--md-8"},{"selectorIndex":136,"line":506,"specificity":10,"selectors":".col--md-9"},{"selectorIndex":137,"line":511,"specificity":10,"selectors":".col--md-10"},{"selectorIndex":138,"line":516,"specificity":10,"selectors":".col--md-11"},{"selectorIndex":139,"line":521,"specificity":10,"selectors":".col--md-12"},{"selectorIndex":140,"line":526,"specificity":10,"selectors":".col--md-offset-1"},{"selectorIndex":141,"line":530,"specificity":10,"selectors":".col--md-offset-2"},{"selectorIndex":142,"line":534,"specificity":10,"selectors":".col--md-offset-3"},{"selectorIndex":143,"line":538,"specificity":10,"selectors":".col--md-offset-4"},{"selectorIndex":144,"line":542,"specificity":10,"selectors":".col--md-offset-5"},{"selectorIndex":145,"line":546,"specificity":10,"selectors":".col--md-offset-6"},{"selectorIndex":146,"line":550,"specificity":10,"selectors":".col--md-offset-7"},{"selectorIndex":147,"line":554,"specificity":10,"selectors":".col--md-offset-8"},{"selectorIndex":148,"line":558,"specificity":10,"selectors":".col--md-offset-9"},{"selectorIndex":149,"line":562,"specificity":10,"selectors":".col--md-offset-10"},{"selectorIndex":150,"line":566,"specificity":10,"selectors":".col--md-offset-11"},{"selectorIndex":151,"line":570,"specificity":10,"selectors":".col--md-offset-12"},{"selectorIndex":152,"line":576,"specificity":10,"selectors":".text--lg-right"},{"selectorIndex":153,"line":580,"specificity":10,"selectors":".text--lg-left"},{"selectorIndex":154,"line":584,"specificity":10,"selectors":".text--lg-center"},{"selectorIndex":155,"line":588,"specificity":10,"selectors":".col--lg-align-top"},{"selectorIndex":156,"line":592,"specificity":10,"selectors":".col--lg-align-center"},{"selectorIndex":157,"line":596,"specificity":10,"selectors":".col--lg-align-bottom"},{"selectorIndex":158,"line":600,"specificity":10,"selectors":".col--lg-first"},{"selectorIndex":159,"line":604,"specificity":10,"selectors":".col--lg-last"},{"selectorIndex":160,"line":608,"specificity":10,"selectors":".col--lg-reset"},{"selectorIndex":161,"line":612,"specificity":10,"selectors":".row--lg-reverse"},{"selectorIndex":162,"line":616,"specificity":10,"selectors":".col--lg-flex"},{"selectorIndex":163,"line":620,"specificity":10,"selectors":".row--lg-top"},{"selectorIndex":164,"line":624,"specificity":10,"selectors":".row--lg-center"},{"selectorIndex":165,"line":628,"specificity":10,"selectors":".row--lg-bottom"},{"selectorIndex":166,"line":632,"specificity":10,"selectors":".col--lg"},{"selectorIndex":167,"line":639,"specificity":10,"selectors":".col--lg-1"},{"selectorIndex":168,"line":644,"specificity":10,"selectors":".col--lg-2"},{"selectorIndex":169,"line":649,"specificity":10,"selectors":".col--lg-3"},{"selectorIndex":170,"line":654,"specificity":10,"selectors":".col--lg-4"},{"selectorIndex":171,"line":659,"specificity":10,"selectors":".col--lg-5"},{"selectorIndex":172,"line":664,"specificity":10,"selectors":".col--lg-6"},{"selectorIndex":173,"line":669,"specificity":10,"selectors":".col--lg-7"},{"selectorIndex":174,"line":674,"specificity":10,"selectors":".col--lg-8"},{"selectorIndex":175,"line":679,"specificity":10,"selectors":".col--lg-9"},{"selectorIndex":176,"line":684,"specificity":10,"selectors":".col--lg-10"},{"selectorIndex":177,"line":689,"specificity":10,"selectors":".col--lg-11"},{"selectorIndex":178,"line":694,"specificity":10,"selectors":".col--lg-12"},{"selectorIndex":179,"line":699,"specificity":10,"selectors":".col--lg-offset-1"},{"selectorIndex":180,"line":703,"specificity":10,"selectors":".col--lg-offset-2"},{"selectorIndex":181,"line":707,"specificity":10,"selectors":".col--lg-offset-3"},{"selectorIndex":182,"line":711,"specificity":10,"selectors":".col--lg-offset-4"},{"selectorIndex":183,"line":715,"specificity":10,"selectors":".col--lg-offset-5"},{"selectorIndex":184,"line":719,"specificity":10,"selectors":".col--lg-offset-6"},{"selectorIndex":185,"line":723,"specificity":10,"selectors":".col--lg-offset-7"},{"selectorIndex":186,"line":727,"specificity":10,"selectors":".col--lg-offset-8"},{"selectorIndex":187,"line":731,"specificity":10,"selectors":".col--lg-offset-9"},{"selectorIndex":188,"line":735,"specificity":10,"selectors":".col--lg-offset-10"},{"selectorIndex":189,"line":739,"specificity":10,"selectors":".col--lg-offset-11"},{"selectorIndex":190,"line":743,"specificity":10,"selectors":".col--lg-offset-12"},{"selectorIndex":191,"line":749,"specificity":10,"selectors":".text--xl-right"},{"selectorIndex":192,"line":753,"specificity":10,"selectors":".text--xl-left"},{"selectorIndex":193,"line":757,"specificity":10,"selectors":".text--xl-center"},{"selectorIndex":194,"line":761,"specificity":10,"selectors":".col--xl-align-top"},{"selectorIndex":195,"line":765,"specificity":10,"selectors":".col--xl-align-center"},{"selectorIndex":196,"line":769,"specificity":10,"selectors":".col--xl-align-bottom"},{"selectorIndex":197,"line":773,"specificity":10,"selectors":".col--xl-first"},{"selectorIndex":198,"line":777,"specificity":10,"selectors":".col--xl-last"},{"selectorIndex":199,"line":781,"specificity":10,"selectors":".col--xl-reset"},{"selectorIndex":200,"line":785,"specificity":10,"selectors":".row--xl-reverse"},{"selectorIndex":201,"line":789,"specificity":10,"selectors":".col--xl-flex"},{"selectorIndex":202,"line":793,"specificity":10,"selectors":".row--xl-top"},{"selectorIndex":203,"line":797,"specificity":10,"selectors":".row--xl-center"},{"selectorIndex":204,"line":801,"specificity":10,"selectors":".row--xl-bottom"},{"selectorIndex":205,"line":805,"specificity":10,"selectors":".col--xl"},{"selectorIndex":206,"line":812,"specificity":10,"selectors":".col--xl-1"},{"selectorIndex":207,"line":817,"specificity":10,"selectors":".col--xl-2"},{"selectorIndex":208,"line":822,"specificity":10,"selectors":".col--xl-3"},{"selectorIndex":209,"line":827,"specificity":10,"selectors":".col--xl-4"},{"selectorIndex":210,"line":832,"specificity":10,"selectors":".col--xl-5"},{"selectorIndex":211,"line":837,"specificity":10,"selectors":".col--xl-6"},{"selectorIndex":212,"line":842,"specificity":10,"selectors":".col--xl-7"},{"selectorIndex":213,"line":847,"specificity":10,"selectors":".col--xl-8"},{"selectorIndex":214,"line":852,"specificity":10,"selectors":".col--xl-9"},{"selectorIndex":215,"line":857,"specificity":10,"selectors":".col--xl-10"},{"selectorIndex":216,"line":862,"specificity":10,"selectors":".col--xl-11"},{"selectorIndex":217,"line":867,"specificity":10,"selectors":".col--xl-12"},{"selectorIndex":218,"line":867,"specificity":10,"selectors":".header"},{"selectorIndex":219,"line":872,"specificity":10,"selectors":".col--xl-offset-1"},{"selectorIndex":220,"line":876,"specificity":10,"selectors":".col--xl-offset-2"},{"selectorIndex":221,"line":880,"specificity":10,"selectors":".col--xl-offset-3"},{"selectorIndex":222,"line":884,"specificity":10,"selectors":".col--xl-offset-4"},{"selectorIndex":223,"line":888,"specificity":10,"selectors":".col--xl-offset-5"},{"selectorIndex":224,"line":892,"specificity":10,"selectors":".col--xl-offset-6"},{"selectorIndex":225,"line":896,"specificity":10,"selectors":".col--xl-offset-7"},{"selectorIndex":226,"line":900,"specificity":10,"selectors":".col--xl-offset-8"},{"selectorIndex":227,"line":904,"specificity":10,"selectors":".col--xl-offset-9"},{"selectorIndex":228,"line":908,"specificity":10,"selectors":".col--xl-offset-10"},{"selectorIndex":229,"line":912,"specificity":10,"selectors":".col--xl-offset-11"},{"selectorIndex":230,"line":916,"specificity":10,"selectors":".col--xl-offset-12"},{"selectorIndex":231,"line":921,"specificity":1,"selectors":"body"},{"selectorIndex":232,"line":929,"specificity":10,"selectors":".grid--general-width"},{"selectorIndex":233,"line":933,"specificity":10,"selectors":".grid--sticky-footer"},{"selectorIndex":234,"line":941,"specificity":20,"selectors":".grid--sticky-footer:last-child"},{"selectorIndex":235,"line":946,"specificity":20,"selectors":".grid--sticky-footer > .row"},{"selectorIndex":236,"line":950,"specificity":30,"selectors":".grid--sticky-footer > .row:nth-last-child(2)"},{"selectorIndex":237,"line":955,"specificity":10,"selectors":".row--no-indent"},{"selectorIndex":238,"line":960,"specificity":10,"selectors":".col--no-indent"},{"selectorIndex":239,"line":960,"specificity":10,"selectors":".header"},{"selectorIndex":240,"line":960,"specificity":10,"selectors":".header__title"},{"selectorIndex":241,"line":960,"specificity":10,"selectors":".header__search"},{"selectorIndex":242,"line":960,"specificity":10,"selectors":".main"},{"selectorIndex":243,"line":960,"specificity":10,"selectors":".nav"},{"selectorIndex":244,"line":960,"specificity":10,"selectors":".content"},{"selectorIndex":245,"line":960,"specificity":10,"selectors":".news"},{"selectorIndex":246,"line":960,"specificity":10,"selectors":".footer"},{"selectorIndex":247,"line":964,"specificity":10,"selectors":".h2"},{"selectorIndex":248,"line":969,"specificity":10,"selectors":".h3"},{"selectorIndex":249,"line":977,"specificity":10,"selectors":".header"},{"selectorIndex":250,"line":982,"specificity":10,"selectors":".header__title"},{"selectorIndex":251,"line":989,"specificity":10,"selectors":".header__title"},{"selectorIndex":252,"line":994,"specificity":10,"selectors":".header__search"},{"selectorIndex":253,"line":999,"specificity":10,"selectors":".header__label"},{"selectorIndex":254,"line":1004,"specificity":10,"selectors":".title"},{"selectorIndex":255,"line":1010,"specificity":10,"selectors":".search"},{"selectorIndex":256,"line":1014,"specificity":10,"selectors":".label"},{"selectorIndex":257,"line":1018,"specificity":10,"selectors":".label__field"},{"selectorIndex":258,"line":1024,"specificity":10,"selectors":".button"},{"selectorIndex":259,"line":1030,"specificity":10,"selectors":".main"},{"selectorIndex":260,"line":1034,"specificity":10,"selectors":".nav"},{"selectorIndex":261,"line":1038,"specificity":10,"selectors":".nav__list"},{"selectorIndex":262,"line":1044,"specificity":10,"selectors":".nav__item--separate"},{"selectorIndex":263,"line":1048,"specificity":10,"selectors":".nav__link"},{"selectorIndex":264,"line":1061,"specificity":20,"selectors":".nav__link:hover"},{"selectorIndex":265,"line":1066,"specificity":10,"selectors":".nav__link--active"},{"selectorIndex":266,"line":1071,"specificity":10,"selectors":".content"},{"selectorIndex":267,"line":1075,"specificity":10,"selectors":".content__title"},{"selectorIndex":268,"line":1081,"specificity":10,"selectors":".content__article"},{"selectorIndex":269,"line":1085,"specificity":10,"selectors":".text"},{"selectorIndex":270,"line":1089,"specificity":11,"selectors":".text img"},{"selectorIndex":271,"line":1096,"specificity":11,"selectors":".text p"},{"selectorIndex":272,"line":1100,"specificity":10,"selectors":".news"},{"selectorIndex":273,"line":1104,"specificity":10,"selectors":".news__title"},{"selectorIndex":274,"line":1109,"specificity":10,"selectors":".news__article"},{"selectorIndex":275,"line":1114,"specificity":10,"selectors":".news__date"},{"selectorIndex":276,"line":1122,"specificity":10,"selectors":".news__text"},{"selectorIndex":277,"line":1127,"specificity":21,"selectors":".news__text p:last-of-type"},{"selectorIndex":278,"line":1131,"specificity":10,"selectors":".news__link"},{"selectorIndex":279,"line":1136,"specificity":10,"selectors":".footer"},{"selectorIndex":280,"line":1142,"specificity":10,"selectors":".footer__text"},{"selectorIndex":281,"line":1148,"specificity":10,"selectors":".footer__link"}];</script>
+    <script src='example.js'></script>
+  </body>
+</html>

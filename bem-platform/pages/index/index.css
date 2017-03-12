@@ -7,74 +7,81 @@ html {
   margin: 0;
   padding: 0;
 
-  background: #eee;
+  background: #EEE;
 
   font: 13px Tahoma, Sans-Serif;
 }
 
 .page__inner {
   width: 700px;
-  margin: auto;
   min-height: 100%;
+  margin: auto;
 
-  background: #fff;
+  background: #FFF;
 }
 
 .heading {
-    margin: 0 0 16px 0;
-
+  margin: 0 0 16px 0;
 }
 
 .heading_level_1 {
-  font-size: 23.4px;
   letter-spacing: 1px;
-  color: #fff;
+
+  color: #FFF;
+
+  font-size: 23.4px;
 }
 
 .heading_level_2 {
   color: #293499;
+
   font-size: 16.9px;
 }
 
 .heading_level_3 {
   text-transform: uppercase;
+
   color: #293499;
-  background: #dde6ff;
+  background: #DDE6FF;
+
   font-size: 13px;
 }
 
 .search {
-    font-size: 10.4px;
+  font-size: 10.4px;
 }
 
 .search__field {
-    display: block;
-    width: 10em;
-    font-size: 9px;
+  display: block;
+
+  width: 10em;
+
+  font-size: 9px;
 }
 
 .button {
-    -ms-touch-action: manipulation;
-        touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
 }
 
 .button {
-    display: inline-block;
-    vertical-align: bottom;
-    font-size: 9px;
+  display: inline-block;
+
+  vertical-align: bottom;
+
+  font-size: 9px;
 }
 
 .main {
-    min-height: 100%;
-    padding-bottom: 42px;
+  min-height: 100%;
+  padding-bottom: 42px;
 }
 
-.clearfix:after
-{
-    display: table;
-    clear: both;
+.clearfix:after {
+  display: table;
+  clear: both;
 
-    content: '';
+  content: '';
 }
 
 .sidebar {
@@ -103,27 +110,27 @@ html {
   text-decoration: none;
 
   color: #000;
-  border: 1px solid #fff;
+  border: 1px solid #FFF;
   border-right: 0;
   border-left: 0;
-  background: #dde6ff;
+  background: #DDE6FF;
 
   font-size: 10.4px;
 }
 
 .nav__link:hover {
-  color: #fff;
-  background: #d00;
+  color: #FFF;
+  background: #D00;
 }
 
 .nav__link_current {
-  color: #fff;
+  color: #FFF;
   background: #293499;
 }
 
 .link {
-    -ms-touch-action: manipulation;
-        touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
 }
 
 .content {
@@ -210,7 +217,7 @@ html {
   width: 700px;
   height: 42px;
 
-  color: #fff;
+  color: #FFF;
   background: #45F;
 }
 
@@ -221,7 +228,7 @@ html {
 }
 
 .footer__link {
-  color: #fff;
+  color: #FFF;
 }
 
 .header {
@@ -236,8 +243,9 @@ html {
   margin: 0;
   padding-left: 40px;
 
-  font-size: 23.4px;
   letter-spacing: 1px;
+
+  font-size: 23.4px;
 }
 
 .header__search {
@@ -246,5 +254,6 @@ html {
 
 .header__label {
   display: inline-block;
-  color: #fff;
+
+  color: #FFF;
 }
