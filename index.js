@@ -24,6 +24,12 @@ fs.readFile('./atomic/style.css', 'utf8', function(err, data) {
   });
 });
 
+fs.readFile('./bem-bootstrap-4/style.css', 'utf8', function(err, data){
+  specificityGraph('./bem-bootstrap-4/specificity-graph', data, function(directory){
+    console.log('specificity-graph files created in ' + directory);
+  });
+});
+
 fs.readFile('./bem-css/style.css', 'utf8', function(err, data){
   specificityGraph('./bem-css/specificity-graph', data, function(directory){
     console.log('specificity-graph files created in ' + directory);
