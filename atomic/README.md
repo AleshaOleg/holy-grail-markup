@@ -5,6 +5,6 @@ This example is already built, but if you want build it by yourself, here is a g
 
 `npm i`
 
-`npm i grunt -g`
+`npm i gulp -g`
 
-`grunt`
+`gulp`
