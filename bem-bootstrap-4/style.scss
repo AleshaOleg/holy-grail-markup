@@ -1,0 +1,218 @@
+$container-max-widths: (
+    sm: 540px,
+    md: 640px,
+    lg: 700px
+);
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+.page {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #EEE;
+  font: 13px Tahoma, Sans-Serif;
+}
+
+.title {
+  letter-spacing: 1px;
+  color: #FFF;
+  font-size: 23.4px;
+  font-weight: bold;
+}
+
+.search {
+  font-size: 10.4px;
+}
+
+.label {
+  color: #FFF;
+  margin: 0; // Reset for bootstrap 4
+  &__field {
+    display: block;
+    width: 10em;
+    font-size: 9px;
+  }
+}
+
+.button {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 9px;
+}
+
+.header {
+  padding: 20px;
+  background: #45F;
+  @include make-row();
+  &__title {
+    @include make-col(6);
+    @media (max-width: 540px) {
+      @include make-col(12);
+    }
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+  }
+  &__search {
+    @include make-col(6);
+    @media (max-width: 540px) {
+      @include make-col(12);
+    }
+    float: right;
+    text-align: right;
+  }
+  &__label {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+.main {
+  @include make-row();
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.nav {
+  @include make-col(2);
+  @media (max-width: 540px) {
+    @include make-col(12);
+  }
+}
+
+.content {
+  @include make-col(7);
+  @media (max-width: 540px) {
+    @include make-col(12);
+  }
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    color: #293499;
+    font-size: 16.9px;
+    font-weight: bold;
+  }
+  &__article {
+    padding: 0 15px;
+  }
+}
+
+.news {
+  @include make-col(3);
+  @media (max-width: 540px) {
+    @include make-col(12);
+  }
+  &__title {
+    margin: 0 0 20px 0;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #293499;
+    background: #DDE6FF;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  &__article {
+    margin: 20px 5px;
+    font-size: 10.4px;
+  }
+  &__date {
+    float: left;
+    margin: 0 5px 0 0;
+    color: #293499;
+    font-size: 10.4px;
+    font-weight: bold;
+  }
+  &__text {
+    display: inline;
+    color: #293499;
+  }
+  &__paragraph {
+    display: inline;
+  }
+  &__link {
+    padding-right: 13px;
+    color: #D00;
+  }
+}
+
+.nav {
+  &__list {
+    width: 100%;
+    margin: 50px 0;
+    padding: 0;
+    list-style: none;
+    @media (max-width: 540px) {
+      @include make-col(12);
+    }
+  }
+  &__link {
+    display: block;
+    margin: 5px 0;
+    padding: 2px 5px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #FFF;
+    border-right: 0;
+    border-left: 0;
+    background: #DDE6FF;
+    font-size: 10.4px;
+    &--active {
+      color: #FFF;
+      background: #293499;
+    }
+    &:hover {
+      color: #FFF;
+      background: #D00;
+    }
+  }
+  &__item {
+    &--separate {
+      margin: 22px 0;
+    }
+  }
+}
+
+.text {
+  &__image {
+    float: left;
+    margin: 0 15px 15px 0;
+    padding: 5px;
+    border: 1px solid #45F;
+  }
+}
+
+.container {
+  align-content: flex-end;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  &:last-child {
+    align-content: flex-end;
+  }
+}
+
+.footer {
+  @include make-row();
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 42px;
+  color: #FFF;
+  background: #45F;
+  &__text {
+    display: block;
+    margin: 5px;
+    font-size: 9.1px;
+  }
+  &__link {
+    color: #FFF;
+    text-decoration: underline;
+    &:hover, &:focus, &:active, &:visited {
+      color: white;
+    }
+  }
+}
