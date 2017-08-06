@@ -39,12 +39,13 @@ The code is available under the [CC BY 4.0](https://creativecommons.org/licenses
 - [OOCSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
 - [SMACSS](https://smacss.com)
 - [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/):
- - [Atomic CSS](http://acss.io)
- - [Organic CSS](http://krasimir.github.io/organic-css/)
-- [BEM](https://en.bem.info/methodology/quick-start/)
- - [BEM CSS](https://en.bem.info/methodology/css/) ([Harry Roberts style](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/))
- - [BEM Platform](https://en.bem.info/platform/)
- - BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
+  * [Atomic CSS](http://acss.io)
+  * [Organic CSS](http://krasimir.github.io/organic-css/)
+- [BEM ](https://en.bem.info/methodology/quick-start/)
+  * [BEM Boottrap-4](https://en.bem.info/methodology/quick-start/)
+  * [BEM CSS](https://en.bem.info/methodology/css/) ([Harry Roberts style](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/))
+  * [BEM Platform](https://en.bem.info/platform/)
+  * BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 - css-in-js (React), and ITCSS will be added soon!
 

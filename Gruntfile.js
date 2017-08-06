@@ -4,6 +4,7 @@ module.exports = function(grunt) {
       dev: {
         src: [
           'atomic/style.css',
+          'bem-bootstrap-4/style.css',
           'bem-css/style.css',
           'bem-flexboxgrid/style.css',
           'bem-platform/pages/index/index.css',

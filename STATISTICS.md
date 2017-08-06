@@ -19,6 +19,7 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 |SMACSS|111|219|330
 |Atomic|219|224|332
 |Organic|108|187|295
+|BEM Bootstrap 4|117|6231|6348
 |BEM CSS|117|244|361
 |BEM Platform|95|250|345
 |BEM Flexboxgrid|117|714|831
@@ -33,6 +34,7 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 |SMACSS|5.88 KB|2.269 KB|8.149 KB
 |Atomic|6.83 KB|12.5 KB|19.33 KB
 |Organic|5.09 KB|3.69 KB|8.78 KB
+|BEM Bootstrap 4|6.28 KB|148 KB|154.28 KB
 |BEM CSS|5.68 KB|2.55 KB|8.23 KB
 |BEM Platform|4.83 KB|2.79 KB|7.62 KB
 |BEM Flexboxgrid|5.87 KB|42.6 KB|48.47 KB
@@ -47,6 +49,7 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 |SMACSS|31|92|31|1.0|2.54
 |Atomic|75|80|72|1.0|1.1
 |Organic|80|94|55|1.5|1.7
+|BEM Bootstrap|2610|3266|1856|1.4|1.8
 |BEM CSS|38|96|38|1.0|2.5
 |BEM Platform|40|103|40|1.0|2.6
 |BEM Flexboxgrid|282|394|249|1.1|1.6
