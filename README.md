@@ -51,3 +51,5 @@ The code is available under the [CC BY 4.0](https://creativecommons.org/licenses
 
 ## Statistics
 You can see statistics for each of example [here](https://github.com/AleshaOleg/holy-grail-markup/blob/master/STATISTICS.md).
+
+Excel document, to view statistics located [there](https://docs.google.com/spreadsheets/d/1LVnJ_GEs51lLxZjBj2SsfLMbTGPqawqzh7POCpaM898/edit?usp=sharing) (Google Sheets).
