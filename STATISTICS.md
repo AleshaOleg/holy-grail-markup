@@ -49,7 +49,7 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 |SMACSS|31|92|31|1.0|2.54
 |Atomic|75|80|72|1.0|1.1
 |Organic|80|94|55|1.5|1.7
-|BEM Bootstrap|2610|3266|1856|1.4|1.8
+|BEM Bootstrap 4|2610|3266|1856|1.4|1.8
 |BEM CSS|38|96|38|1.0|2.5
 |BEM Platform|40|103|40|1.0|2.6
 |BEM Flexboxgrid|282|394|249|1.1|1.6
