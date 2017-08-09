@@ -151,7 +151,6 @@ $container-max-widths: (
     display: block;
     margin: 5px 0;
     padding: 2px 5px;
-    text-decoration: none;
     color: #000;
     border: 1px solid #FFF;
     border-right: 0;
@@ -165,6 +164,7 @@ $container-max-widths: (
     &:hover {
       color: #FFF;
       background: #D00;
+      text-decoration: none;
     }
   }
   &__item {

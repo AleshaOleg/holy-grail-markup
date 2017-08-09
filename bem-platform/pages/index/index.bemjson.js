@@ -80,6 +80,10 @@ module.exports = {
                                 content: 'BEM Flexbox Grid'
                             },
                             {
+                                url: 'https://aleshaoleg.github.io/holy-grail-markup/bem-bootstrap-4/',
+                                content: 'BEM Bootstrap 4'
+                            },
+                            {
                                 url: 'https://aleshaoleg.github.io/holy-grail-markup/bem-platform/',
                                 content: 'BEM Platform',
                                 isCurrent: true

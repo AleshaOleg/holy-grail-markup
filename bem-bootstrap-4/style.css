@@ -6155,7 +6155,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   display: block;
   margin: 5px 0;
   padding: 2px 5px;
-  text-decoration: none;
   color: #000;
   border: 1px solid #FFF;
   border-right: 0;
@@ -6167,7 +6166,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     background: #293499; }
   .nav__link:hover {
     color: #FFF;
-    background: #D00; }
+    background: #D00;
+    text-decoration: none; }
 
 .nav__item--separate {
   margin: 22px 0; }

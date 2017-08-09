@@ -228,6 +228,7 @@ const items = [
   { id: "organic", name: "Organic" },
   { id: "bem-css", name: "BEM CSS" },
   { id: "bem-flexboxgrid", name: "BEM Flexbox Grid" },
+  { id: "bem-bootstrap-4", name: "BEM Bootstrap 4" },
   { id: "bem-platform/pages/index", name: "BEM Platform" },
   { id: "css-modules", name: "CSS-modules" },
   { id: "raw", name: "Raw" }
