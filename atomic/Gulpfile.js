@@ -1,6 +1,5 @@
 var gulp            = require('gulp'),
     acss            = require('gulp-atomizer')
-    sourcemaps      = require('gulp-sourcemaps'),
     cached          = require('gulp-cached'),
     remember        = require('gulp-remember'),
     gulpif          = require('gulp-if'),
@@ -14,12 +13,10 @@ gulp.task('acss', function(filepath) {
     return multipipe (
         gulp.src('*.html'),
         cached('*.html'),
-        gulpif(isDevelopment, sourcemaps.init({loadMaps: true})),
         acss({
           outfile: 'style.css',
           acssConfig: require('./config.js'),
         }),
-        gulpif(isDevelopment, sourcemaps.write()),
         remember('*.html'),
         gulp.dest('./')
     ).on('error', notify.onError(function(err){
