@@ -7,8 +7,6 @@ var gulp            = require('gulp'),
     multipipe       = require('multipipe'),
     notify          = require('gulp-notify');
 
-var isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
-
 gulp.task('acss', function(filepath) {
     return multipipe (
         gulp.src('*.html'),
