@@ -42,7 +42,7 @@ The code is available under the [CC BY 4.0](https://creativecommons.org/licenses
 - [Organic CSS](http://krasimir.github.io/organic-css/), based on [Atomic](http://atomicdesign.bradfrost.com/chapter-2/) concept
 - [BEM ](https://en.bem.info/methodology/quick-start/)
   * [BEM Boottrap-4](https://en.bem.info/methodology/quick-start/)
-  * [BEM CSS](https://en.bem.info/methodology/css/) ([created](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/) by Nicolas Gallagher and [populated](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) by Harry Roberts)
+  * [BEM CSS](https://en.bem.info/methodology/css/) (Nicolas Gallagher's [variation](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/), [populated](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) by Harry Roberts)
   * [BEM Platform](https://en.bem.info/platform/)
   * BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
 - [CSS Modules](https://github.com/css-modules/css-modules)
