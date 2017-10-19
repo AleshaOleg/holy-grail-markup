@@ -38,9 +38,8 @@ The code is available under the [CC BY 4.0](https://creativecommons.org/licenses
 ## Documentation
 - [OOCSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
 - [SMACSS](https://smacss.com)
-- [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/):
-  * [Atomic CSS](http://acss.io)
-  * [Organic CSS](http://krasimir.github.io/organic-css/)
+- [Atomic CSS](http://acss.io)
+- [Organic CSS](http://krasimir.github.io/organic-css/), based on [Atomic](http://atomicdesign.bradfrost.com/chapter-2/) concept
 - [BEM ](https://en.bem.info/methodology/quick-start/)
   * [BEM Boottrap-4](https://en.bem.info/methodology/quick-start/)
   * [BEM CSS](https://en.bem.info/methodology/css/) ([Harry Roberts style](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/))
