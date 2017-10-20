@@ -39,9 +39,9 @@ The code is available under the [CC BY 4.0](https://creativecommons.org/licenses
 - [OOCSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
 - [SMACSS](https://smacss.com)
 - [Atomic CSS](http://acss.io)
-- [Organic CSS](http://krasimir.github.io/organic-css/), based on [Atomic](http://atomicdesign.bradfrost.com/chapter-2/) concept
+- [Organic CSS](http://krasimir.github.io/organic-css/), based on [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/) concept
 - [BEM ](https://en.bem.info/methodology/quick-start/)
-  * [BEM Boottrap-4](https://en.bem.info/methodology/quick-start/)
+  * [BEM Bootstrap-4](https://en.bem.info/methodology/quick-start/)
   * [BEM CSS](https://en.bem.info/methodology/css/) (Nicolas Gallagher's [variation](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/), [populated](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) by Harry Roberts)
   * [BEM Platform](https://en.bem.info/platform/)
   * BEM CSS with [grid](https://github.com/vivid-web/flexbox-grid-sass)
