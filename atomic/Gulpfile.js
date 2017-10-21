@@ -12,8 +12,8 @@ gulp.task('acss', function(filepath) {
         gulp.src('*.html'),
         cached('*.html'),
         acss({
-          outfile: 'style.css',
-          acssConfig: Object.assign({}, require('./config.js')),
+            outfile: 'style.css',
+            acssConfig: Object.assign({}, require('./config.js'))
         }),
         remember('*.html'),
         gulp.dest('./')
