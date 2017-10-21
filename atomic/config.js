@@ -1,5 +1,5 @@
 module.exports = {
     "custom": {
-        "Ff(tahoma)": "Tahoma, sans-serif"
+        "Ff(Tahoma)": "Tahoma, sans-serif"
     }
 };

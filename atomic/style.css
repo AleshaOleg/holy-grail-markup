@@ -1,20 +1,11 @@
 .Bdc\(\#45f\) {
   border-color: #45f;
 }
-.Bdc\(\#fff\) {
-  border-color: #fff;
-}
 .Bds\(s\) {
   border-style: solid;
 }
 .Bdw\(1px\) {
   border-width: 1px;
-}
-.Bdendw\(0\) {
-  border-right-width: 0;
-}
-.Bdstartw\(0\) {
-  border-left-width: 0;
 }
 .Bgc\(\#293499\) {
   background-color: #293499;
@@ -64,7 +55,7 @@
 .Fl\(start\) {
   float: left;
 }
-.Ff\(tahoma\) {
+.Ff\(Tahoma\) {
   font-family: Tahoma, sans-serif;
 }
 .Fw\(b\) {
@@ -103,8 +94,8 @@
 .List\(n\) {
   list-style-type: none;
 }
-.M\(0\) {
-  margin: 0;
+.M\(20px\) {
+  margin: 20px;
 }
 .M\(5px\) {
   margin: 5px;
@@ -119,8 +110,10 @@
   margin-left: auto;
   margin-right: auto;
 }
-.My\(0\) {
+.My\(0\), .Mt\(0\) {
   margin-top: 0;
+}
+.My\(0\) {
   margin-bottom: 0;
 }
 .My\(20px\), .Mt\(20px\) {
@@ -129,17 +122,16 @@
 .My\(20px\), .Mb\(20px\) {
   margin-bottom: 20px;
 }
-.My\(22px\) {
-  margin-top: 22px;
-  margin-bottom: 22px;
+.My\(24px\) {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
-.My\(50px\) {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.My\(7px\) {
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
-.My\(5px\) {
-  margin-top: 5px;
-  margin-bottom: 5px;
+.Mt\(51px\) {
+  margin-top: 51px;
 }
 .Mend\(15px\) {
   margin-right: 15px;
@@ -150,8 +142,20 @@
 .Mb\(15px\) {
   margin-bottom: 15px;
 }
+.Mstart\(-75\%\) {
+  margin-left: -75%;
+}
+.Mstart\(20\%\) {
+  margin-left: 20%;
+}
 .Mih\(100\%\) {
   min-height: 100%;
+}
+.T\(0\) {
+  top: 0;
+}
+.End\(0\) {
+  right: 0;
 }
 .B\(0\) {
   bottom: 0;
@@ -159,14 +163,8 @@
 .Ov\(h\) {
   overflow: hidden;
 }
-.P\(0\) {
-  padding: 0;
-}
 .P\(10px\) {
   padding: 10px;
-}
-.P\(20px\) {
-  padding: 20px;
 }
 .P\(5px\) {
   padding: 5px;
@@ -179,6 +177,14 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+.Px\(60px\) {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.Py\(20px\) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .Py\(2px\) {
   padding-top: 2px;
   padding-bottom: 2px;
@@ -189,8 +195,8 @@
 .Pb\(42px\) {
   padding-bottom: 42px;
 }
-.Pstart\(40px\) {
-  padding-left: 40px;
+.Pstart\(0\) {
+  padding-left: 0;
 }
 .Pos\(a\) {
   position: absolute;
@@ -204,8 +210,8 @@
 .Tt\(u\) {
   text-transform: uppercase;
 }
-.Va\(b\) {
-  vertical-align: bottom;
+.W\(100\%\) {
+  width: 100%;
 }
 .W\(10em\) {
   width: 10em;
