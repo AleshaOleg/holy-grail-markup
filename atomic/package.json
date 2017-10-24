@@ -1,21 +1,8 @@
 {
-  "name": "atomic",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "browser-sync": "2.18.13",
     "gulp": "^3.9.1",
-    "gulp-atomizer": "^3.0.7",
-    "gulp-cached": "^1.1.1",
-    "gulp-if": "^2.0.2",
-    "gulp-notify": "^3.0.0",
-    "gulp-remember": "^0.3.1",
-    "multipipe": "^1.0.2",
-    "path": "^0.12.7"
+    "gulp-atomizer": "^3.0.7"
   }
 }

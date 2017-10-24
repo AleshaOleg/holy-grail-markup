@@ -1,35 +1,25 @@
-var gulp            = require('gulp'),
-    acss            = require('gulp-atomizer')
-    cached          = require('gulp-cached'),
-    remember        = require('gulp-remember'),
-    gulpif          = require('gulp-if'),
-    path            = require('path'),
-    multipipe       = require('multipipe'),
-    notify          = require('gulp-notify');
+var gulp = require('gulp');
+var acss = require('gulp-atomizer');
+var browserSync = require('browser-sync').create();
 
-gulp.task('acss', function(filepath) {
-    return multipipe (
-        gulp.src('*.html'),
-        cached('*.html'),
-        acss({
-            outfile: 'style.css',
-            acssConfig: Object.assign({}, require('./config.js'))
-        }),
-        remember('*.html'),
-        gulp.dest('./')
-    ).on('error', notify.onError(function(err){
-        return {
-            title: 'Error',
-            message: err.message
+gulp.task('bs', ['acss'], function () {
+    browserSync.init({
+        server: {
+            baseDir: "./"
         }
-    }));
-});
-
-gulp.task('watch', function() {
-    gulp.watch('*.html', ['acss']).on('unlink', function(filepath) {
-        remember.forget('acss', path.resolve(filepath));
-        delete cached.caches.sass[path.resolve(filepath)];
     });
+
+    gulp.watch("*.html", ['acss']);
+    gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['acss', 'watch']);
+gulp.task('acss', function () {
+    return gulp.src('*.html')
+        .pipe(acss({
+            outfile: 'style.css',
+            acssConfig: Object.assign({}, require('./config'))
+        }))
+        .pipe(gulp.dest('.'));
+});
+
+gulp.task('default', ['acss', 'bs']);
