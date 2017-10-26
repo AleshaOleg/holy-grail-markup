@@ -16,31 +16,31 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 
 |Implementation|HTML|CSS|Total
 ------------ | ------------- | ------------- | -------------
-|OOCSS|101|232|333
-|SMACSS|111|219|330
-|Atomic|230|104|334
-|Organic|108|187|295
-|BEM Bootstrap 4|117|6231|6348
-|BEM CSS|117|244|361
-|BEM Platform|95|250|345
-|BEM Flexboxgrid|117|714|831
-|CSS Modules|129|201|330
-|Raw|82|241|323
+|OOCSS|106|233|339
+|SMACSS|116|220|336
+|Atomic|104|231|335
+|Organic|112|255|367
+|BEM Bootstrap 4|118|6232|6350
+|BEM CSS|122|245|367
+|BEM Platform|75|260|335
+|BEM Flexboxgrid|124|1074|1198
+|CSS Modules|134|220|354
+|Raw|86|242|328
 
 #### File size
 
 |Implementation|HTML|CSS|Total|
 ------------ | ------------- | ------------- | -------------
-|OOCSS|4.92 KB|2.22 KB|7.14 KB
-|SMACSS|5.88 KB|2.269 KB|8.149 KB
-|Atomic|6.39 KB|2.88 KB|9.27 KB
-|Organic|5.41 KB|3.68 KB|8.9.09 KB
-|BEM Bootstrap 4|6.41 KB|151.74 KB|158.15 KB
-|BEM CSS|5.68 KB|2.55 KB|8.23 KB
-|BEM Platform|4.83 KB|2.79 KB|7.62 KB
-|BEM Flexboxgrid|6.22 KB|43.86 KB|50.08 KB
-|CSS Modules|4.27 KB|2.51 KB|6.78 KB
-|Raw|4.11 KB|2.53 KB|6.64 KB
+|OOCSS|5.17 KB|2.22 KB|7.39 KB
+|SMACSS|6.09 KB|2.25 KB|8.34 KB
+|Atomic|6.24 KB|2.82 KB|9.06 KB
+|Organic|5.28 KB|3.59 KB|8.87 KB
+|BEM Bootstrap 4|6.26 KB|148 KB|154.26 KB
+|BEM CSS|5.9 KB|2.55 KB|8.45 KB
+|BEM Platform|5.02 KB|2.77 KB|7.79 KB
+|BEM Flexboxgrid|6.07 KB|42.8 KB|48.87 KB
+|CSS Modules|4.41 KB|2.35 KB|6.76 KB
+|Raw|4.31 KB|2.53 KB|6.84 KB
 
 ### CSS statistics
 
