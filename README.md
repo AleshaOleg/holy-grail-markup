@@ -22,6 +22,7 @@ Specificity graphs for each implementetion, you can find by URL address, `https:
 
 ## Authors
 Created by [Oleh Aloshkin](https://github.com/AleshaOleg) and [Ihor Zenich](https://github.com/IhorZenich).
+Collaborator: [Dmytro Cisar](https://github.com/idmytro).
 
 ## Contributors
 * [Boris Serdiuk](https://github.com/just-boris) and [Artem Sapegin](https://github.com/sapegin) for CSS-Modules example.
