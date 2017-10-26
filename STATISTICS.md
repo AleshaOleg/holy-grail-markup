@@ -11,13 +11,14 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 `grunt`
 
 <br />
+
 ### Number of lines
 
 |Implementation|HTML|CSS|Total
 ------------ | ------------- | ------------- | -------------
 |OOCSS|101|232|333
 |SMACSS|111|219|330
-|Atomic|219|224|332
+|Atomic|230|104|334
 |Organic|108|187|295
 |BEM Bootstrap 4|117|6231|6348
 |BEM CSS|117|244|361
@@ -32,12 +33,12 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 ------------ | ------------- | ------------- | -------------
 |OOCSS|4.92 KB|2.22 KB|7.14 KB
 |SMACSS|5.88 KB|2.269 KB|8.149 KB
-|Atomic|6.83 KB|12.5 KB|19.33 KB
-|Organic|5.09 KB|3.69 KB|8.78 KB
-|BEM Bootstrap 4|6.28 KB|148 KB|154.28 KB
+|Atomic|6.39 KB|2.88 KB|9.27 KB
+|Organic|5.41 KB|3.68 KB|8.9.09 KB
+|BEM Bootstrap 4|6.41 KB|151.74 KB|158.15 KB
 |BEM CSS|5.68 KB|2.55 KB|8.23 KB
 |BEM Platform|4.83 KB|2.79 KB|7.62 KB
-|BEM Flexboxgrid|5.87 KB|42.6 KB|48.47 KB
+|BEM Flexboxgrid|6.22 KB|43.86 KB|50.08 KB
 |CSS Modules|4.27 KB|2.51 KB|6.78 KB
 |Raw|4.11 KB|2.53 KB|6.64 KB
 
@@ -47,7 +48,7 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
 |OOCSS|38|92|35|1.1|2.6
 |SMACSS|31|92|31|1.0|2.54
-|Atomic|75|80|72|1.0|1.1
+|Atomic|78|82|74|1.1|1.1
 |Organic|80|94|55|1.5|1.7
 |BEM Bootstrap 4|2610|3266|1856|1.4|1.8
 |BEM CSS|38|96|38|1.0|2.5
