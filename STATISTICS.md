@@ -16,16 +16,16 @@ Here a statistics for each of implementation/example. Also available as `.xlsx` 
 
 |Implementation|HTML|CSS|Total
 ------------ | ------------- | ------------- | -------------
-|OOCSS|106|233|339
-|SMACSS|116|220|336
-|Atomic|104|231|335
-|Organic|112|255|367
-|BEM Bootstrap 4|118|6232|6350
-|BEM CSS|122|245|367
-|BEM Platform|75|260|335
-|BEM Flexboxgrid|124|1074|1198
-|CSS Modules|134|220|354
-|Raw|86|242|328
+|OOCSS|116|233|349
+|SMACSS|125|220|345
+|Atomic|114|231|345
+|Organic|122|255|377
+|BEM Bootstrap 4|127|6232|6359
+|BEM CSS|131|245|376
+|BEM Platform|105|260|365
+|BEM Flexboxgrid|133|1074|1207
+|CSS Modules|144|220|364
+|Raw|96|242|338
 
 #### File size
 
