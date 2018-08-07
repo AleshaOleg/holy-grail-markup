@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Holy Grail Markup</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86724647-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-86724647-1');
+    </script>
+</head>
+<body class="page">
+<div class="page__inner">
+    <div class="header">
+        <!--
+            We specially use 'title' class here instead of 'logo'
+            in order to set an example of problems with the same classnames in different parts of site
+            The same block called 'title' also located in div.content.
+        -->
+        <h1 class="header__title title">CompanyName</h1>
+        <form class="header__search search">
+            <label class="header__label label">Type to search:
+                <input class="search__field input" type="text">
+            </label>
+            <button class="button" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="https://aleshaoleg.github.io/holy-grail-markup/oocss" class="nav__link">OOCSS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://aleshaoleg.github.io/holy-grail-markup/smacss" class="nav__link">SMACSS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://aleshaoleg.github.io/holy-grail-markup/atomic" class="nav__link">Atomic</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://aleshaoleg.github.io/holy-grail-markup/organic" class="nav__link">Organic</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://aleshaoleg.github.io/holy-grail-markup/bem-css/" class="nav__link nav__link--active">BEM CSS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://aleshaoleg.github.io/holy-grail-markup/bem-flexboxgrid/" class="nav__link">BEM Flexbox Grid</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://aleshaoleg.github.io/holy-grail-markup/bem-bootstrap-4/" class="nav__link">BEM
+                        Bootstrap 4</a>
+                </li>
+                <li class="nav__item">
+                    <a href="http://aleshaoleg.github.io/holy-grail-markup/bem-platform/pages/index/" class="nav__link">BEM
+                    Platform</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://aleshaoleg.github.io/holy-grail-markup/css-modules/" class="nav__link">CSS-modules</a>
+                </li>
+                <li class="nav__item nav__item--separate">
+                    <a href="https://aleshaoleg.github.io/holy-grail-markup/raw" class="nav__link">Raw</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <!--
+                The same block called 'title' also located in div.header,
+                so as the result we have to figure out some other name for it.
+            -->
+            <h2 class="content__title heading heading--level_2">About Company</h2>
+            <div class="content__article text">
+                <img src="imgpsh_fullsize.jpg" alt="Image">
+                <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed erat diam, posuere rhoncus
+                justo tempus, ornare vehicula lorem. Donec egestas et nisl
+                non dapibus. Morbi congue, purus ac lobortis feugiat, nunc
+                nulla facilisis lacus, ac laoreet urna dui a lorem. Quisque
+                ligula nisi, tristique in ligula vitae, dapibus tempus lectus.</p>
+                <p>Cras eget ipsum mattis, pharetra
+                nulla vitae, laoreet dui.</p>
+                <p>Duis in erat a lectus consequat
+                auctor quis vel ligula. Quisque rhoncus sapien sit amet augue
+                mollis convallis. Curabitur pharetra nunc a massa dictum, eu
+                iaculis dolor egestas. Suspendisse potenti. Nam id lorem risus.
+                Suspendisse potenti.</p>
+            </div>
+        </div>
+        <div class="news">
+            <h2 class="news__title heading heading--level_3">News</h2>
+            <div class="news__article">
+                <h3 class="news__date">01.01.16</h3>
+                <div class="news__text">
+                    <p>Vestibulum semper convallis mauris vitae lobortis.
+                    Pellentesque lobortis sem a cursus varius. Phasellus
+                    dignissim diam eget lectus cursus finibus.</p>
+                </div>
+            </div>
+            <div class="news__article">
+                <h3 class="news__date">03.01.16</h3>
+                <div class="news__text">
+                    <p>Nam placerat tellus vitae rhoncus
+                    ornare. Suspendisse scelerisque lorem id turpis efficitur
+                    facilisis. Vivamus enim magna, hendrerit id rutrum at, euismod
+                    ac orci.</p>
+                </div>
+                <a href="#" class="news__link">Read more...</a>
+            </div>
+            <div class="news__article">
+                <h3 class="news__date">08.01.16</h3>
+                <div class="news__text">
+                    <p>Maecenas sed orci turpis. Donec pretium lorem in purus porta
+                    hendrerit. Praesent at placerat lacus, ac ultrices ligula. Cras
+                    at consequat velit. Vivamus dapibus metus at nisl imperdiet
+                    imperdiet.</p>
+                </div>
+                <a href="#" class="news__link">Read more...</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer__text">© 2016 CompanyName, Inc. All Rights Reserved.</span>
+        <span class="footer__text">Site support: <a href="mailto:design@megacorp.kk" class="footer__link">design@megacorp.kk</a></span>
+    </div>
+</div>
+</body>
+</html>
