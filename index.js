@@ -9,6 +9,7 @@ var comb = new Comb(config);
 comb.processPath('./bem-css');
 comb.processPath('./bem-flexboxgrid');
 comb.processPath('./bem-platform/pages/index');
+comb.processPath('./bem-sass');
 comb.processPath('./css-modules/build');
 comb.processPath('./oocss');
 comb.processPath('./organic');
@@ -46,6 +47,12 @@ fs.readFile('./bem-platform/pages/index/index.css', 'utf8', function(err, data){
   specificityGraph('./bem-platform/specificity-graph', data, function(directory){
     console.log('specificity-graph files created in ' + directory);
   });
+});
+
+fs.readFile('./bem-sass/style.css', 'utf8', function(err, data){
+    specificityGraph('./bem-sass/specificity-graph', data, function(directory){
+        console.log('specificity-graph files created in ' + directory);
+    });
 });
 
 fs.readFile('./css-modules/build/style.css', 'utf8', function(err, data){

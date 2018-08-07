@@ -1,6 +1,3 @@
 node_modules/
 .idea
 ~$statistics.xlsx
-
-# Temporary file for bem-sass implemenation (you can remove it from here and repo if it isn't yet)
-bem-sass/bem-css_style.css
