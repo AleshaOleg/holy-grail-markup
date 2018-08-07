@@ -1,0 +1,223 @@
+html {
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: #EEE;
+
+  font: 13px Tahoma, Sans-Serif;
+}
+.page__inner {
+  position: relative;
+
+  width: 700px;
+  min-height: 100%;
+  margin: auto;
+
+  background: #FFF;
+}
+
+.heading {
+  color: #293499;
+}
+.heading--level_2 {
+  font-size: 16.9px;
+}
+.heading--level_3 {
+  text-transform: uppercase;
+
+  background: #DDE6FF;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.header {
+  padding: 20px;
+
+  background: #45F;
+}
+.header__title {
+  display: inline-block;
+
+  margin: 0;
+  padding-left: 40px;
+}
+.header__search {
+  float: right;
+}
+.header__label {
+  display: inline-block;
+}
+
+.title {
+  letter-spacing: 1px;
+
+  color: #FFF;
+
+  font-size: 23.4px;
+}
+
+.search {
+  font-size: 10.4px;
+}
+.search__field {
+  display: block;
+
+  width: 10em;
+
+  font-size: 9px;
+}
+
+.label {
+  color: #FFF;
+}
+
+.button {
+  display: inline-block;
+
+  vertical-align: bottom;
+
+  font-size: 9px;
+}
+
+.main {
+  overflow: hidden;
+
+  min-height: 100%;
+  padding-bottom: 42px;
+}
+
+.sidebar {
+  float: left;
+
+  width: 20%;
+}
+
+.nav {
+  margin: 50px 0;
+  padding: 0;
+
+  list-style: none;
+}
+.nav__item--separate {
+  margin: 22px 0;
+}
+.nav__link {
+  display: block;
+
+  margin: 5px 0;
+  padding: 2px 5px;
+
+  text-decoration: none;
+
+  color: #000;
+  border: 1px solid #FFF;
+  border-right: 0;
+  border-left: 0;
+  background: #DDE6FF;
+
+  font-size: 10.4px;
+}
+.nav__link:hover {
+  color: #FFF;
+  background: #D00;
+}
+.nav__link--active {
+  color: #FFF;
+  background: #293499;
+}
+
+.content {
+  float: left;
+
+  width: 55%;
+}
+.content__title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+.content__article {
+  padding: 0 15px;
+}
+
+.text {
+  /* There can be some styles for content imported from backed */
+}
+.text img {
+  float: left;
+
+  margin: 0 15px 15px 0;
+  padding: 5px;
+
+  border: 1px solid #45F;
+}
+.text p {
+  /* There can be some styles for html-elements in text-content block */
+}
+
+.news {
+  float: right;
+
+  width: 25%;
+}
+.news__title {
+  margin: 0 0 20px 0;
+  padding: 10px;
+}
+.news__article {
+  margin: 20px 5px;
+
+  font-size: 10.4px;
+}
+.news__date {
+  float: left;
+
+  margin: 0 5px 0 0;
+
+  color: #293499;
+
+  font-size: 10.4px;
+  font-weight: bold;
+}
+.news__text {
+  display: inline;
+
+  color: #293499;
+}
+.news__text p:last-of-type {
+  display: inline;
+}
+.news__link {
+  padding-right: 13px;
+
+  color: #D00;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+
+  width: 700px;
+  height: 42px;
+
+  color: #FFF;
+  background: #45F;
+}
+.footer__text {
+  display: block;
+
+  margin: 5px;
+
+  font-size: 9.1px;
+}
+.footer__link {
+  color: #FFF;
+}
+
+/*# sourceMappingURL=style.css.map */

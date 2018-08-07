@@ -1,0 +1,249 @@
+html {
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: #EEE;
+
+  font: 13px Tahoma, Sans-Serif;
+
+  &__inner {
+    position: relative;
+
+    width: 700px;
+    min-height: 100%;
+    margin: auto;
+
+    background: #FFF;
+  }
+}
+
+.heading {
+  color: #293499;
+
+  &--level_2 {
+    font-size: 16.9px;
+  }
+
+  &--level_3 {
+    text-transform: uppercase;
+
+    background: #DDE6FF;
+
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.header {
+  padding: 20px;
+
+  background: #45F;
+
+  &__title {
+    display: inline-block;
+
+    margin: 0;
+    padding-left: 40px;
+  }
+
+  &__search {
+    float: right;
+  }
+
+  &__label {
+    display: inline-block;
+  }
+}
+
+.title {
+  letter-spacing: 1px;
+
+  color: #FFF;
+
+  font-size: 23.4px;
+}
+
+.search {
+  font-size: 10.4px;
+
+  &__field {
+    display: block;
+
+    width: 10em;
+
+    font-size: 9px;
+  }
+}
+
+.label {
+  color: #FFF;
+}
+
+.button {
+  display: inline-block;
+
+  vertical-align: bottom;
+
+  font-size: 9px;
+}
+
+.main {
+  overflow: hidden;
+
+  min-height: 100%;
+  padding-bottom: 42px;
+}
+
+.sidebar {
+  float: left;
+
+  width: 20%;
+}
+
+.nav {
+  margin: 50px 0;
+  padding: 0;
+
+  list-style: none;
+
+  &__item {
+    &--separate {
+      margin: 22px 0;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    margin: 5px 0;
+    padding: 2px 5px;
+
+    text-decoration: none;
+
+    color: #000;
+    border: 1px solid #FFF;
+    border-right: 0;
+    border-left: 0;
+    background: #DDE6FF;
+
+    font-size: 10.4px;
+
+    &:hover {
+      color: #FFF;
+      background: #D00;
+    }
+
+    &--active {
+      color: #FFF;
+      background: #293499;
+    }
+  }
+}
+
+.content {
+  float: left;
+
+  width: 55%;
+
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+  }
+
+  &__article {
+    padding: 0 15px;
+  }
+}
+
+
+.text {
+  /* There can be some styles for content imported from backed */
+
+  img {
+    float: left;
+
+    margin: 0 15px 15px 0;
+    padding: 5px;
+
+    border: 1px solid #45F;
+  }
+
+  p {
+    /* There can be some styles for html-elements in text-content block */
+  }
+}
+
+.news {
+  float: right;
+
+  width: 25%;
+
+  &__title {
+    margin: 0 0 20px 0;
+    padding: 10px;
+  }
+
+  &__article {
+    margin: 20px 5px;
+
+    font-size: 10.4px;
+  }
+
+  &__date {
+    float: left;
+
+    margin: 0 5px 0 0;
+
+    color: #293499;
+
+    font-size: 10.4px;
+    font-weight: bold;
+  }
+
+  &__text {
+    display: inline;
+
+    color: #293499;
+
+    p {
+      &:last-of-type {
+        display: inline;
+      }
+    }
+  }
+
+  &__link {
+    padding-right: 13px;
+
+    color: #D00;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+
+  width: 700px;
+  height: 42px;
+
+  color: #FFF;
+  background: #45F;
+
+  &__text {
+    display: block;
+
+    margin: 5px;
+
+    font-size: 9.1px;
+  }
+
+  &__link {
+    color: #FFF;
+  }
+}

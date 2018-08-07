@@ -8,6 +8,7 @@ module.exports = function(grunt) {
           'bem-css/style.css',
           'bem-flexboxgrid/style.css',
           'bem-platform/pages/index/index.css',
+          'bem-sass/style.css',
           'css-modules/build/style.css',
           'oocss/style.css',
           'organic/style.css',
