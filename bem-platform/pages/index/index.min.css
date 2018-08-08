@@ -23,6 +23,7 @@ html {
 .heading {
   margin: 0 0 16px 0;
 }
+
 .heading_level_1 {
   letter-spacing: 1px;
 
@@ -30,11 +31,13 @@ html {
 
   font-size: 23.4px;
 }
+
 .heading_level_2 {
   color: #293499;
 
   font-size: 16.9px;
 }
+
 .heading_level_3 {
   text-transform: uppercase;
 
@@ -42,33 +45,6 @@ html {
   background: #DDE6FF;
 
   font-size: 13px;
-}
-
-.header {
-  padding: 20px;
-
-  background: #45F;
-}
-
-.header__title {
-  display: inline-block;
-
-  margin: 0;
-  padding-left: 40px;
-
-  letter-spacing: 1px;
-
-  font-size: 23.4px;
-}
-
-.header__search {
-  float: right;
-}
-
-.header__label {
-  display: inline-block;
-
-  color: #FFF;
 }
 
 .search {
@@ -155,6 +131,10 @@ html {
 .link {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
+}
+
+.link_disabled {
+  pointer-events: none;
 }
 
 .content {
@@ -252,5 +232,32 @@ html {
 }
 
 .footer__link {
+  color: #FFF;
+}
+
+.header {
+  padding: 20px;
+
+  background: #45F;
+}
+
+.header__title {
+  display: inline-block;
+
+  margin: 0;
+  padding-left: 40px;
+
+  letter-spacing: 1px;
+
+  font-size: 23.4px;
+}
+
+.header__search {
+  float: right;
+}
+
+.header__label {
+  display: inline-block;
+
   color: #FFF;
 }

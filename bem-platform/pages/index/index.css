@@ -133,6 +133,10 @@ html {
       touch-action: manipulation;
 }
 
+.link_disabled {
+  pointer-events: none;
+}
+
 .content {
   float: left;
 

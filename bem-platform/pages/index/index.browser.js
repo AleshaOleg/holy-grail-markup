@@ -519,14 +519,12 @@ function initEntities(domElem, uniqInitId, dropElemCacheQueue) {
         elemName;
 
     for(entityName in params) {
-        if(dropElemCacheQueue) {
-            splitted = entityName.split(ELEM_DELIM);
-            blockName = splitted[0];
-            elemName = splitted[1];
-            elemName &&
-                ((dropElemCacheQueue[blockName] ||
-                    (dropElemCacheQueue[blockName] = {}))[elemName] = true);
-        }
+        splitted = entityName.split(ELEM_DELIM);
+        blockName = splitted[0];
+        elemName = splitted[1];
+        elemName &&
+            ((dropElemCacheQueue[blockName] ||
+                (dropElemCacheQueue[blockName] = {}))[elemName] = true);
 
         initEntity(
             entityName,
@@ -575,7 +573,7 @@ function initEntity(entityName, domElem, params, ignoreLazyInit, callback) {
 
     entityCls._processInit();
 
-    if(!entityCls.lazyInit || ignoreLazyInit || params.lazyInit === false) {
+    if(ignoreLazyInit || params.lazyInit === false || !entityCls.lazyInit && !params.lazyInit) {
         ignoreLazyInit && domElem.addClass(BEM_CLASS_NAME); // add css class for preventing memory leaks in further destructing
 
         entity = new entityCls(uniqIdToDomElems[uniqId], params, !!ignoreLazyInit);
@@ -590,8 +588,8 @@ function getEntityCls(entityName) {
 
     var splitted = entityName.split(ELEM_DELIM);
     return splitted[1]?
-        bemDom.declElem(splitted[0], splitted[1], {}, { lazyInit : true }, true) :
-        bemDom.declBlock(entityName, {}, { lazyInit : true }, true);
+        bemDom.declElem(splitted[0], splitted[1], {}, { lazyInit : true }) :
+        bemDom.declBlock(entityName, {}, { lazyInit : true });
 }
 
 /**
@@ -637,13 +635,13 @@ function getParams(domNode) {
 /**
  * Returns parameters of an entity extracted from DOM node
  * @param {HTMLElement} domNode DOM node
- * @param {String} blockName
+ * @param {String} entityName
  * @returns {Object}
  */
 
-function getEntityParams(domNode, blockName) {
+function getEntityParams(domNode, entityName) {
     var params = getParams(domNode);
-    return params[blockName] || (params[blockName] = {});
+    return params[entityName] || (params[entityName] = {});
 }
 
 /**
@@ -663,7 +661,7 @@ function extractParams(domNode) {
  */
 function removeDomNodeFromEntity(entity, domNode) {
     if(entity.domElem.length === 1) {
-        entity._delInitedMod();
+        entity.delMod('js');
         delete uniqIdToEntity[entity._uniqId];
     } else {
         entity.domElem = entity.domElem.not(domNode);
@@ -696,8 +694,6 @@ function dropElemCacheForCtx(ctx, dropElemCacheQueue) {
             }
         });
     });
-
-    dropElemCacheQueue = {};
 }
 
 /**
@@ -729,6 +725,40 @@ function buildElemKey(elem) {
  */
 function getJqueryCollection(html) {
     return $(typeof html === 'string'? $.parseHTML(html, null, true) : html);
+}
+
+/**
+ * Validates block to be class or specified description
+ * @param {*} Block Any argument passed to find*Block as Block
+ * @throws {Error} Will throw an error if the Block argument isn't correct
+ */
+function validateBlockParam(Block) {
+    if(
+        typeof Block === 'string' ||
+        typeof Block === 'object' && typeof Block.block === 'string'
+    ) {
+        throw new Error('Block must be a class or description (block, modName, modVal) of the block to find');
+    }
+}
+
+/**
+ * Returns base entities for declaration
+ * @param {Function} baseCls block|elem class
+ * @param {String} entityName entityName
+ * @param {Function|Array[Function]} [base] base block|elem + mixes
+ * @returns {Array<Function>}
+ */
+function getEntityBase(baseCls, entityName, base) {
+    base || (base = entities[entityName] || baseCls);
+
+    Array.isArray(base) || (base = [base]);
+
+    if(!base[0].__bemEntity) {
+        base = base.slice();
+        base.unshift(entities[entityName] || baseCls);
+    }
+
+    return base;
 }
 
 /**
@@ -862,7 +892,8 @@ var BemDomEntity = inherit(/** @lends BemDomEntity.prototype */{
      * @returns {Block}
      */
     findChildBlock : function(Block) {
-        // TODO: throw if Block passed as a string
+        validateBlockParam(Block);
+
         return this._findEntities('find', Block, true);
     },
 
@@ -872,6 +903,8 @@ var BemDomEntity = inherit(/** @lends BemDomEntity.prototype */{
      * @returns {BemDomCollection}
      */
     findChildBlocks : function(Block) {
+        validateBlockParam(Block);
+
         return this._findEntities('find', Block);
     },
 
@@ -881,6 +914,8 @@ var BemDomEntity = inherit(/** @lends BemDomEntity.prototype */{
      * @returns {Block}
      */
     findParentBlock : function(Block) {
+        validateBlockParam(Block);
+
         return this._findEntities('parents', Block, true);
     },
 
@@ -890,6 +925,8 @@ var BemDomEntity = inherit(/** @lends BemDomEntity.prototype */{
      * @returns {BemDomCollection}
      */
     findParentBlocks : function(Block) {
+        validateBlockParam(Block);
+
         return this._findEntities('parents', Block);
     },
 
@@ -899,6 +936,8 @@ var BemDomEntity = inherit(/** @lends BemDomEntity.prototype */{
      * @returns {Block}
      */
     findMixedBlock : function(Block) {
+        validateBlockParam(Block);
+
         return this._findEntities('filter', Block, true);
     },
 
@@ -908,6 +947,8 @@ var BemDomEntity = inherit(/** @lends BemDomEntity.prototype */{
      * @returns {BemDomCollection}
      */
     findMixedBlocks : function(Block) {
+        validateBlockParam(Block);
+
         return this._findEntities('filter', Block);
     },
 
@@ -1017,7 +1058,7 @@ var BemDomEntity = inherit(/** @lends BemDomEntity.prototype */{
                         typeof entity.modVal === 'undefined'?
                             true :
                             entity.modVal) :
-                    buildClassName(entityName)) +
+                    entityName) +
                 (onlyFirst? ':first' : ''),
             domElems = this.domElem[select](selector);
 
@@ -1237,7 +1278,7 @@ var BemDomEntity = inherit(/** @lends BemDomEntity.prototype */{
  * @class Block
  * @description Base class for creating BEM blocks that have DOM representation
  * @augments i-bem:Block
- * @exports
+ * @exports i-bem-dom:Block
  */
 var Block = inherit([bem.Block, BemDomEntity], /** @lends Block.prototype */{
     /** @override */
@@ -1250,7 +1291,7 @@ var Block = inherit([bem.Block, BemDomEntity], /** @lends Block.prototype */{
  * @class Elem
  * @description Base class for creating BEM elements that have DOM representation
  * @augments i-bem:Elem
- * @exports
+ * @exports i-bem-dom:Elem
  */
 var Elem = inherit([bem.Elem, BemDomEntity], /** @lends Elem.prototype */{
     /** @override */
@@ -1305,7 +1346,7 @@ bemDom = /** @exports */{
 
     /**
      * @param {*} entity
-     * @return {Boolean}
+     * @returns {Boolean}
      */
     isEntity : function(entity) {
         return entity instanceof Block || entity instanceof Elem;
@@ -1328,6 +1369,8 @@ bemDom = /** @exports */{
                 blockName;
         }
 
+        base = getEntityBase(Block, blockName, base);
+
         return bem.declBlock(blockName, base, props, staticProps);
     },
 
@@ -1341,11 +1384,15 @@ bemDom = /** @exports */{
      * @returns {Function} Elem class
      */
     declElem : function(blockName, elemName, base, props, staticProps) {
+        var entityName = blockName + ELEM_DELIM + elemName;
+
         if(!base || (typeof base === 'object' && !Array.isArray(base))) {
             staticProps = props;
             props = base;
-            base = entities[blockName + ELEM_DELIM + elemName] || Elem;
+            base = entities[entityName] || Elem;
         }
+
+        base = getEntityBase(Elem, entityName, base);
 
         return bem.declElem(blockName, elemName, base, props, staticProps);
     },
@@ -1362,16 +1409,17 @@ bemDom = /** @exports */{
             $(ctx) :
             ctx || bemDom.scope;
 
-        var dropElemCacheQueue = ctx === bemDom.scope? {} : undef,
+        var dropElemCacheQueue = {},
             uniqInitId = identify();
 
+        // NOTE: we find only js-entities, so cahced elems without js can't be dropped from cache
         findDomElem(ctx, BEM_SELECTOR).each(function() {
             initEntities($(this), uniqInitId, dropElemCacheQueue);
         });
 
         bem._runInitFns();
 
-        dropElemCacheQueue && dropElemCacheForCtx(ctx, dropElemCacheQueue);
+        dropElemCacheForCtx(ctx, dropElemCacheQueue);
 
         return ctx;
     },
@@ -1536,15 +1584,14 @@ modules.define = function(name, deps, decl) {
 /* begin: ../../node_modules/bem-core/common.blocks/inherit/inherit.vanilla.js */
 /**
  * @module inherit
- * @version 2.2.1
+ * @version 2.2.6
  * @author Filatov Dmitry <dfilatov@yandex-team.ru>
  * @description This module provides some syntax sugar for "class" declarations, constructors, mixins, "super" calls and static members.
  */
 
 (function(global) {
 
-var hasIntrospection = (function(){'_';}).toString().indexOf('_') > -1,
-    emptyBase = function() {},
+var noop = function() {},
     hasOwnProperty = Object.prototype.hasOwnProperty,
     objCreate = Object.create || function(ptp) {
         var inheritance = function() {};
@@ -1572,11 +1619,10 @@ var hasIntrospection = (function(){'_';}).toString().indexOf('_') > -1,
     isFunction = function(obj) {
         return toStr.call(obj) === '[object Function]';
     },
-    noOp = function() {},
     needCheckProps = true,
     testPropObj = { toString : '' };
 
-for(var i in testPropObj) { // fucking ie hasn't toString, valueOf in for
+for(var i in testPropObj) { // It's a pity ie hasn't toString, valueOf in for
     testPropObj.hasOwnProperty(i) && (needCheckProps = false);
 }
 
@@ -1604,20 +1650,26 @@ function override(base, res, add) {
         }
         prop = add[name];
         if(isFunction(prop) &&
-                (!hasIntrospection || prop.toString().indexOf('.__base') > -1)) {
+                (!prop.prototype || !prop.prototype.__self) && // check to prevent wrapping of "class" functions
+                (prop.toString().indexOf('.__base') > -1)) {
             res[name] = (function(name, prop) {
                 var baseMethod = base[name]?
                         base[name] :
-                        name === '__constructor'? // case of inheritance from plane function
+                        name === '__constructor'? // case of inheritance from plain function
                             res.__self.__parent :
-                            noOp;
-                return function() {
-                    var baseSaved = this.__base;
-                    this.__base = baseMethod;
-                    var res = prop.apply(this, arguments);
-                    this.__base = baseSaved;
-                    return res;
-                };
+                            noop,
+                    result = function() {
+                        var baseSaved = this.__base;
+
+                        this.__base = result.__base;
+                        var res = prop.apply(this, arguments);
+                        this.__base = baseSaved;
+
+                        return res;
+                    };
+                result.__base = baseMethod;
+
+                return result;
             })(name, prop);
         } else {
             res[name] = prop;
@@ -1651,10 +1703,10 @@ function inherit() {
     var args = arguments,
         withMixins = isArray(args[0]),
         hasBase = withMixins || isFunction(args[0]),
-        base = hasBase? withMixins? applyMixins(args[0]) : args[0] : emptyBase,
+        base = hasBase? withMixins? applyMixins(args[0]) : args[0] : noop,
         props = args[hasBase? 1 : 0] || {},
         staticProps = args[hasBase? 2 : 1],
-        res = props.__constructor || (hasBase && base.prototype.__constructor)?
+        res = props.__constructor || (hasBase && base.prototype && base.prototype.__constructor)?
             function() {
                 return this.__constructor.apply(this, arguments);
             } :
@@ -1700,25 +1752,26 @@ inherit.self = function() {
 };
 
 var defineAsGlobal = true;
+/* istanbul ignore next */
 if(typeof exports === 'object') {
     module.exports = inherit;
     defineAsGlobal = false;
 }
-
-if(typeof modules === 'object') {
+/* istanbul ignore next */
+if(typeof modules === 'object' && typeof modules.define === 'function') {
     modules.define('inherit', function(provide) {
         provide(inherit);
     });
     defineAsGlobal = false;
 }
-
+/* istanbul ignore next */
 if(typeof define === 'function') {
     define(function(require, exports, module) {
         module.exports = inherit;
     });
     defineAsGlobal = false;
 }
-
+/* istanbul ignore next */
 defineAsGlobal && (global.inherit = inherit);
 
 })(this);
@@ -1764,7 +1817,7 @@ provide(/** @exports */{
      * URL for loading jQuery if it does not exist
      * @type {String}
      */
-    url : 'https://yastatic.net/jquery/3.1.0/jquery.min.js'
+    url : 'https://yastatic.net/jquery/3.2.1/jquery.min.js'
 });
 
 });
@@ -1786,7 +1839,7 @@ provide(
         objects.extend(
             base,
             {
-                url : 'https://yastatic.net/jquery/1.12.3/jquery.min.js'
+                url : 'https://yastatic.net/jquery/1.12.4/jquery.min.js'
             }) :
         base);
 
@@ -1917,7 +1970,10 @@ provide(/** @exports */{
      * @returns {Boolean}
      */
     isFunction : function(obj) {
-        return toStr.call(obj) === '[object Function]';
+        // In some browsers, typeof returns "function" for HTML <object> elements
+        // (i.e., `typeof document.createElement( "object" ) === "function"`).
+        // We don't want to classify *any* DOM node as a function.
+        return typeof obj === 'function' && typeof obj.nodeType !== 'number';
     },
 
     /**
@@ -1936,6 +1992,20 @@ provide(/** @exports */{
  */
 
 modules.define('dom', ['jquery'], function(provide, $) {
+
+var EDITABLE_INPUT_TYPES = {
+    'datetime-local' : true,
+    date : true,
+    month : true,
+    number : true,
+    password : true,
+    search : true,
+    tel : true,
+    text : true,
+    time : true,
+    url : true,
+    week : true
+};
 
 provide(/** @exports */{
     /**
@@ -2017,8 +2087,7 @@ provide(/** @exports */{
 
         switch(domNode.tagName.toLowerCase()) {
             case 'input':
-                var type = domNode.type;
-                return (type === 'text' || type === 'password') && !domNode.disabled && !domNode.readOnly;
+                return EDITABLE_INPUT_TYPES.hasOwnProperty(domNode.type) && !domNode.disabled && !domNode.readOnly;
 
             case 'textarea':
                 return !domNode.disabled && !domNode.readOnly;
@@ -2292,14 +2361,6 @@ var BemEntity = inherit(/** @lends BemEntity.prototype */ {
      */
     _setInitedMod : function() {
         return this.setMod('js', 'inited');
-    },
-
-    /**
-     * Deletes a BEM entity
-     * @private
-     */
-    _delInitedMod : function() {
-        this.delMod('js');
     },
 
     /**
@@ -3635,7 +3696,7 @@ var BemCollection = inherit(/** @lends BemCollection.prototype */{
                 arg instanceof BemCollection?  arg._entities : arg);
         }
 
-        return new BemCollection(arrayConcat.apply(this._entities, argsForConcat));
+        return new this.__self(arrayConcat.apply(this._entities, argsForConcat));
     },
 
     /**
@@ -3788,8 +3849,10 @@ var EVENT_PREFIX = '__bem__',
         }
     });
 
-provide({
+provide(/** @exports */ {
     /**
+     * Emits BEM event
+     * @augments i-bem-dom__events_type_bem
      * @param {BemDomEntity} ctx
      * @param {String|Object|events:Event} e Event name
      * @param {Object} [data]
@@ -4370,8 +4433,7 @@ var doc = document,
  * Returns a snapshot of the event, with writable properties.
  *
  * @param {Event} event An event that contains properties to copy.
- * @returns {Object} An object containing shallow copies of `inEvent`'s
- *    properties.
+ * @returns {Object} An object containing shallow copies of `inEvent`'s properties.
  */
 function cloneEvent(event) {
     var eventCopy = $.extend(new $.Event(), event);
@@ -4417,6 +4479,7 @@ var MOUSE_PROPS = {
 /*!
  * Pointer event constructor
  *
+ * @class PointerEvent
  * @param {String} type
  * @param {Object} [params]
  * @returns {Event}
@@ -5611,7 +5674,7 @@ var eventBuilder = function(e) {
 
                     if(instance) {
                         params.bindEntityCls && (e.bemTarget = $(this).bem(params.bindEntityCls));
-                        fn.call(instance, e);
+                        fn.apply(instance, arguments);
                     }
                 };
             }

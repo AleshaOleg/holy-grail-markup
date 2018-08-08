@@ -76,6 +76,10 @@ module.exports = {
                                 content: 'BEM CSS'
                             },
                             {
+                                url: 'https://aleshaoleg.github.io/holy-grail-markup/bem-sass/',
+                                content: 'BEM SASS'
+                            },
+                            {
                                 url: 'https://aleshaoleg.github.io/holy-grail-markup/bem-flexboxgrid/',
                                 content: 'BEM Flexbox Grid'
                             },
