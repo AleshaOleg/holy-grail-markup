@@ -18,7 +18,7 @@ but with trying to structuring code some way we did it before methodoligies comi
 
 [Demo](https://aleshaoleg.github.io/holy-grail-markup/raw) is here.
 
-Specificity graphs for each implementetion, you can find by URL address, `https://aleshaoleg.github.io/holy-grail-markup/implementetion/specificity-graph`. For example, `raw` example here: http://aleshaoleg.me/holy-grail-markup/raw/specificity-graph.
+Specificity graphs for each implementetion, you can find by URL address, `https://aleshaoleg.github.io/holy-grail-markup/implementetion/specificity-graph`. For example, `raw` example here: http://aleshaoleg.github.io/holy-grail-markup/raw/specificity-graph.
 
 ## Authors
 Created by [Oleh Aloshkin](https://github.com/AleshaOleg) and [Ihor Zenich](https://github.com/IhorZenich).
