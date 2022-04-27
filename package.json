@@ -29,7 +29,7 @@
   "devDependencies": {
     "concat-files": "^0.1.1",
     "csscomb": "^4.0.1",
-    "grunt": "^1.0.1",
+    "grunt": "^1.5.2",
     "grunt-css-count": "^0.3.1",
     "pre-commit": "^1.2.2",
     "specificity-graph": "^0.1.7"
